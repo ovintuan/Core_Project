@@ -1,11 +1,24 @@
 {
-    "image": "python",
+    "name" : "python_devcontainer",
+    "image": "python:3.12.4",
     // "forwardPorts": [3000],
     "customizations": {
       // Configure properties specific to VS Code.
       "vscode": {
         // Add the IDs of extensions you want installed when the container is created.
-        // "extensions": ["streetsidesoftware.code-spell-checker"]
+        "extensions": ["streetsidesoftware.code-spell-checker"
+                      ,"formulahendry.code-runner"
+                      ,"ms-python.debugpy"
+                      ,"ms-python.python"
+                      ,"usernamehw.remove-empty-lines"
+                      ,"adpyke.vscode-sql-formatter"
+                      ,"vscode-icons-team.vscode-icons"
+                      ,"redhat.vscode-yaml"
+                      ,"pascalreitermann93.vscode-yaml-sort"
+                      ,"ms-toolsai.jupyter"      
+                      ]
       }
-    }
+    },
+    "postCreateCommand": "pip install -r requirements.txt",
+    "runArgs": ["--name", "python_devcontainer"]
   }
