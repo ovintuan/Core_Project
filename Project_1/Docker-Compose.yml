@@ -1,0 +1,33 @@
+
+version: "3.8"
+
+services:
+  postgres:
+    image: your_postgres_image  # Replace with your built image or official image
+    environment:
+      - POSTGRES_PASSWORD=your_password
+      - POSTGRES_USER=your_username
+      - POSTGRES_DB=your_postgres_database
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Optional for persistent data
+
+  sqlserver:  # Replace with mariadb if using MariaDB
+    image: your_sqlserver_image  # Replace with your built image or official image
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=your_password
+    ports:
+      - "1433:1433"  # Adjust port if using MariaDB
+    volumes:
+      - sqlserver_data:/var/opt/mssql/data  # Optional for persistent data (SQL Server)
+
+  airflow:
+    image: apache/airflow
+    # ... Airflow configuration ...
+
+volumes:
+  postgres_data:  # Optional
+  sqlserver_data:  # Optional for SQL Server
+  mariadb_data:  # Optional for MariaDB
