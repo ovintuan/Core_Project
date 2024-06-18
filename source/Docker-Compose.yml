@@ -1,33 +1,42 @@
 
-version: "3.8"
+# version: "3.8"
 
 services:
-  postgres:
-    image: your_postgres_image  # Replace with your built image or official image
+  postgres_database_1:
+    image: postgres:latest
     environment:
-      - POSTGRES_PASSWORD=your_password
-      - POSTGRES_USER=your_username
-      - POSTGRES_DB=your_postgres_database
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data  # Optional for persistent data
+      - POSTGRES_PASSWORD=Postgres_Password_3000
+      - POSTGRES_USER=Postgres_User
 
-  sqlserver:  # Replace with mariadb if using MariaDB
-    image: your_sqlserver_image  # Replace with your built image or official image
+    ports:
+      - "3000:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  sqlserver_database_1:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    user: root
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=your_password
+      - SA_PASSWORD=SQL_Server_Password_1000
     ports:
-      - "1433:1433"  # Adjust port if using MariaDB
+      - "1000:1433"
     volumes:
-      - sqlserver_data:/var/opt/mssql/data  # Optional for persistent data (SQL Server)
+      - sqlserver_data1:/var/opt/mssql/data
 
-  airflow:
-    image: apache/airflow
-    # ... Airflow configuration ...
+  sqlserver_database_2:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    user: root
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=SQL_Server_Password_2000
+    ports:
+      - "2000:1433"
+    volumes:
+      - sqlserver_data2:/var/opt/mssql/data
+      
 
 volumes:
   postgres_data:  # Optional
-  sqlserver_data:  # Optional for SQL Server
-  mariadb_data:  # Optional for MariaDB
+  sqlserver_data1:  # Optional for SQL Server
+  sqlserver_data2:  # Optional for MariaDB

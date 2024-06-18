@@ -16,6 +16,7 @@
                       ,"redhat.vscode-yaml"
                       ,"pascalreitermann93.vscode-yaml-sort"
                       ,"ms-toolsai.jupyter"      
+                      ,"ms-azuretools.vscode-docker"
                       ]
       }
     },
