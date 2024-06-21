@@ -21,6 +21,9 @@ services:
       - SA_PASSWORD=SQL_Server_Password_1000
     ports:
       - "1000:1433"
+    # command: 
+    #   - /bin/bash -c "for f in /source/init_script/SQL_Server_1/*.sql; do /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${SA_PASSWORD} -i $f; `SQL Server - Init completed`"
+
     volumes:
       - sqlserver_data1:/var/opt/mssql/data
 
