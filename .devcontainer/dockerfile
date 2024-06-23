@@ -1,0 +1,9 @@
+
+
+# FROM openjdk:11
+
+# FROM python:3.12.4
+
+# # Copy JDK from Java image
+# ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
+# CMD /bin/bash pip install --upgrade pip

@@ -2,6 +2,31 @@
 # version: "3.8"
 
 services:
+
+  java_environment:
+    image: openjdk:11
+    stdin_open: true  # Keep STDIN open even if not attached
+    tty: true         # Allocate a pseudo-TTY 
+    volumes:
+      - "java-openjdk-11:/usr/local/openjdk-11/"
+        
+
+  python_environment:
+    image: python:3.12.4
+    stdin_open: true  # Keep STDIN open even if not attached
+    tty: true         # Allocate a pseudo-TTY 
+    environment:
+      - JAVA_HOME=/usr/local/openjdk-11/
+    volumes:
+      - "java-openjdk-11:/usr/local/openjdk-11/"
+
+      - type: bind
+        source: ..
+        target: /container/Project_1
+
+    depends_on:
+      - java_environment
+
   postgres_database_1:
     image: postgres:latest
     environment:
@@ -43,3 +68,4 @@ volumes:
   postgres_data:  # Optional
   sqlserver_data1:  # Optional for SQL Server
   sqlserver_data2:  # Optional for MariaDB
+  java-openjdk-11:

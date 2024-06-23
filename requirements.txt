@@ -1,3 +1,5 @@
+ipykernel
+pyspark
+delta-spark==2.1.0
 FastAPI
 pandas
-ipykernel

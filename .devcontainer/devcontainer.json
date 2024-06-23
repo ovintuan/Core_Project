@@ -1,7 +1,9 @@
 {
-    "name" : "python_devcontainer",
-    "image": "python:3.12.4",
-    // "forwardPorts": [3000],
+    "name" : "dev_environment_container",
+    // "build": {"dockerfile": "dockerfile"},
+    "dockerComposeFile": "../source/Docker-Compose.yml",
+    "service": "python_environment",
+    "workspaceFolder": "/container/Project_1",
     "customizations": {
       // Configure properties specific to VS Code.
       "vscode": {
@@ -21,5 +23,5 @@
       }
     },
     "postCreateCommand": "pip install -r requirements.txt",
-    "runArgs": ["--name", "python_devcontainer"]
+    "runArgs": ["--name", "dev_environment_container"]
   }
