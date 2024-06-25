@@ -3,13 +3,56 @@
 
 services:
 
+  spark-master:
+    image: bitnami/spark:latest
+    container_name: spark-master
+    hostname: spark-master
+    ports:
+      - "8080:8080"  # Spark Web UI
+      - "7077:7077"  # Spark Master Port
+    environment:
+      - SPARK_MODE=master
+      - SPARK_MASTER_PORT=7077
+      - SPARK_MASTER_WEBUI_PORT=8080
+      - PYSPARK_PYTHON=/usr/local/bin/python  # Ensure the same version is used
+      - PYSPARK_DRIVER_PYTHON=/usr/local/bin/python  # Ensure the same version is used
+    # volumes:
+    #   - spark-master-data:/bitnami
+
+  spark-worker-1:
+    image: bitnami/spark:latest
+    container_name: spark-worker-1
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_WEBUI_PORT=8081
+      - PYSPARK_PYTHON=/usr/local/bin/python  # Ensure the same version is used
+      - PYSPARK_DRIVER_PYTHON=/usr/local/bin/python  # Ensure the same version is used
+    depends_on:
+      - spark-master
+    # volumes:
+    #   - spark-worker-1-data:/bitnami
+
+  spark-worker-2:
+    image: bitnami/spark:latest
+    container_name: spark-worker-2
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_WEBUI_PORT=8082
+      - PYSPARK_PYTHON=/usr/local/bin/python  # Ensure the same version is used
+      - PYSPARK_DRIVER_PYTHON=/usr/local/bin/python  # Ensure the same version is used
+    depends_on:
+      - spark-master
+    # volumes:
+    #   - spark-worker-2-data:/bitnami
+
   java_environment:
     image: openjdk:11
     stdin_open: true  # Keep STDIN open even if not attached
     tty: true         # Allocate a pseudo-TTY 
     volumes:
       - "java-openjdk-11:/usr/local/openjdk-11/"
-        
 
   python_environment:
     image: python:3.12.4
