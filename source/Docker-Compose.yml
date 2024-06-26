@@ -14,9 +14,13 @@ services:
       - SPARK_MODE=master
       - SPARK_MASTER_PORT=7077
       - SPARK_MASTER_WEBUI_PORT=8080
-      - PYSPARK_PYTHON=/usr/local/bin/python  # Ensure the same version is used
-      - PYSPARK_DRIVER_PYTHON=/usr/local/bin/python  # Ensure the same version is used
-    # volumes:
+      - PYTHONPATH=/usr/local/bin_python/python  # Ensure the same version is used
+      - PYSPARK_PYTHON=/usr/local/bin_python/python  # Ensure the same version is used
+      - PYSPARK_DRIVER_PYTHON=/usr/local/bin_python/python  # Ensure the same version is used
+    depends_on:
+      - python_environment
+    volumes:
+      - "python_path:/usr/local/bin_python/"
     #   - spark-master-data:/bitnami
 
   spark-worker-1:
@@ -26,11 +30,14 @@ services:
       - SPARK_MODE=worker
       - SPARK_MASTER_URL=spark://spark-master:7077
       - SPARK_WORKER_WEBUI_PORT=8081
-      - PYSPARK_PYTHON=/usr/local/bin/python  # Ensure the same version is used
-      - PYSPARK_DRIVER_PYTHON=/usr/local/bin/python  # Ensure the same version is used
+      - PYTHONPATH=/usr/local/bin_python/python  # Ensure the same version is used
+      - PYSPARK_PYTHON=/usr/local/bin_python/python  # Ensure the same version is used
+      - PYSPARK_DRIVER_PYTHON=/usr/local/bin_python/python  # Ensure the same version is used
     depends_on:
       - spark-master
-    # volumes:
+      - python_environment
+    volumes:
+      - "python_path:/usr/local/bin_python/"
     #   - spark-worker-1-data:/bitnami
 
   spark-worker-2:
@@ -40,11 +47,14 @@ services:
       - SPARK_MODE=worker
       - SPARK_MASTER_URL=spark://spark-master:7077
       - SPARK_WORKER_WEBUI_PORT=8082
-      - PYSPARK_PYTHON=/usr/local/bin/python  # Ensure the same version is used
-      - PYSPARK_DRIVER_PYTHON=/usr/local/bin/python  # Ensure the same version is used
+      - PYTHONPATH=/usr/local/bin_python/python  # Ensure the same version is used
+      - PYSPARK_PYTHON=/usr/local/bin_python/python  # Ensure the same version is used
+      - PYSPARK_DRIVER_PYTHON=/usr/local/bin_python/python  # Ensure the same version is used
     depends_on:
-      - spark-master
-    # volumes:
+      - spark-master  
+      - python_environment
+    volumes:
+      - "python_path:/usr/local/bin_python/"
     #   - spark-worker-2-data:/bitnami
 
   java_environment:
@@ -62,11 +72,10 @@ services:
       - JAVA_HOME=/usr/local/openjdk-11/
     volumes:
       - "java-openjdk-11:/usr/local/openjdk-11/"
-
+      - "python_path:/usr/local/bin_python/"
       - type: bind
         source: ..
         target: /container/Project_1
-
     depends_on:
       - java_environment
 
@@ -75,7 +84,6 @@ services:
     environment:
       - POSTGRES_PASSWORD=Postgres_Password_3000
       - POSTGRES_USER=Postgres_User
-
     ports:
       - "3000:5432"
     volumes:
@@ -112,3 +120,4 @@ volumes:
   sqlserver_data1:  # Optional for SQL Server
   sqlserver_data2:  # Optional for MariaDB
   java-openjdk-11:
+  python_path:
