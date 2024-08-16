@@ -5,6 +5,7 @@ services:
 
   spark-master:
     image: bitnami/spark:latest
+    user: root
     container_name: spark-master
     hostname: spark-master
     ports:
@@ -21,9 +22,11 @@ services:
       - python_environment
     volumes:
       - "python_path:/usr/local/bin_python/"
+      - "./spark-config/entrypoint:/usr/local/entrypoint/"
     #   - spark-master-data:/bitnami
-    entrypoint:
-      - "entrypoint.spark/sh"
+    command: /usr/local/entrypoint/entrypoint.spark.sh
+    # entrypoint:
+    #   - "/usr/local/entrypoint/entrypoint.spark.sh"
 
   spark-worker-1:
     image: bitnami/spark:latest
@@ -41,8 +44,8 @@ services:
     volumes:
       - "python_path:/usr/local/bin_python/"
     #   - spark-worker-1-data:/bitnami
-    entrypoint:
-      - "entrypoint.spark/sh"
+    # entrypoint:
+      # - "entrypoint.spark/sh"
 
   spark-worker-2:
     image: bitnami/spark:latest
@@ -60,8 +63,8 @@ services:
     volumes:
       - "python_path:/usr/local/bin_python/"
     #   - spark-worker-2-data:/bitnami
-    entrypoint:
-      - "entrypoint.spark/sh"
+    # entrypoint:
+    #   - "entrypoint.spark/sh"
 
   java_environment:
     image: openjdk:11
@@ -79,9 +82,7 @@ services:
     volumes:
       - "java-openjdk-11:/usr/local/openjdk-11/"
       - "python_path:/usr/local/bin_python/"
-      - type: bind
-        source: ..
-        target: /container/Project_1
+      - "..:/container/Project_1"
     depends_on:
       - java_environment
 
