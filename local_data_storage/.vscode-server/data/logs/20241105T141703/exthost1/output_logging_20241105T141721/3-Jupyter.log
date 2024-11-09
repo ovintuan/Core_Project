@@ -1,0 +1,17 @@
+Visual Studio Code (1.95.1, attached-container, desktop)
+Jupyter Extension Version: 2024.10.0.
+Python Extension Version: 2024.18.0.
+Pylance Extension Version: 2024.11.1.
+Platform: linux (x64).
+Temp Storage folder ~/.vscode-server/data/User/globalStorage/ms-toolsai.jupyter/version-2024.10.0
+Workspace folder /container/pyspark_workspace, Home = /root
+14:31:26.804 [info] Starting Kernel (Python Path: /usr/local/bin/python, Unknown, 3.11.9) for '/container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb' (disableUI=true)
+14:31:32.799 [warn] Failed to get activated env vars for /usr/local/bin/python in 6002ms
+14:31:32.820 [warn] Failed to get activated env vars for /usr/local/bin/python in 4120ms
+14:31:33.225 [info] Process Execution: /usr/local/bin/python -c "import site;print("USER_BASE_VALUE");print(site.USER_BASE);print("USER_BASE_VALUE");"
+14:31:33.408 [info] Process Execution: /usr/local/bin/python -m pip list
+14:31:33.425 [info] Process Execution: /usr/local/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+14:31:33.452 [info] Process Execution: /usr/local/bin/python -m ipykernel_launcher --f=/~/.local/share/jupyter/runtime/kernel-v3909c708a301ee6d78f376f2c104376b45706a0f3.json
+    > cwd: //container/pyspark_workspace/source_code/sample_code
+14:32:02.236 [info] Kernel successfully started
+14:32:02.281 [info] Process Execution: /usr/local/bin/python /~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/pythonFiles/printJupyterDataDir.py

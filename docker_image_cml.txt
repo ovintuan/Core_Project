@@ -1,6 +1,0 @@
-sudo docker pull mcr.microsoft.com/mssql/server:2022-latest
-docker pull postgres
-docker pull apache/airflow
-docker pull python:3.12.4
-docker pull openjdk:11
-docker pull bitnami/spark:latest

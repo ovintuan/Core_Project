@@ -40,5 +40,8 @@ This project's information:
         - data visualize in dashboard (mayby on web)
 
 
+Changed Logs:
+    - Environment is using docker compose ---> change to use terraform
+
 
 

@@ -1,0 +1,248 @@
+2024-11-05 14:17:09.010 [info] 
+
+
+
+
+2024-11-05 14:17:09.011 [info] Installing extensions...
+2024-11-05 14:17:09.012 [info] Extension host agent started.
+2024-11-05 14:17:09.036 [debug] Error while reading the extension cache file: /root/.vscode-server/data/CachedProfilesData/__default__profile__/extensions.builtin.cache Unable to read file '/root/.vscode-server/data/CachedProfilesData/__default__profile__/extensions.builtin.cache' (Error: Unable to resolve nonexistent file '/root/.vscode-server/data/CachedProfilesData/__default__profile__/extensions.builtin.cache')
+2024-11-05 14:17:09.043 [info] Started initializing default profile extensions in extensions installation folder. file:///root/.vscode-server/extensions
+2024-11-05 14:17:09.470 [info] [127.0.0.1][1681c7c2][ManagementConnection] New connection established.
+2024-11-05 14:17:09.496 [info] [127.0.0.1][86425cc6][ExtensionHostConnection] New connection established.
+2024-11-05 14:17:09.525 [info] Log level changed to info
+2024-11-05 14:17:10.309 [info] [127.0.0.1][86425cc6][ExtensionHostConnection] <376> Launched Extension Host Process.
+2024-11-05 14:17:11.623 [info] Completed initializing default profile extensions in extensions installation folder. file:///root/.vscode-server/extensions
+2024-11-05 14:18:10.683 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-05 14:18:11.944 [info] Installing extension 'formulahendry.code-runner'...
+2024-11-05 14:18:12.108 [info] Installing extension 'streetsidesoftware.code-spell-checker'...
+2024-11-05 14:18:12.222 [info] Installing extension 'ms-python.python'...
+2024-11-05 14:18:12.245 [info] Installing extension 'ms-python.debugpy'...
+2024-11-05 14:18:12.725 [info] Installing extension 'usernamehw.remove-empty-lines'...
+2024-11-05 14:18:12.979 [info] Installing extension 'redhat.vscode-yaml'...
+2024-11-05 14:18:13.089 [info] Installing extension 'adpyke.vscode-sql-formatter'...
+2024-11-05 14:18:13.092 [info] Installing extension 'vscode-icons-team.vscode-icons'...
+2024-11-05 14:18:13.095 [info] Installing extension 'pascalreitermann93.vscode-yaml-sort'...
+2024-11-05 14:18:13.331 [info] Installing extension 'ms-toolsai.jupyter'...
+2024-11-05 14:18:13.359 [info] Installing extension 'github.copilot-chat'...
+2024-11-05 14:18:13.379 [info] Installing extension 'github.copilot'...
+2024-11-05 14:18:13.408 [info] Installing extension 'github.copilot'...
+2024-11-05 14:18:13.460 [info] Installing extension 'ms-azuretools.vscode-docker'...
+2024-11-05 14:18:13.521 [info] Installing extension 'github.copilot-chat'...
+2024-11-05 14:18:13.583 [info] Getting Manifest... formulahendry.code-runner
+2024-11-05 14:18:13.587 [info] Getting Manifest... streetsidesoftware.code-spell-checker
+2024-11-05 14:18:13.600 [info] Getting Manifest... ms-python.python
+2024-11-05 14:18:13.606 [info] Getting Manifest... ms-python.debugpy
+2024-11-05 14:18:13.607 [info] Getting Manifest... usernamehw.remove-empty-lines
+2024-11-05 14:18:13.609 [info] Getting Manifest... redhat.vscode-yaml
+2024-11-05 14:18:13.610 [info] Getting Manifest... adpyke.vscode-sql-formatter
+2024-11-05 14:18:13.616 [info] Getting Manifest... vscode-icons-team.vscode-icons
+2024-11-05 14:18:13.623 [info] Getting Manifest... pascalreitermann93.vscode-yaml-sort
+2024-11-05 14:18:13.628 [info] Getting Manifest... ms-toolsai.jupyter
+2024-11-05 14:18:13.633 [info] Getting Manifest... github.copilot-chat
+2024-11-05 14:18:13.647 [info] Getting Manifest... github.copilot
+2024-11-05 14:18:13.652 [info] Getting Manifest... github.copilot
+2024-11-05 14:18:13.661 [info] Getting Manifest... ms-azuretools.vscode-docker
+2024-11-05 14:18:13.665 [info] Getting Manifest... github.copilot-chat
+2024-11-05 14:18:15.101 [info] Installing extension: usernamehw.remove-empty-lines {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.120 [info] Installing extension: ms-python.debugpy {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.123 [info] Installing extension: adpyke.vscode-sql-formatter {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.126 [info] Installing extension: redhat.vscode-yaml {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.135 [info] Installing extension: formulahendry.code-runner {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.138 [info] Installing extension: pascalreitermann93.vscode-yaml-sort {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.140 [info] Installing extension: vscode-icons-team.vscode-icons {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.150 [info] Installing extension: ms-python.python {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.164 [info] Installing extension: github.copilot {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.170 [info] Extension is already requested to install github.copilot file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:18:15.175 [info] Installing extension: github.copilot-chat {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.183 [info] Installing extension: streetsidesoftware.code-spell-checker {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.186 [info] Installing extension: ms-toolsai.jupyter {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.188 [info] Installing extension: ms-azuretools.vscode-docker {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:18:15.203 [info] Extension is already requested to install github.copilot-chat file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:18:21.646 [info] Getting Manifest... ms-toolsai.jupyter-keymap
+2024-11-05 14:18:23.156 [info] Getting Manifest... ms-python.vscode-pylance
+2024-11-05 14:18:23.314 [info] Getting Manifest... github.copilot
+2024-11-05 14:18:23.474 [info] Getting Manifest... github.copilot-chat
+2024-11-05 14:18:23.484 [info] Getting Manifest... ms-toolsai.jupyter-renderers
+2024-11-05 14:18:23.536 [info] Getting Manifest... ms-toolsai.vscode-jupyter-cell-tags
+2024-11-05 14:18:23.596 [info] Getting Manifest... ms-toolsai.vscode-jupyter-slideshow
+2024-11-05 14:18:24.633 [info] Getting Manifest... ms-python.python
+2024-11-05 14:18:24.677 [info] Getting Manifest... ms-python.debugpy
+2024-11-05 14:18:25.220 [info] Installing extension: ms-toolsai.jupyter-keymap {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-11-05 14:18:25.223 [info] Installing extension: ms-toolsai.jupyter-renderers {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-11-05 14:18:25.228 [info] Installing extension: ms-toolsai.vscode-jupyter-cell-tags {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-11-05 14:18:25.233 [info] Installing extension: ms-toolsai.vscode-jupyter-slideshow {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-11-05 14:18:25.418 [info] Installing extension: ms-python.vscode-pylance {"isMachineScoped":false,"installPreReleaseVersion":false,"isApplicationScoped":true,"isBuiltin":false,"installGivenVersion":false,"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-11-05 14:18:25.449 [info] Getting Manifest... ms-python.vscode-pylance
+2024-11-05 14:19:17.284 [info] Extension signature verification result for adpyke.vscode-sql-formatter: Success. Executed: true. Duration: 44501ms.
+2024-11-05 14:19:23.636 [info] Extension signature verification result for formulahendry.code-runner: Success. Executed: true. Duration: 49614ms.
+2024-11-05 14:19:23.783 [info] Extension signature verification result for ms-toolsai.vscode-jupyter-slideshow: Success. Executed: true. Duration: 50967ms.
+2024-11-05 14:19:23.788 [info] Extension signature verification result for ms-azuretools.vscode-docker: Success. Executed: true. Duration: 51247ms.
+2024-11-05 14:19:23.803 [info] Extension signature verification result for ms-toolsai.vscode-jupyter-cell-tags: Success. Executed: true. Duration: 50431ms.
+2024-11-05 14:19:23.820 [info] Extension signature verification result for usernamehw.remove-empty-lines: Success. Executed: true. Duration: 53783ms.
+2024-11-05 14:19:26.242 [info] Extension signature verification result for pascalreitermann93.vscode-yaml-sort: Success. Executed: true. Duration: 28487ms.
+2024-11-05 14:19:26.438 [info] Extension signature verification result for vscode-icons-team.vscode-icons: Success. Executed: true. Duration: 33387ms.
+2024-11-05 14:19:26.821 [info] Extension signature verification result for github.copilot-chat: Success. Executed: true. Duration: 58076ms.
+2024-11-05 14:19:28.458 [info] Extracted extension to file:///root/.vscode-server/extensions/usernamehw.remove-empty-lines-1.0.1: usernamehw.remove-empty-lines
+2024-11-05 14:19:28.899 [info] Renamed to /root/.vscode-server/extensions/usernamehw.remove-empty-lines-1.0.1
+2024-11-05 14:19:29.643 [info] Extension signature verification result for ms-toolsai.jupyter-keymap: Success. Executed: true. Duration: 55596ms.
+2024-11-05 14:19:31.850 [info] Extracted extension to file:///root/.vscode-server/extensions/ms-toolsai.vscode-jupyter-slideshow-0.1.6: ms-toolsai.vscode-jupyter-slideshow
+2024-11-05 14:19:32.120 [info] Extracted extension to file:///root/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.2: ms-toolsai.jupyter-keymap
+2024-11-05 14:19:32.153 [info] Renamed to /root/.vscode-server/extensions/ms-toolsai.vscode-jupyter-slideshow-0.1.6
+2024-11-05 14:19:32.882 [info] Renamed to /root/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.2
+2024-11-05 14:19:33.753 [info] Extracted extension to file:///root/.vscode-server/extensions/ms-toolsai.vscode-jupyter-cell-tags-0.1.9: ms-toolsai.vscode-jupyter-cell-tags
+2024-11-05 14:19:34.380 [info] Renamed to /root/.vscode-server/extensions/ms-toolsai.vscode-jupyter-cell-tags-0.1.9
+2024-11-05 14:19:35.332 [info] Extension signature verification result for streetsidesoftware.code-spell-checker: Success. Executed: true. Duration: 22299ms.
+2024-11-05 14:19:46.709 [info] Getting Manifest... mhutchie.git-graph
+2024-11-05 14:19:50.050 [info] Extracted extension to file:///root/.vscode-server/extensions/ms-azuretools.vscode-docker-1.29.3: ms-azuretools.vscode-docker
+2024-11-05 14:19:50.396 [info] Renamed to /root/.vscode-server/extensions/ms-azuretools.vscode-docker-1.29.3
+2024-11-05 14:20:02.045 [info] Installing extension: mhutchie.git-graph {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:20:10.323 [info] Extracted extension to file:///root/.vscode-server/extensions/formulahendry.code-runner-0.12.2: formulahendry.code-runner
+2024-11-05 14:20:10.545 [info] Renamed to /root/.vscode-server/extensions/formulahendry.code-runner-0.12.2
+2024-11-05 14:20:14.436 [info] Extracted extension to file:///root/.vscode-server/extensions/github.copilot-chat-0.22.1: github.copilot-chat
+2024-11-05 14:20:14.813 [info] Renamed to /root/.vscode-server/extensions/github.copilot-chat-0.22.1
+2024-11-05 14:20:52.881 [info] Extension signature verification result for redhat.vscode-yaml: Success. Executed: true. Duration: 47619ms.
+2024-11-05 14:20:52.886 [info] Extension signature verification result for ms-python.python: Success. Executed: true. Duration: 43533ms.
+2024-11-05 14:20:52.983 [info] Extension signature verification result for mhutchie.git-graph: Success. Executed: true. Duration: 21871ms.
+2024-11-05 14:20:53.787 [info] [127.0.0.1][86425cc6][ExtensionHostConnection] The client has reconnected.
+2024-11-05 14:21:07.404 [info] Extracted extension to file:///root/.vscode-server/extensions/redhat.vscode-yaml-1.15.0: redhat.vscode-yaml
+2024-11-05 14:21:07.840 [info] Renamed to /root/.vscode-server/extensions/redhat.vscode-yaml-1.15.0
+2024-11-05 14:21:08.348 [info] Extracted extension to file:///root/.vscode-server/extensions/streetsidesoftware.code-spell-checker-3.0.1: streetsidesoftware.code-spell-checker
+2024-11-05 14:21:09.201 [info] Renamed to /root/.vscode-server/extensions/streetsidesoftware.code-spell-checker-3.0.1
+2024-11-05 14:21:12.920 [info] Extracted extension to file:///root/.vscode-server/extensions/mhutchie.git-graph-1.30.0: mhutchie.git-graph
+2024-11-05 14:21:13.348 [info] Renamed to /root/.vscode-server/extensions/mhutchie.git-graph-1.30.0
+2024-11-05 14:21:14.101 [info] Extension installed successfully: mhutchie.git-graph file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:21:17.699 [info] Extension signature verification result for ms-python.debugpy: Success. Executed: true. Duration: 37890ms.
+2024-11-05 14:21:45.134 [info] Extension signature verification result for ms-toolsai.jupyter: Success. Executed: true. Duration: 30769ms.
+2024-11-05 14:21:49.650 [info] Extension signature verification result for ms-toolsai.jupyter-renderers: Success. Executed: true. Duration: 22898ms.
+2024-11-05 14:21:54.077 [info] Extension signature verification result for github.copilot: Success. Executed: true. Duration: 46766ms.
+2024-11-05 14:22:40.704 [info] Extracted extension to file:///root/.vscode-server/extensions/ms-toolsai.jupyter-renderers-1.0.21: ms-toolsai.jupyter-renderers
+2024-11-05 14:22:42.608 [info] Renamed to /root/.vscode-server/extensions/ms-toolsai.jupyter-renderers-1.0.21
+2024-11-05 14:22:57.750 [info] Extracted extension to file:///root/.vscode-server/extensions/pascalreitermann93.vscode-yaml-sort-6.6.0: pascalreitermann93.vscode-yaml-sort
+2024-11-05 14:22:58.244 [info] Extracted extension to file:///root/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64: ms-toolsai.jupyter
+2024-11-05 14:22:58.908 [info] Renamed to /root/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64
+2024-11-05 14:22:58.927 [info] Renamed to /root/.vscode-server/extensions/pascalreitermann93.vscode-yaml-sort-6.6.0
+2024-11-05 14:23:06.546 [info] Extracted extension to file:///root/.vscode-server/extensions/github.copilot-1.243.0: github.copilot
+2024-11-05 14:23:07.962 [info] Renamed to /root/.vscode-server/extensions/github.copilot-1.243.0
+2024-11-05 14:23:27.740 [info] Extracted extension to file:///root/.vscode-server/extensions/ms-python.debugpy-2024.12.0-linux-x64: ms-python.debugpy
+2024-11-05 14:23:28.735 [info] Renamed to /root/.vscode-server/extensions/ms-python.debugpy-2024.12.0-linux-x64
+2024-11-05 14:23:54.453 [info] Extension signature verification result for ms-python.vscode-pylance: Success. Executed: true. Duration: 11782ms.
+2024-11-05 14:24:09.716 [info] Extracted extension to file:///root/.vscode-server/extensions/vscode-icons-team.vscode-icons-12.9.0: vscode-icons-team.vscode-icons
+2024-11-05 14:24:11.170 [info] Renamed to /root/.vscode-server/extensions/vscode-icons-team.vscode-icons-12.9.0
+2024-11-05 14:25:44.637 [info] Extracted extension to file:///root/.vscode-server/extensions/adpyke.vscode-sql-formatter-1.4.4: adpyke.vscode-sql-formatter
+2024-11-05 14:25:44.830 [info] Renamed to /root/.vscode-server/extensions/adpyke.vscode-sql-formatter-1.4.4
+2024-11-05 14:26:51.916 [info] Extracted extension to file:///root/.vscode-server/extensions/ms-python.python-2024.18.0-linux-x64: ms-python.python
+2024-11-05 14:26:51.980 [info] Renamed to /root/.vscode-server/extensions/ms-python.python-2024.18.0-linux-x64
+2024-11-05 14:30:38.002 [info] Extracted extension to file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1: ms-python.vscode-pylance
+2024-11-05 14:30:38.101 [info] Renamed to /root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1
+2024-11-05 14:30:38.498 [info] Extension installed successfully: usernamehw.remove-empty-lines file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.499 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-slideshow file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.500 [info] Extension installed successfully: ms-toolsai.jupyter-keymap file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.502 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-cell-tags file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.504 [info] Extension installed successfully: ms-azuretools.vscode-docker file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.505 [info] Extension installed successfully: formulahendry.code-runner file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.507 [info] Extension installed successfully: github.copilot-chat file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.509 [info] Extension installed successfully: redhat.vscode-yaml file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.511 [info] Extension installed successfully: streetsidesoftware.code-spell-checker file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.514 [info] Extension installed successfully: ms-toolsai.jupyter-renderers file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.515 [info] Extension installed successfully: pascalreitermann93.vscode-yaml-sort file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.517 [info] Extension installed successfully: ms-toolsai.jupyter file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.520 [info] Extension installed successfully: github.copilot file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.522 [info] Extension installed successfully: ms-python.debugpy file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.524 [info] Extension installed successfully: vscode-icons-team.vscode-icons file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.527 [info] Extension installed successfully: adpyke.vscode-sql-formatter file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.537 [info] Extension installed successfully: ms-python.python file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.543 [info] Extension installed successfully: ms-python.vscode-pylance file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:30:38.633 [info] Extension 'usernamehw.remove-empty-lines' v1.0.1 was successfully installed.
+2024-11-05 14:30:38.634 [info] Extension 'ms-toolsai.vscode-jupyter-slideshow' v0.1.6 was successfully installed.
+2024-11-05 14:30:38.636 [info] Extension 'ms-toolsai.jupyter-keymap' v1.1.2 was successfully installed.
+2024-11-05 14:30:38.637 [info] Extension 'ms-toolsai.vscode-jupyter-cell-tags' v0.1.9 was successfully installed.
+2024-11-05 14:30:38.646 [info] Extension 'ms-azuretools.vscode-docker' v1.29.3 was successfully installed.
+2024-11-05 14:30:38.655 [info] Extension 'formulahendry.code-runner' v0.12.2 was successfully installed.
+2024-11-05 14:30:38.656 [info] Extension 'github.copilot-chat' v0.22.1 was successfully installed.
+2024-11-05 14:30:38.658 [info] Extension 'redhat.vscode-yaml' v1.15.0 was successfully installed.
+2024-11-05 14:30:38.663 [info] Extension 'streetsidesoftware.code-spell-checker' v3.0.1 was successfully installed.
+2024-11-05 14:30:38.665 [info] Extension 'ms-toolsai.jupyter-renderers' v1.0.21 was successfully installed.
+2024-11-05 14:30:38.670 [info] Extension 'pascalreitermann93.vscode-yaml-sort' v6.6.0 was successfully installed.
+2024-11-05 14:30:38.673 [info] Extension 'ms-toolsai.jupyter' v2024.10.0 was successfully installed.
+2024-11-05 14:30:38.675 [info] Extension 'github.copilot' v1.243.0 was successfully installed.
+2024-11-05 14:30:38.677 [info] Extension 'ms-python.debugpy' v2024.12.0 was successfully installed.
+2024-11-05 14:30:38.681 [info] Extension 'vscode-icons-team.vscode-icons' v12.9.0 was successfully installed.
+2024-11-05 14:30:38.683 [info] Extension 'adpyke.vscode-sql-formatter' v1.4.4 was successfully installed.
+2024-11-05 14:30:38.685 [info] Extension 'ms-python.python' v2024.18.0 was successfully installed.
+2024-11-05 14:30:38.687 [info] Extension 'ms-python.vscode-pylance' v2024.11.1 was successfully installed.
+2024-11-05 14:31:04.576 [info] [127.0.0.1][86425cc6][ExtensionHostConnection] The client has reconnected.
+2024-11-05 14:35:46.898 [info] Getting Manifest... l13rary.l13-diff
+2024-11-05 14:35:46.901 [info] Getting Manifest... jerrdeh.sql-in-python-highlighter-formatter
+2024-11-05 14:35:46.902 [info] Getting Manifest... yo1dog.cursor-trim
+2024-11-05 14:35:46.903 [info] Getting Manifest... mccarter.start-git-bash
+2024-11-05 14:35:46.905 [info] Getting Manifest... dzhavat.bracket-pair-toggler
+2024-11-05 14:35:46.906 [info] Getting Manifest... grapecity.gc-excelviewer
+2024-11-05 14:35:46.908 [info] Getting Manifest... dracula-theme.theme-dracula
+2024-11-05 14:35:46.909 [info] Getting Manifest... shuworks.vscode-table-formatter
+2024-11-05 14:35:46.911 [info] Getting Manifest... hediet.vscode-drawio
+2024-11-05 14:35:46.912 [info] Getting Manifest... ms-python.isort
+2024-11-05 14:35:46.912 [info] Getting Manifest... hashicorp.terraform
+2024-11-05 14:35:47.265 [info] Installing extension: jerrdeh.sql-in-python-highlighter-formatter {"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:35:47.290 [info] Installing extension: l13rary.l13-diff {"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:35:47.326 [info] Installing extension: yo1dog.cursor-trim {"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:35:47.336 [info] Installing extension: mccarter.start-git-bash {"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:35:47.457 [info] Installing extension: dzhavat.bracket-pair-toggler {"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:35:47.537 [info] Installing extension: grapecity.gc-excelviewer {"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:35:47.603 [info] Installing extension: shuworks.vscode-table-formatter {"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:35:47.614 [info] Installing extension: dracula-theme.theme-dracula {"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:35:47.621 [info] Installing extension: ms-python.isort {"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:35:47.740 [info] Installing extension: hashicorp.terraform {"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:35:47.762 [info] Installing extension: hediet.vscode-drawio {"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.95.1","date":"2024-10-31T05:14:54.222Z"}}
+2024-11-05 14:35:53.333 [info] Getting Manifest... ms-python.python
+2024-11-05 14:36:04.455 [info] Extension signature verification result for mccarter.start-git-bash: Success. Executed: true. Duration: 9603ms.
+2024-11-05 14:36:04.633 [info] Extension signature verification result for dzhavat.bracket-pair-toggler: Success. Executed: true. Duration: 9661ms.
+2024-11-05 14:36:04.856 [info] Extension signature verification result for dracula-theme.theme-dracula: Success. Executed: true. Duration: 8462ms.
+2024-11-05 14:36:04.889 [info] Extension signature verification result for yo1dog.cursor-trim: Success. Executed: true. Duration: 9134ms.
+2024-11-05 14:36:05.554 [info] Extracted extension to file:///root/.vscode-server/extensions/mccarter.start-git-bash-1.2.1: mccarter.start-git-bash
+2024-11-05 14:36:05.803 [info] Renamed to /root/.vscode-server/extensions/mccarter.start-git-bash-1.2.1
+2024-11-05 14:36:05.972 [info] Extracted extension to file:///root/.vscode-server/extensions/dzhavat.bracket-pair-toggler-0.0.3: dzhavat.bracket-pair-toggler
+2024-11-05 14:36:06.273 [info] Extracted extension to file:///root/.vscode-server/extensions/yo1dog.cursor-trim-1.1.2: yo1dog.cursor-trim
+2024-11-05 14:36:06.436 [info] Renamed to /root/.vscode-server/extensions/dzhavat.bracket-pair-toggler-0.0.3
+2024-11-05 14:36:06.773 [info] Renamed to /root/.vscode-server/extensions/yo1dog.cursor-trim-1.1.2
+2024-11-05 14:36:07.200 [info] Extension signature verification result for shuworks.vscode-table-formatter: Success. Executed: true. Duration: 8869ms.
+2024-11-05 14:36:07.288 [info] Extension installed successfully: mccarter.start-git-bash file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:36:09.539 [info] Extension installed successfully: dzhavat.bracket-pair-toggler file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:36:11.515 [info] Extension installed successfully: yo1dog.cursor-trim file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:36:11.792 [info] Extracted extension to file:///root/.vscode-server/extensions/dracula-theme.theme-dracula-2.25.1: dracula-theme.theme-dracula
+2024-11-05 14:36:12.389 [info] Extension signature verification result for l13rary.l13-diff: Success. Executed: true. Duration: 9538ms.
+2024-11-05 14:36:12.401 [info] Renamed to /root/.vscode-server/extensions/dracula-theme.theme-dracula-2.25.1
+2024-11-05 14:36:13.635 [info] Extension installed successfully: dracula-theme.theme-dracula file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:36:17.915 [info] Extension signature verification result for ms-python.isort: Success. Executed: true. Duration: 10592ms.
+2024-11-05 14:36:22.981 [info] Extracted extension to file:///root/.vscode-server/extensions/l13rary.l13-diff-1.3.8: l13rary.l13-diff
+2024-11-05 14:36:23.366 [info] Renamed to /root/.vscode-server/extensions/l13rary.l13-diff-1.3.8
+2024-11-05 14:36:24.599 [info] Extension installed successfully: l13rary.l13-diff file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:36:32.674 [info] Extension signature verification result for grapecity.gc-excelviewer: Success. Executed: true. Duration: 12643ms.
+2024-11-05 14:36:34.604 [info] Extension signature verification result for jerrdeh.sql-in-python-highlighter-formatter: Success. Executed: true. Duration: 21526ms.
+2024-11-05 14:36:45.018 [info] Extracted extension to file:///root/.vscode-server/extensions/jerrdeh.sql-in-python-highlighter-formatter-0.1.3: jerrdeh.sql-in-python-highlighter-formatter
+2024-11-05 14:36:46.407 [info] Renamed to /root/.vscode-server/extensions/jerrdeh.sql-in-python-highlighter-formatter-0.1.3
+2024-11-05 14:36:48.060 [info] Extension installed successfully: jerrdeh.sql-in-python-highlighter-formatter file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:36:49.041 [info] Extracted extension to file:///root/.vscode-server/extensions/grapecity.gc-excelviewer-4.2.62: grapecity.gc-excelviewer
+2024-11-05 14:36:49.933 [info] Renamed to /root/.vscode-server/extensions/grapecity.gc-excelviewer-4.2.62
+2024-11-05 14:36:51.822 [info] Extension installed successfully: grapecity.gc-excelviewer file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:37:10.887 [info] Extracted extension to file:///root/.vscode-server/extensions/ms-python.isort-2023.10.1: ms-python.isort
+2024-11-05 14:37:11.186 [info] Renamed to /root/.vscode-server/extensions/ms-python.isort-2023.10.1
+2024-11-05 14:37:12.297 [info] Extension installed successfully: ms-python.isort file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:37:30.605 [info] Extension signature verification result for hashicorp.terraform: Success. Executed: true. Duration: 27547ms.
+2024-11-05 14:37:39.988 [info] Extracted extension to file:///root/.vscode-server/extensions/hashicorp.terraform-2.33.0-linux-x64: hashicorp.terraform
+2024-11-05 14:37:41.400 [info] Renamed to /root/.vscode-server/extensions/hashicorp.terraform-2.33.0-linux-x64
+2024-11-05 14:37:42.572 [info] Extension installed successfully: hashicorp.terraform file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:37:58.563 [info] Extracted extension to file:///root/.vscode-server/extensions/shuworks.vscode-table-formatter-1.2.1: shuworks.vscode-table-formatter
+2024-11-05 14:37:59.335 [info] Rename failed because of EACCES: permission denied, rename '/root/.vscode-server/extensions/.90a743bc-78a3-4075-8a7d-bf780c024438' -> '/root/.vscode-server/extensions/shuworks.vscode-table-formatter-1.2.1'. Deleted from extracted location {"$mid":1,"fsPath":"/root/.vscode-server/extensions/.90a743bc-78a3-4075-8a7d-bf780c024438","path":"/root/.vscode-server/extensions/.90a743bc-78a3-4075-8a7d-bf780c024438","scheme":"file"}
+2024-11-05 14:38:09.685 [error] Error while installing the extension shuworks.vscode-table-formatter EACCES: permission denied, rename '/root/.vscode-server/extensions/.90a743bc-78a3-4075-8a7d-bf780c024438' -> '/root/.vscode-server/extensions/shuworks.vscode-table-formatter-1.2.1' file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 14:38:10.702 [error] Error: EACCES: permission denied, rename '/root/.vscode-server/extensions/.90a743bc-78a3-4075-8a7d-bf780c024438' -> '/root/.vscode-server/extensions/shuworks.vscode-table-formatter-1.2.1'
+    at async Object.rename (node:internal/fs/promises:782:10)
+    at async Object.tN (file:///root/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/out/server-main.js:45:5275)
+    at async ph.G (file:///root/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/out/server-main.js:51:25104)
+    at async ph.extractUserExtension (file:///root/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/out/server-main.js:51:22143)
+    at async Oc.rb (file:///root/.vscode-server/bin/65edc4939843c90c34d61f4ce11704f09d3e5cb6/out/server-main.js:51:15376)
+2024-11-05 14:38:59.620 [info] Extension signature verification result for hediet.vscode-drawio: Success. Executed: true. Duration: 12265ms.
+2024-11-05 14:42:04.376 [info] Extracted extension to file:///root/.vscode-server/extensions/hediet.vscode-drawio-1.6.6: hediet.vscode-drawio
+2024-11-05 14:42:04.465 [info] Renamed to /root/.vscode-server/extensions/hediet.vscode-drawio-1.6.6
+2024-11-05 14:42:04.854 [info] Extension installed successfully: hediet.vscode-drawio file:///root/.vscode-server/extensions/extensions.json
+2024-11-05 16:06:53.043 [info] [127.0.0.1][1681c7c2][ManagementConnection] The client has reconnected.
+2024-11-05 16:06:55.588 [info] [127.0.0.1][86425cc6][ExtensionHostConnection] The client has reconnected.

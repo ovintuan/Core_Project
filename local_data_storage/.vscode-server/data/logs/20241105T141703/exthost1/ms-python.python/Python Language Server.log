@@ -1,0 +1,155 @@
+2024-11-05 14:31:33.987 [info] (Client) Pylance async client (2024.11.1) started with python extension (2024.18.0)
+2024-11-05 14:32:01.303 [info] [Info  - 2:31:59 PM] (7394) Server root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:32:01.829 [info] [Info  - 2:32:01 PM] (7394) Pylance language server 2024.11.1 (pyright version 1.1.386, commit 4180fa21) starting
+2024-11-05 14:32:01.857 [info] [Info  - 2:32:01 PM] (7394) Starting service instance "pyspark_workspace"
+2024-11-05 14:32:02.537 [info] [Info  - 2:32:02 PM] (7394) Setting environmentName for service "pyspark_workspace": "D:\Program Files\Python\python.exe"
+2024-11-05 14:32:02.542 [info] [Info  - 2:32:02 PM] (7394) No include entries specified; assuming /container/pyspark_workspace
+2024-11-05 14:32:02.565 [info] [Info  - 2:32:02 PM] (7394) Auto-excluding **/node_modules
+2024-11-05 14:32:02.584 [info] [Info  - 2:32:02 PM] (7394) Auto-excluding **/__pycache__
+2024-11-05 14:32:02.606 [info] [Info  - 2:32:02 PM] (7394) Auto-excluding **/.*
+2024-11-05 14:32:11.687 [info] [Info  - 2:32:11 PM] (7394) Found 2 source files
+2024-11-05 14:32:11.879 [info] [Info  - 2:32:11 PM] (7394) Starting service instance "pyspark_workspace"
+2024-11-05 14:32:11.970 [info] [Info  - 2:32:11 PM] (7394) Setting environmentName for service "pyspark_workspace": "D:\Program Files\Python\python.exe"
+2024-11-05 14:32:11.972 [info] [Info  - 2:32:11 PM] (7394) Setting pythonPath for service "pyspark_workspace": "/usr/local/bin/python"
+2024-11-05 14:32:11.973 [info] [Info  - 2:32:11 PM] (7394) No include entries specified; assuming /container/pyspark_workspace
+2024-11-05 14:32:11.974 [info] [Info  - 2:32:11 PM] (7394) Auto-excluding **/node_modules
+2024-11-05 14:32:11.975 [info] [Info  - 2:32:11 PM] (7394) Auto-excluding **/__pycache__
+2024-11-05 14:32:11.979 [info] [Info  - 2:32:11 PM] (7394) Auto-excluding **/.*
+2024-11-05 14:32:12.149 [info] [Info  - 2:32:12 PM] (7394) Assuming Python version 3.11.9.final.0
+2024-11-05 14:32:17.209 [info] [Info  - 2:32:17 PM] (7394) Found 2 source files
+2024-11-05 14:32:22.364 [info] [Info  - 2:32:22 PM] (7394) Background analysis(1) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:32:22.365 [info] [Info  - 2:32:22 PM] (7394) Background analysis(1) started
+2024-11-05 14:32:22.366 [info] [Info  - 2:32:22 PM] (7394) Background analysis(2) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:32:22.367 [info] [Info  - 2:32:22 PM] (7394) Background analysis(2) started
+2024-11-05 14:32:24.783 [info] [Info  - 2:32:24 PM] (7394) Indexer background runner(3) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist (index)
+2024-11-05 14:32:24.784 [info] [Info  - 2:32:24 PM] (7394) Indexing(3) started
+2024-11-05 14:32:27.287 [info] [Info  - 2:32:27 PM] (7394) [BG(2)] Long operation: parsing: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb.py#W1sdnNjb2RlLXJlbW90ZQ%3D%3D (2191ms)
+2024-11-05 14:32:30.169 [info] [Info  - 2:32:30 PM] (7394) [BG(2)] Long operation: SemanticTokens full at file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb.py#W1sdnNjb2RlLXJlbW90ZQ%3D%3D (5073ms)
+2024-11-05 14:32:37.632 [info] [Info  - 2:32:37 PM] (7394) [BG(2)] Long operation: checking: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb.py#X15sdnNjb2RlLXJlbW90ZQ%3D%3D (4419ms)
+2024-11-05 14:32:37.768 [info] [Info  - 2:32:37 PM] (7394) [BG(2)] Long operation: analyzing: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb.py#X15sdnNjb2RlLXJlbW90ZQ%3D%3D (4419ms)
+2024-11-05 14:32:40.235 [info] [Info  - 2:32:40 PM] (7394) [BG(2)] Long operation: analyzing: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb.py#pylancePrefixCell (8337ms)
+2024-11-05 14:32:53.965 [info] [Info  - 2:32:53 PM] (7394) [IDX(3)] Long operation: scan packages file:///container/pyspark_workspace (26891ms)
+2024-11-05 14:32:53.966 [info] [Info  - 2:32:53 PM] (7394) scanned(3) 88 files over 1 exec env
+2024-11-05 14:33:02.328 [info] [Info  - 2:33:02 PM] (7394) [IDX(3)] Long operation: indexing: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/typeshed-fallback/stubs/networkx/networkx/__init__.pyi (5381ms)
+2024-11-05 14:33:05.658 [info] [Info  - 2:33:05 PM] (7394) [IDX(3)] Long operation: indexing: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/bundled/stubs/pandas/__init__.pyi (2542ms)
+2024-11-05 14:33:09.695 [info] [Info  - 2:33:09 PM] (7394) [IDX(3)] Long operation: index execution environment file:///container/pyspark_workspace (14183ms)
+2024-11-05 14:33:11.277 [info] [Info  - 2:33:11 PM] (7394) [IDX(3)] Long operation: index packages file:///container/pyspark_workspace (15837ms)
+2024-11-05 14:33:11.278 [info] [Info  - 2:33:11 PM] (7394) indexed(3) 88 files over 1 exec env
+2024-11-05 14:33:11.794 [info] [Info  - 2:33:11 PM] (7394) Indexing finished(3).
+2024-11-05 14:36:09.158 [info] (Client) Pylance async client (2024.11.1) started with python extension (2024.18.0)
+2024-11-05 14:36:09.243 [info] [Info  - 2:36:09 PM] Server process exited successfully
+2024-11-05 14:36:18.578 [info] [Info  - 2:36:18 PM] (9484) Server root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:36:18.619 [info] [Info  - 2:36:18 PM] (9484) Pylance language server 2024.11.1 (pyright version 1.1.386, commit 4180fa21) starting
+2024-11-05 14:36:18.671 [info] [Info  - 2:36:18 PM] (9484) Starting service instance "pyspark_workspace"
+2024-11-05 14:36:18.938 [info] [Info  - 2:36:18 PM] Server process exited successfully
+2024-11-05 14:36:20.011 [info] (Client) Pylance async client (2024.11.1) started with python extension (2024.18.0)
+2024-11-05 14:36:28.177 [info] [Info  - 2:36:28 PM] (9573) Server root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:36:28.211 [info] [Info  - 2:36:28 PM] (9573) Pylance language server 2024.11.1 (pyright version 1.1.386, commit 4180fa21) starting
+2024-11-05 14:36:28.253 [info] [Info  - 2:36:28 PM] (9573) Starting service instance "pyspark_workspace"
+2024-11-05 14:36:29.079 [info] [Info  - 2:36:29 PM] (9573) Setting environmentName for service "pyspark_workspace": "D:\Program Files\Python\python.exe"
+2024-11-05 14:36:29.085 [info] [Info  - 2:36:29 PM] (9573) No include entries specified; assuming /container/pyspark_workspace
+2024-11-05 14:36:29.100 [info] [Info  - 2:36:29 PM] (9573) Auto-excluding **/node_modules
+2024-11-05 14:36:29.113 [info] [Info  - 2:36:29 PM] (9573) Auto-excluding **/__pycache__
+2024-11-05 14:36:29.117 [info] [Info  - 2:36:29 PM] (9573) Auto-excluding **/.*
+2024-11-05 14:36:47.012 [info] [Info  - 2:36:47 PM] (9573) Found 2 source files
+2024-11-05 14:36:47.271 [info] [Info  - 2:36:47 PM] (9573) Background analysis(1) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:36:47.275 [info] [Info  - 2:36:47 PM] (9573) Background analysis(1) started
+2024-11-05 14:36:48.431 [info] [Info  - 2:36:48 PM] (9573) Starting service instance "pyspark_workspace"
+2024-11-05 14:36:49.635 [info] (Client) Pylance async client (2024.11.1) started with python extension (2024.18.0)
+2024-11-05 14:36:50.004 [info] DataCloneError: MessagePort in transfer list is already detached
+    at new DOMException (node:internal/per_context/domexception:53:5)
+    at Worker.postMessage (node:internal/worker:378:5)
+    at _0x456ac9.postMessage (/root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/server.bundle.js:1:890512)
+    at _0x3bf1b4.enqueueRequest (/root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/pyright.bundle.js:1:1094588)
+    at _0x3bf1b4.enqueueRequest (/root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/server.bundle.js:1:164400)
+    at _0x3bf1b4.setup (/root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/pyright.bundle.js:1:1094174)
+    at _0x3bf1b4._ensureWorkerStarted (/root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/server.bundle.js:1:165932)
+    at _0x3bf1b4.enqueueRequest (/root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/server.bundle.js:1:164374)
+    at _0x3bf1b4.setFileOpened (/root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/pyright.bundle.js:1:1091855)
+    at _0x3bf1b4.setFileOpened (/root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/server.bundle.js:1:162175)
+    at _0x5359c6.setFileOpened (/root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/pyright.bundle.js:1:6092)
+    at _0x455daf.setFileOpened (/root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/pyright.bundle.js:1:497449)
+    at _0x8286cd (/root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/server.bundle.js:1:1046918)
+    at /root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist/server.bundle.js:1:1002676
+
+2024-11-05 14:36:50.336 [info] [Error - 2:36:50 PM] Server process exited with code 1.
+2024-11-05 14:36:54.951 [info] [Info  - 2:36:54 PM] (9822) Server root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:36:54.973 [info] [Info  - 2:36:54 PM] (9822) Pylance language server 2024.11.1 (pyright version 1.1.386, commit 4180fa21) starting
+2024-11-05 14:36:55.017 [info] [Info  - 2:36:55 PM] (9822) Starting service instance "pyspark_workspace"
+2024-11-05 14:36:55.164 [info] [Info  - 2:36:55 PM] Server process exited successfully
+2024-11-05 14:36:56.031 [info] (Client) Pylance async client (2024.11.1) started with python extension (2024.18.0)
+2024-11-05 14:36:59.263 [info] [Info  - 2:36:59 PM] (9873) Server root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:36:59.289 [info] [Info  - 2:36:59 PM] (9873) Pylance language server 2024.11.1 (pyright version 1.1.386, commit 4180fa21) starting
+2024-11-05 14:36:59.326 [info] [Info  - 2:36:59 PM] (9873) Starting service instance "pyspark_workspace"
+2024-11-05 14:36:59.688 [info] [Info  - 2:36:59 PM] (9873) Setting environmentName for service "pyspark_workspace": "D:\Program Files\Python\python.exe"
+2024-11-05 14:36:59.704 [info] [Info  - 2:36:59 PM] (9873) No include entries specified; assuming /container/pyspark_workspace
+2024-11-05 14:36:59.722 [info] [Info  - 2:36:59 PM] (9873) Auto-excluding **/node_modules
+2024-11-05 14:36:59.726 [info] [Info  - 2:36:59 PM] (9873) Auto-excluding **/__pycache__
+2024-11-05 14:36:59.728 [info] [Info  - 2:36:59 PM] (9873) Auto-excluding **/.*
+2024-11-05 14:37:15.259 [info] [Error - 2:37:15 PM] Stopping server timed out
+2024-11-05 14:37:17.336 [info] (Client) Pylance async client (2024.11.1) started with python extension (2024.18.0)
+2024-11-05 14:37:18.119 [info] [Info  - 2:37:18 PM] (9873) Found 2 source files
+2024-11-05 14:37:18.391 [info] [Info  - 2:37:18 PM] (9873) Background analysis(1) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:37:18.403 [info] [Info  - 2:37:18 PM] (9873) Background analysis(1) started
+2024-11-05 14:37:18.604 [info] [Info  - 2:37:18 PM] Server process exited successfully
+2024-11-05 14:37:23.740 [info] [Info  - 2:37:23 PM] (10056) Server root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:37:23.783 [info] [Info  - 2:37:23 PM] (10056) Pylance language server 2024.11.1 (pyright version 1.1.386, commit 4180fa21) starting
+2024-11-05 14:37:23.834 [info] [Info  - 2:37:23 PM] (10056) Starting service instance "pyspark_workspace"
+2024-11-05 14:37:24.082 [info] [Info  - 2:37:24 PM] (10056) Setting environmentName for service "pyspark_workspace": "D:\Program Files\Python\python.exe"
+2024-11-05 14:37:24.092 [info] [Info  - 2:37:24 PM] (10056) No include entries specified; assuming /container/pyspark_workspace
+2024-11-05 14:37:24.105 [info] [Info  - 2:37:24 PM] (10056) Auto-excluding **/node_modules
+2024-11-05 14:37:24.107 [info] [Info  - 2:37:24 PM] (10056) Auto-excluding **/__pycache__
+2024-11-05 14:37:24.116 [info] [Info  - 2:37:24 PM] (10056) Auto-excluding **/.*
+2024-11-05 14:37:33.118 [info] [Info  - 2:37:33 PM] (10056) Found 2 source files
+2024-11-05 14:37:33.212 [info] [Info  - 2:37:33 PM] (10056) Background analysis(1) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:37:33.214 [info] [Info  - 2:37:33 PM] (10056) Background analysis(1) started
+2024-11-05 14:37:33.763 [info] [Info  - 2:37:33 PM] (10056) Starting service instance "pyspark_workspace"
+2024-11-05 14:37:33.935 [info] [Info  - 2:37:33 PM] (10056) Setting environmentName for service "pyspark_workspace": "D:\Program Files\Python\python.exe"
+2024-11-05 14:37:33.959 [info] [Info  - 2:37:33 PM] (10056) Setting pythonPath for service "pyspark_workspace": "/usr/local/bin/python"
+2024-11-05 14:37:33.962 [info] [Info  - 2:37:33 PM] (10056) No include entries specified; assuming /container/pyspark_workspace
+2024-11-05 14:37:33.967 [info] [Info  - 2:37:33 PM] (10056) Auto-excluding **/node_modules
+2024-11-05 14:37:33.977 [info] [Info  - 2:37:33 PM] (10056) Auto-excluding **/__pycache__
+2024-11-05 14:37:33.980 [info] [Info  - 2:37:33 PM] (10056) Auto-excluding **/.*
+2024-11-05 14:37:34.051 [info] [Info  - 2:37:34 PM] (10056) Assuming Python version 3.11.9.final.0
+2024-11-05 14:37:43.847 [info] [Info  - 2:37:43 PM] (10056) Found 2 source files
+2024-11-05 14:37:44.064 [info] [Info  - 2:37:44 PM] (10056) Background analysis(2) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:37:44.253 [info] [Info  - 2:37:44 PM] (10056) Background analysis(2) started
+2024-11-05 14:37:46.033 [info] [Error - 2:37:46 PM] Stopping server timed out
+2024-11-05 14:37:49.383 [info] [Info  - 2:37:49 PM] (10056) [FG] Long operation: parsing: vscode-notebook-cell://attached-container%2B7b22636f6e7461696e65724e616d65223a222f707974686f6e5f656e7669726f6e6d656e74227d/container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb#W2sdnNjb2RlLXJlbW90ZQ%3D%3D (3461ms)
+2024-11-05 14:37:49.656 [info] (Client) Pylance async client (2024.11.1) started with python extension (2024.18.0)
+2024-11-05 14:37:49.796 [info] [Info  - 2:37:49 PM] (10056) Indexer background runner(3) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist (index)
+2024-11-05 14:37:50.225 [info] [Info  - 2:37:50 PM] (10056) Indexing(3) started
+2024-11-05 14:37:50.657 [info] [Info  - 2:37:50 PM] Server process exited successfully
+2024-11-05 14:37:53.279 [info] [Info  - 2:37:53 PM] (10353) Server root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:37:53.296 [info] [Info  - 2:37:53 PM] (10353) Pylance language server 2024.11.1 (pyright version 1.1.386, commit 4180fa21) starting
+2024-11-05 14:37:53.346 [info] [Info  - 2:37:53 PM] (10353) Starting service instance "pyspark_workspace"
+2024-11-05 14:37:53.543 [info] [Info  - 2:37:53 PM] (10353) Setting environmentName for service "pyspark_workspace": "D:\Program Files\Python\python.exe"
+2024-11-05 14:37:53.544 [info] [Info  - 2:37:53 PM] (10353) No include entries specified; assuming /container/pyspark_workspace
+2024-11-05 14:37:53.556 [info] [Info  - 2:37:53 PM] (10353) Auto-excluding **/node_modules
+2024-11-05 14:37:53.560 [info] [Info  - 2:37:53 PM] (10353) Auto-excluding **/__pycache__
+2024-11-05 14:37:53.564 [info] [Info  - 2:37:53 PM] (10353) Auto-excluding **/.*
+2024-11-05 14:38:03.492 [info] [Info  - 2:38:03 PM] (10353) Found 2 source files
+2024-11-05 14:38:03.743 [info] [Info  - 2:38:03 PM] (10353) Background analysis(1) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:38:03.762 [info] [Info  - 2:38:03 PM] (10353) Background analysis(1) started
+2024-11-05 14:38:04.241 [info] [Info  - 2:38:04 PM] (10353) Starting service instance "pyspark_workspace"
+2024-11-05 14:38:04.606 [info] [Info  - 2:38:04 PM] (10353) Setting environmentName for service "pyspark_workspace": "D:\Program Files\Python\python.exe"
+2024-11-05 14:38:04.609 [info] [Info  - 2:38:04 PM] (10353) Setting pythonPath for service "pyspark_workspace": "/usr/local/bin/python"
+2024-11-05 14:38:04.612 [info] [Info  - 2:38:04 PM] (10353) No include entries specified; assuming /container/pyspark_workspace
+2024-11-05 14:38:05.090 [info] [Info  - 2:38:05 PM] (10353) Auto-excluding **/node_modules
+2024-11-05 14:38:05.093 [info] [Info  - 2:38:05 PM] (10353) Auto-excluding **/__pycache__
+2024-11-05 14:38:05.098 [info] [Info  - 2:38:05 PM] (10353) Auto-excluding **/.*
+2024-11-05 14:38:05.102 [info] [Info  - 2:38:05 PM] (10353) Assuming Python version 3.11.9.final.0
+2024-11-05 14:38:13.510 [info] [Info  - 2:38:13 PM] (10353) Found 2 source files
+2024-11-05 14:38:13.645 [info] [Info  - 2:38:13 PM] (10353) Background analysis(2) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist
+2024-11-05 14:38:13.648 [info] [Info  - 2:38:13 PM] (10353) Background analysis(2) started
+2024-11-05 14:38:17.166 [info] [Info  - 2:38:17 PM] (10353) Indexer background runner(3) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.1/dist (index)
+2024-11-05 14:38:17.173 [info] [Info  - 2:38:17 PM] (10353) Indexing(3) started
+2024-11-05 14:38:18.043 [info] [Info  - 2:38:18 PM] (10353) [BG(2)] Long operation: parsing: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.py (3263ms)
+2024-11-05 14:38:18.829 [info] [Info  - 2:38:18 PM] (10353) [BG(2)] Long operation: indexing: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.py (4102ms)
+2024-11-05 14:38:25.399 [info] [Info  - 2:38:25 PM] (10353) [BG(2)] Long operation: checking: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb.py#X15sdnNjb2RlLXJlbW90ZQ%3D%3D (3565ms)
+2024-11-05 14:38:25.400 [info] [Info  - 2:38:25 PM] (10353) [BG(2)] Long operation: analyzing: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb.py#X15sdnNjb2RlLXJlbW90ZQ%3D%3D (3565ms)
+2024-11-05 14:38:26.989 [info] [Info  - 2:38:26 PM] (10353) [BG(2)] Long operation: analyzing: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb.py#pylancePrefixCell (7231ms)
+2024-11-05 14:38:46.406 [info] [Info  - 2:38:46 PM] (10353) [IDX(3)] Long operation: scan packages file:///container/pyspark_workspace (24993ms)
+2024-11-05 14:38:46.407 [info] [Info  - 2:38:46 PM] (10353) scanned(3) 88 files over 1 exec env
+2024-11-05 14:38:48.667 [info] [Info  - 2:38:48 PM] (10353) indexed(3) 88 files over 1 exec env
+2024-11-05 14:38:49.034 [info] [Info  - 2:38:49 PM] (10353) Indexing finished(3).

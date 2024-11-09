@@ -1,0 +1,83 @@
+{
+	"name": "sql-in-python-highlighter-formatter",
+	"displayName": "SQL in Python Highlighter/Formatter",
+	"description": "",
+	"icon": "images/pythonsql.png",
+	"version": "0.1.3",
+	"publisher": "jerrdeh",
+	"engines": {
+		"vscode": "^1.76.0"
+	},
+	"repository": "https://github.com/jerryzhou196/sql-embed-in-python",
+	"categories": [
+		"Formatters",
+		"Other"
+	],
+	"main": "./dist/extension.js",
+	"activationEvents": [
+		"onCommand:sql-embed-in-python.format-SQL"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "sql-embed-in-python.format-SQL",
+				"title": "Format Embedded SQL in Python"
+			}
+		],
+		"grammars": [
+			{
+				"path": "./highlighter/sql-highlighter.json",
+				"scopeName": "highlight-string-code",
+				"injectTo": [
+					"source.python"
+				],
+				"embeddedLanguages": {
+					"meta.embedded.block.sql": "sql"
+				},
+				"tokenTypes": {
+					"meta.*": "other"
+				}
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"webpack": "webpack --mode development",
+		"webpack-dev": "webpack --mode development --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"test-compile": "tsc -p ./"
+	},
+	"devDependencies": {
+		"@types/glob": "^8.0.0",
+		"@types/mocha": "^10.0.0",
+		"@types/node": "16.x",
+		"@types/vscode": "^1.76.0",
+		"@typescript-eslint/eslint-plugin": "^5.42.0",
+		"@typescript-eslint/parser": "^5.42.0",
+		"@vscode/test-electron": "^2.2.0",
+		"eslint": "^8.26.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.1.0",
+		"ts-loader": "^9.4.2",
+		"typescript": "^4.9.5",
+		"webpack": "^5.76.2",
+		"webpack-cli": "^5.0.1",
+		"webpack-node-externals": "^3.0.0"
+	},
+	"dependencies": {
+		"@sqltools/formatter": "^1.2.5"
+	},
+	"__metadata": {
+		"id": "8ab65646-af82-4dcc-b8d0-6d54829d3bfe",
+		"publisherId": "a52ff412-34d5-44fb-b444-257e76fa476a",
+		"publisherDisplayName": "jerrdeh",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1730817395320,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

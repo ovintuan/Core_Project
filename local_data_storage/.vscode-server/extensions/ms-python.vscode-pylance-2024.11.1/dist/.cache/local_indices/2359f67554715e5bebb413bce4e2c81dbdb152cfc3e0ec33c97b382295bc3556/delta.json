@@ -1,0 +1,1 @@
+[[[0,"/usr/local/lib/python3.11/site-packages/delta/__init__.py","","",null,1],[false,[["DeltaTable",3,2,["DeltaTable",[0,"/usr/local/lib/python3.11/site-packages/delta/tables.py","","",null,1],5]],["configure_spark_with_delta_pip",3,2,["configure_spark_with_delta_pip",[0,"/usr/local/lib/python3.11/site-packages/delta/pip_utils.py","","",null,1],12]],["__all__",1,13,null]]]]]

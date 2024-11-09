@@ -1,5 +1,0 @@
-ipykernel
-pyspark==3.5.1
-delta-spark==3.2.0
-FastAPI
-pandas
