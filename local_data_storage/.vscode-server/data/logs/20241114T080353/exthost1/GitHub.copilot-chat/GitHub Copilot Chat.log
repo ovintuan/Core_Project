@@ -1,0 +1,37 @@
+2024-11-14 08:05:18.185 [info] Can't use the Electron fetcher in this environment.
+2024-11-14 08:05:18.192 [info] Using the Helix fetcher.
+2024-11-14 08:05:18.194 [info] Initializing Git extension service.
+2024-11-14 08:05:18.197 [info] Successfully activated the vscode.git extension.
+2024-11-14 08:05:18.200 [info] Enablement state of the vscode.git extension: true.
+2024-11-14 08:05:18.202 [info] Successfully registered Git commit message provider.
+2024-11-14 08:05:26.550 [info] Logged in as ovintuan
+2024-11-14 08:05:27.925 [info] Removed 3 expired certificates
+2024-11-14 08:05:32.538 [info] Got Copilot token for ovintuan
+2024-11-14 08:05:33.937 [info] copilot token chat_enabled: true, sku: free_educational
+2024-11-14 08:05:33.940 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2024-11-14 08:05:34.028 [info] Registering default platform agent...
+2024-11-14 08:05:36.588 [info] Fetched model metadata in 4026ms b7549182-5daf-4315-954d-654ba2a7a489
+2024-11-14 08:05:39.101 [info] activationBlocker from 'languageModelAccess' took for 33492ms
+2024-11-14 08:20:39.265 [info] Fetched model metadata in 122ms 172d3952-0edb-4a2e-8a16-1345e8b66388
+2024-11-14 08:30:32.584 [info] Logged in as ovintuan
+2024-11-14 08:30:33.852 [info] Got Copilot token for ovintuan
+2024-11-14 08:30:34.171 [info] copilot token chat_enabled: true, sku: free_educational
+2024-11-14 09:05:21.297 [info] Logged in as ovintuan
+2024-11-14 09:05:22.762 [info] Got Copilot token for ovintuan
+2024-11-14 09:05:22.847 [info] Fetched model metadata in 76ms a5a7f5fb-b1eb-4a5d-83f4-84f787dbc46d
+2024-11-14 09:05:23.014 [info] copilot token chat_enabled: true, sku: free_educational
+2024-11-14 09:20:22.950 [info] Fetched model metadata in 82ms 91dfbd36-8c07-442a-806f-9697b1a08d14
+2024-11-14 09:30:22.820 [info] Logged in as ovintuan
+2024-11-14 09:30:24.164 [info] Got Copilot token for ovintuan
+2024-11-14 09:30:24.445 [info] copilot token chat_enabled: true, sku: free_educational
+2024-11-14 09:30:24.659 [info] Fetched model metadata in 130ms 6aa9ef87-0c05-4646-b1c4-cfba7144c53b
+2024-11-14 09:45:16.797 [info] Fetched model metadata in 82ms 9f796b50-874d-4167-93bf-795cf2fdfbb0
+2024-11-14 09:57:20.895 [info] Logged in as ovintuan
+2024-11-14 09:57:22.430 [info] Got Copilot token for ovintuan
+2024-11-14 09:57:22.635 [info] copilot token chat_enabled: true, sku: free_educational
+2024-11-14 09:57:22.865 [info] Fetched model metadata in 110ms dc6f2d99-8397-4310-988d-041a9e633edc
+2024-11-14 10:12:23.071 [info] Fetched model metadata in 172ms 49c180bf-971f-4154-b6f0-a6cfb9e2a1e3
+2024-11-14 10:22:22.462 [info] Logged in as ovintuan
+2024-11-14 10:22:23.850 [info] Got Copilot token for ovintuan
+2024-11-14 10:22:24.062 [info] copilot token chat_enabled: true, sku: free_educational
+2024-11-14 10:22:24.271 [info] Fetched model metadata in 90ms 3cda86c1-766e-480b-b44f-e60f4d81e3f9

@@ -1,0 +1,7 @@
+ipykernel
+pyspark==3.5.2
+delta-spark==3.2.0
+FastAPI
+pandas
+requests
+confluent_kafka

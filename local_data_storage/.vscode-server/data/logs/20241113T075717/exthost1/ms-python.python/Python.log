@@ -1,0 +1,86 @@
+2024-11-13 07:59:28.359 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-11-13 07:59:28.360 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-11-13 07:59:28.360 [info] Experiment 'pythonTestAdapter' is active
+2024-11-13 07:59:28.360 [warning] Dir "/container/pyspark_workspace/.pixi/envs" is not watchable (directory does not exist)
+2024-11-13 07:59:28.361 [info] > pyenv which python
+2024-11-13 07:59:28.361 [info] cwd: .
+2024-11-13 07:59:28.508 [info] > conda info --json
+2024-11-13 07:59:29.343 [info] > D:\Program Files\Python\python.exe -c "import sys;print(sys.executable)"
+2024-11-13 07:59:29.599 [error] Error: Command failed: D:\Program Files\Python\python.exe -c "import sys;print(sys.executable)"
+/bin/sh: 1: D:Program: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:531:35)
+    at maybeClose (node:internal/child_process:1105:16)
+    at Socket.<anonymous> (node:internal/child_process:457:11)
+    at Socket.emit (node:events:519:28)
+    at Pipe.<anonymous> (node:net:339:12) {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: 'D:\\Program Files\\Python\\python.exe -c "import sys;print(sys.executable)"'
+}
+2024-11-13 07:59:41.568 [info] Starting Pylance language server.
+2024-11-13 08:00:39.192 [info] Starting Environment refresh
+2024-11-13 08:00:39.193 [info] Searching for interpreters in posix paths locator
+2024-11-13 08:00:39.210 [info] Searching for pyenv environments
+2024-11-13 08:00:39.211 [info] Searching for conda environments
+2024-11-13 08:00:39.212 [info] Searching for global virtual environments
+2024-11-13 08:00:39.213 [info] Searching for custom virtual environments
+2024-11-13 08:00:39.232 [info] > hatch env show --json
+2024-11-13 08:00:39.233 [info] cwd: .
+2024-11-13 08:00:39.241 [info] pyenv is not installed
+2024-11-13 08:00:39.241 [info] Finished searching for pyenv environments: 33 milliseconds
+2024-11-13 08:00:39.242 [info] Finished searching for custom virtual envs: 32 milliseconds
+2024-11-13 08:00:39.255 [info] Finished searching for global virtual envs: 46 milliseconds
+2024-11-13 08:00:39.259 [info] Found: /bin/python3 --> /bin/python3.11
+2024-11-13 08:00:39.260 [info] Found: /bin/python3.11 --> /bin/python3.11
+2024-11-13 08:00:39.330 [info] > "D:\Program Files\Python\python.exe" -I ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+2024-11-13 08:00:39.363 [info] Found: /usr/bin/python3 --> /usr/bin/python3.11
+2024-11-13 08:00:39.365 [info] Found: /usr/bin/python3.11 --> /usr/bin/python3.11
+2024-11-13 08:00:39.370 [error] Error: Command failed: "D:\Program Files\Python\python.exe" -I /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+/bin/sh: 1: D:\Program Files\Python\python.exe: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:531:35)
+    at maybeClose (node:internal/child_process:1105:16)
+    at Socket.<anonymous> (node:internal/child_process:457:11)
+    at Socket.emit (node:events:519:28)
+    at Pipe.<anonymous> (node:net:339:12) {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: '"D:\\Program Files\\Python\\python.exe" -I /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py'
+}
+2024-11-13 08:00:39.399 [info] Found: /usr/local/bin/python --> /usr/local/bin/python3.11
+2024-11-13 08:00:39.400 [info] Found: /usr/local/bin/python3 --> /usr/local/bin/python3.11
+2024-11-13 08:00:39.401 [info] Found: /usr/local/bin/python3.11 --> /usr/local/bin/python3.11
+2024-11-13 08:00:39.446 [info] > /bin/python3 -I ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+2024-11-13 08:00:39.525 [info] Finished searching for interpreters in posix paths locator: 334 milliseconds
+2024-11-13 08:00:39.526 [info] > /usr/bin/python3 -I ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+2024-11-13 08:00:39.615 [info] Environments refresh paths discovered (event): 440 milliseconds
+2024-11-13 08:00:39.617 [info] Environments refresh paths discovered: 442 milliseconds
+2024-11-13 08:00:39.797 [info] > /usr/local/bin/python -I ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+2024-11-13 08:00:41.392 [info] > "D:\Program Files\Python\python.exe" -I ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+2024-11-13 08:00:41.429 [error] Error: Command failed: "D:\Program Files\Python\python.exe" -I /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+/bin/sh: 1: D:\Program Files\Python\python.exe: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:531:35)
+    at maybeClose (node:internal/child_process:1105:16)
+    at Socket.<anonymous> (node:internal/child_process:457:11)
+    at Socket.emit (node:events:519:28)
+    at Pipe.<anonymous> (node:net:339:12) {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: '"D:\\Program Files\\Python\\python.exe" -I /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py'
+}
+2024-11-13 08:00:41.478 [info] Environments refresh finished (event): 2301 milliseconds
+2024-11-13 08:00:41.521 [info] Environment refresh took 2347 milliseconds
