@@ -1,11 +1,14 @@
 sudo docker pull mcr.microsoft.com/mssql/server:2022-latest
 docker pull postgres
-docker pull apache/airflow
+docker pull apache/airflow:2.7.0
 docker pull python:3.11.9
 docker pull openjdk:17
 docker pull bitnami/spark:3.5.2
 docker pull bitnami/kafka:3.8.1
-docker pull bitnami/zookeeper:3.9.3
 docker pull provectuslabs/kafka-ui:latest
-
 docker pull bitnami/schema-registry:7.4.7
+
+docker pull apache/hive:4.0.0
+docker pull debezium/connect:3.0.0.Final
+
+docker pull bitnami/zookeeper:3.9.3

@@ -1,0 +1,1 @@
+IF EXISTS (SELECT * FROM sys.databases WHERE name = 'CreditStagingDB') DROP DATABASE CreditStagingDB;

@@ -1,0 +1,11 @@
+OptionSetID,OptionSetName,OptionSetValue,Description,ReferenceTable,ReferenceColumn,CreatedDate,UpdateDate
+4ae2609d-2736-4337-a701-43a90ecbc2d0,Status,Active,Active Account Status,CreditAccount,StatusID,2024-11-18T13:05:00.682558,2024-11-18T13:05:00.682558
+aa810cdb-3040-4538-8877-be7548772f81,Status,Closed,Closed Account Status,CreditAccount,StatusID,2024-11-18T13:05:00.682558,2024-11-18T13:05:00.682558
+ff4f1b1a-63b1-4d6d-8ee2-0965c993bdaa,Status,Delinquent,Delinquent Account Status,CreditAccount,StatusID,2024-11-18T13:05:00.682558,2024-11-18T13:05:00.682558
+8cd02238-9e40-41ca-952c-4b641553c724,TransactionType,Purchase,Purchase Transaction Type,Transaction,TransactionTypeID,2024-11-18T13:05:00.682558,2024-11-18T13:05:00.682558
+f925e756-b182-4d65-a77f-41c6f19c6022,TransactionType,Payment,Payment Transaction Type,Transaction,TransactionTypeID,2024-11-18T13:05:00.682558,2024-11-18T13:05:00.682558
+86aefd03-a8ea-47a7-a4a0-d57529d15548,PaymentMethod,Credit Card,Credit Card Payment Method,Transaction,PaymentmethodID,2024-11-18T13:05:00.682558,2024-11-18T13:05:00.682558
+e1db49ff-c566-4e67-a106-d1a1cec6f392,PaymentMethod,Bank Transfer,Bank Transfer Payment Method,Transaction,PaymentmethodID,2024-11-18T13:05:00.682558,2024-11-18T13:05:00.682558
+acfc57e8-12ce-45d8-99a8-d0c404f987c0,ProductType,Line of Credit,Line of Credit Product Type,Product,ProductTypeID,2024-11-18T13:05:00.682558,2024-11-18T13:05:00.682558
+38b6823e-6087-4437-8e20-6d2afa979d7f,ProductType,Loan,Loan Product Type,Product,ProductTypeID,2024-11-18T13:05:00.682558,2024-11-18T13:05:00.682558
+cd9bb088-3a0b-4338-a358-79f9f5050d48,ProductType,Credit Card,Credit Card Product Type,Product,ProductTypeID,2024-11-18T13:05:00.682558,2024-11-18T13:05:00.682558

@@ -45,3 +45,12 @@ Changed Logs:
 
 
 
+Kiến trúc tổng quan của một hệ thống Airflow hoàn chỉnh:
+    Webserver - Giao diện người dùng để theo dõi và quản lý các DAG.
+    Scheduler - Lập lịch và phân phối công việc cho các task.
+    Executor - Thực thi các task (Celery hoặc Kubernetes Executor giúp phân tán).
+    Worker - Xử lý các task song song.
+    Metadata Database - Lưu trữ thông tin về các DAG, task, và trạng thái.
+    Message Broker - Truyền tải thông tin giữa các thành phần trong hệ thống (nếu sử dụng Celery).
+    CLI - Quản lý hệ thống qua dòng lệnh.
+    Triggerer (Tùy chọn) - Hỗ trợ các task không đồng bộ.

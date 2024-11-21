@@ -1,0 +1,22 @@
+2024-11-20 17:10:22.318 [info] [main] Log level: Info
+2024-11-20 17:10:22.320 [info] [main] Validating found git in: "git"
+2024-11-20 17:10:22.323 [info] [main] Using git "2.39.2" from "git"
+2024-11-20 17:10:22.324 [info] [Model][doInitialScan] Initial repository scan started
+2024-11-20 17:10:22.327 [info] > git rev-parse --show-toplevel [9872ms]
+2024-11-20 17:10:22.329 [info] > git rev-parse --git-dir --git-common-dir [132ms]
+2024-11-20 17:10:22.330 [info] [Model][openRepository] Opened repository: /container/pyspark_workspace
+2024-11-20 17:10:23.964 [info] > git rev-parse --show-toplevel [959ms]
+2024-11-20 17:10:23.969 [info] > git config --get commit.template [1352ms]
+2024-11-20 17:10:24.205 [info] > git rev-parse --show-toplevel [128ms]
+2024-11-20 17:10:26.306 [info] > git check-ignore -v -z --stdin [2766ms]
+2024-11-20 17:10:26.312 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2276ms]
+2024-11-20 17:10:26.575 [info] > git rev-parse --show-toplevel [925ms]
+2024-11-20 17:10:26.945 [info] > git rev-parse --show-toplevel [328ms]
+2024-11-20 17:10:39.912 [info] > git rev-parse --show-toplevel [11728ms]
+2024-11-20 17:10:39.918 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [13203ms]
+2024-11-20 17:10:40.606 [info] > git rev-parse --show-toplevel [593ms]
+2024-11-20 17:10:40.629 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-11-20 17:14:17.158 [info] > git ls-files --stage -- /container/pyspark_workspace/Dockerfile.pyspark_workspace [1158ms]
+2024-11-20 17:14:17.261 [info] > git cat-file -s 94becbf16154edcddd10fcecbfa3e8fe813dd2e8 [92ms]
+2024-11-20 17:14:17.305 [info] > git show --textconv :Dockerfile.pyspark_workspace [1319ms]
+2024-11-20 17:25:54.256 [info] > git status -z -uall [927561ms] (cancelled)

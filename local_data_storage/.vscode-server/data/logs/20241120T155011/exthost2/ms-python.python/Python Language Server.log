@@ -1,0 +1,47 @@
+2024-11-20 16:45:12.825 [info] (Client) Pylance async client (2024.11.2) started with python extension (2024.20.0)
+2024-11-20 16:45:21.495 [info] [Info  - 4:45:17 PM] (26073) Server root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.2/dist
+2024-11-20 16:45:23.913 [info] [Info  - 4:45:23 PM] (26073) Pylance language server 2024.11.2 (pyright version 1.1.386, commit 4180fa21) starting
+2024-11-20 16:45:24.100 [info] [Info  - 4:45:24 PM] (26073) Starting service instance "pyspark_workspace"
+2024-11-20 16:45:24.887 [info] [Info  - 4:45:24 PM] (26073) Setting environmentName for service "pyspark_workspace": "D:\Program Files\Python\python.exe"
+2024-11-20 16:45:24.900 [info] [Info  - 4:45:24 PM] (26073) No include entries specified; assuming /container/pyspark_workspace
+2024-11-20 16:45:24.904 [info] [Info  - 4:45:24 PM] (26073) Auto-excluding **/node_modules
+2024-11-20 16:45:24.909 [info] [Info  - 4:45:24 PM] (26073) Auto-excluding **/__pycache__
+2024-11-20 16:45:24.911 [info] [Info  - 4:45:24 PM] (26073) Auto-excluding **/.*
+2024-11-20 16:45:42.509 [info] [Info  - 4:45:42 PM] (26073) Found 13 source files
+2024-11-20 16:45:42.712 [info] [Info  - 4:45:42 PM] (26073) Background analysis(1) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.2/dist
+2024-11-20 16:45:42.715 [info] [Info  - 4:45:42 PM] (26073) Background analysis(1) started
+2024-11-20 16:45:42.733 [info] [Info  - 4:45:42 PM] (26073) Setting environmentName for service "pyspark_workspace": "D:\Program Files\Python\python.exe"
+2024-11-20 16:45:42.740 [info] [Info  - 4:45:42 PM] (26073) No include entries specified; assuming /container/pyspark_workspace
+2024-11-20 16:45:42.744 [info] [Info  - 4:45:42 PM] (26073) Auto-excluding **/node_modules
+2024-11-20 16:45:42.745 [info] [Info  - 4:45:42 PM] (26073) Auto-excluding **/__pycache__
+2024-11-20 16:45:42.747 [info] [Info  - 4:45:42 PM] (26073) Auto-excluding **/.*
+2024-11-20 16:45:54.187 [info] [Info  - 4:45:54 PM] (26073) Found 13 source files
+2024-11-20 16:45:57.319 [info] [Info  - 4:45:57 PM] (26073) [FG] Long operation: parsing: file:///container/pyspark_workspace/source_code/utils/spark.py (3065ms)
+2024-11-20 16:45:59.415 [info] [Info  - 4:45:59 PM] (26073) Indexer background runner(2) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.2/dist (index)
+2024-11-20 16:45:59.418 [info] [Info  - 4:45:59 PM] (26073) Indexing(2) started
+2024-11-20 16:45:59.592 [info] [Info  - 4:45:59 PM] (26073) Starting service instance "pyspark_workspace"
+2024-11-20 16:45:59.864 [info] [Info  - 4:45:59 PM] (26073) Setting environmentName for service "pyspark_workspace": "D:\Program Files\Python\python.exe"
+2024-11-20 16:45:59.870 [info] [Info  - 4:45:59 PM] (26073) Setting pythonPath for service "pyspark_workspace": "/usr/local/bin/python"
+2024-11-20 16:45:59.879 [info] [Info  - 4:45:59 PM] (26073) No include entries specified; assuming /container/pyspark_workspace
+2024-11-20 16:45:59.883 [info] [Info  - 4:45:59 PM] (26073) Auto-excluding **/node_modules
+2024-11-20 16:45:59.898 [info] [Info  - 4:45:59 PM] (26073) Auto-excluding **/__pycache__
+2024-11-20 16:45:59.902 [info] [Info  - 4:45:59 PM] (26073) Auto-excluding **/.*
+2024-11-20 16:45:59.998 [info] [Info  - 4:45:59 PM] (26073) Assuming Python version 3.11.9.final.0
+2024-11-20 16:46:10.020 [info] [Info  - 4:46:10 PM] (26073) Found 13 source files
+2024-11-20 16:46:10.204 [info] [Info  - 4:46:10 PM] (26073) [BG(1)] Long operation: parsing: file:///container/pyspark_workspace/source_code/utils/spark.py (7578ms)
+2024-11-20 16:46:10.216 [info] [Info  - 4:46:10 PM] (26073) [BG(1)] Long operation: SemanticTokens full at file:///container/pyspark_workspace/source_code/utils/spark.py (11174ms)
+2024-11-20 16:46:10.228 [info] [Info  - 4:46:10 PM] (26073) Background analysis(3) root directory: file:///root/.vscode-server/extensions/ms-python.vscode-pylance-2024.11.2/dist
+2024-11-20 16:46:10.236 [info] [Info  - 4:46:10 PM] (26073) Background analysis(3) started
+2024-11-20 16:46:15.275 [info] [Info  - 4:46:15 PM] (26073) [BG(3)] Long operation: parsing: file:///container/pyspark_workspace/source_code/utils/download_spark_package.py (4678ms)
+2024-11-20 16:46:15.923 [info] [Info  - 4:46:15 PM] (26073) [BG(3)] Long operation: indexing: file:///container/pyspark_workspace/source_code/utils/download_spark_package.py (5326ms)
+2024-11-20 16:46:25.246 [info] [Info  - 4:46:25 PM] (26073) [BG(3)] Long operation: checking: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb.py#X24sdnNjb2RlLXJlbW90ZQ%3D%3D (2010ms)
+2024-11-20 16:46:25.248 [info] [Info  - 4:46:25 PM] (26073) [BG(3)] Long operation: analyzing: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb.py#X24sdnNjb2RlLXJlbW90ZQ%3D%3D (2011ms)
+2024-11-20 16:46:25.756 [info] [Info  - 4:46:25 PM] (26073) [BG(3)] Long operation: analyzing: file:///container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb.py#pylancePrefixCell (2525ms)
+2024-11-20 16:46:34.434 [info] [Info  - 4:46:34 PM] (26073) [IDX(2)] Long operation: scan packages file:///container/pyspark_workspace (28535ms)
+2024-11-20 16:46:34.434 [info] [Info  - 4:46:34 PM] (26073) scanned(2) 211 files over 1 exec env
+2024-11-20 16:46:41.233 [info] [Info  - 4:46:41 PM] (26073) [IDX(2)] Long operation: index packages file:///container/pyspark_workspace (4187ms)
+2024-11-20 16:46:41.234 [info] [Info  - 4:46:41 PM] (26073) indexed(2) 211 files over 1 exec env
+2024-11-20 16:46:43.959 [info] [Info  - 4:46:43 PM] (26073) scanned(2) 211 files over 1 exec env
+2024-11-20 16:46:47.352 [info] [Info  - 4:46:47 PM] (26073) [IDX(2)] Long operation: index packages file:///container/pyspark_workspace (2256ms)
+2024-11-20 16:46:47.353 [info] [Info  - 4:46:47 PM] (26073) indexed(2) 211 files over 1 exec env
+2024-11-20 16:46:47.824 [info] [Info  - 4:46:47 PM] (26073) Indexing finished(2).

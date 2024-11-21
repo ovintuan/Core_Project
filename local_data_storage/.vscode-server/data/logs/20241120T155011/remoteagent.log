@@ -1,0 +1,33 @@
+2024-11-20 15:50:23.785 [info] 
+
+
+
+
+2024-11-20 15:50:23.787 [info] Extension host agent started.
+2024-11-20 15:50:23.926 [debug] Removing uninstalled extensions: ["github.copilot-chat-0.22.2","streetsidesoftware.code-spell-checker-3.0.1","hashicorp.terraform-2.33.0-linux-x64"]
+2024-11-20 15:50:24.166 [info] [127.0.0.1][62f830c3][ManagementConnection] New connection established.
+2024-11-20 15:50:24.200 [info] Log level changed to info
+2024-11-20 15:50:24.653 [info] [127.0.0.1][ab5bfcbb][ExtensionHostConnection] New connection established.
+2024-11-20 15:50:25.661 [info] [127.0.0.1][ab5bfcbb][ExtensionHostConnection] <512> Launched Extension Host Process.
+2024-11-20 15:50:34.836 [info] Deleted uninstalled extension from disk hashicorp.terraform /root/.vscode-server/extensions/hashicorp.terraform-2.33.0-linux-x64
+2024-11-20 15:50:36.959 [info] Deleted uninstalled extension from disk streetsidesoftware.code-spell-checker /root/.vscode-server/extensions/streetsidesoftware.code-spell-checker-3.0.1
+2024-11-20 15:50:53.802 [info] Getting Manifest... streetsidesoftware.code-spell-checker
+2024-11-20 15:50:54.600 [info] Installing extension: streetsidesoftware.code-spell-checker {"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"},"pinned":false,"operation":3,"isApplicationScoped":true,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"}}
+2024-11-20 15:51:17.796 [info] Extension signature verification result for streetsidesoftware.code-spell-checker: Success. Executed: true. Duration: 13466ms.
+2024-11-20 15:51:25.231 [info] [127.0.0.1][ab5bfcbb][ExtensionHostConnection] The client has reconnected.
+2024-11-20 15:51:33.335 [info] Extracted extension to file:///root/.vscode-server/extensions/streetsidesoftware.code-spell-checker-4.0.20: streetsidesoftware.code-spell-checker
+2024-11-20 15:51:33.479 [info] Renamed to /root/.vscode-server/extensions/streetsidesoftware.code-spell-checker-4.0.20
+2024-11-20 15:51:33.656 [info] Marked extension as uninstalled streetsidesoftware.code-spell-checker-4.0.19
+2024-11-20 15:51:33.902 [info] Extension installed successfully: streetsidesoftware.code-spell-checker file:///root/.vscode-server/extensions/extensions.json
+2024-11-20 15:52:10.925 [info] [127.0.0.1][ab5bfcbb][ExtensionHostConnection] The client has reconnected.
+2024-11-20 15:54:05.942 [error] [File Watcher] Unexpected error: inotify_add_watch on '/container/pyspark_workspace/local_data_storage/.vscode-server/extensions/.e417ec25-8bca-4d97-8e41-b4af7b3c4b1a/node_modules/@cspell/dict-ada' failed: No such file or directory (EUNKNOWN) (path: /container/pyspark_workspace)
+2024-11-20 15:54:05.963 [error] [File Watcher (universal)] inotify_add_watch on '/container/pyspark_workspace/local_data_storage/.vscode-server/extensions/.e417ec25-8bca-4d97-8e41-b4af7b3c4b1a/node_modules/@cspell/dict-ada' failed: No such file or directory
+2024-11-20 16:35:41.075 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 16:36:06.327 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 16:37:36.758 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 16:38:02.658 [info] [127.0.0.1][62f830c3][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-20 16:38:34.235 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 16:43:51.635 [info] [127.0.0.1][ab5bfcbb][ExtensionHostConnection] <512> Extension Host Process exited with code: 0, signal: null.
+2024-11-20 16:44:05.029 [info] [127.0.0.1][f3a7f82b][ManagementConnection] New connection established.
+2024-11-20 16:44:06.147 [info] [127.0.0.1][af0c12db][ExtensionHostConnection] New connection established.
+2024-11-20 16:44:06.260 [info] [127.0.0.1][af0c12db][ExtensionHostConnection] <25187> Launched Extension Host Process.

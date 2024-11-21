@@ -8,34 +8,31 @@ terraform {
 }
 
 provider "docker" {
-  host = "tcp://localhost:2375"
+  host = var.docker_host
 }
 
 resource "docker_image" "pyspark_workspace" {
-  name = "pyspark_workspace"
+  name = var.pyspark_image_name
   build {
-    context = "."
-    dockerfile = "Dockerfile.pyspark_workspace"
+    context    = "."
+    dockerfile = var.pyspark_dockerfile
   }
 }
 
 resource "docker_network" "pyspark_workspace_network" {
-  name = "pyspark_workspace_network"
+  name = var.network_name
 }
 
 resource "docker_volume" "spark_master_opt_java" {
-  name = "spark_master_opt_java"
+  name = var.volume_spark_master_opt_java
+}
+
+resource "docker_volume" "spark_master_spark_command" {
+  name = var.volume_spark_master_spark_command
 }
 
 resource "docker_volume" "python_site_packages" {
-  name = "python_site_packages"
-}
-
-
-locals {
-  sqlserver_1_env = [for line in split("\n", file("./config_env_variables/sqlserver1.env")) : line if line != ""]
-  sqlserver_2_env = [for line in split("\n", file("./config_env_variables/sqlserver2.env")) : line if line != ""]
-  postgres_env    = [for line in split("\n", file("./config_env_variables/postgres.env")) : line if line != ""]
+  name = var.volume_python_site_packages
 }
 
 resource "docker_container" "spark_master" {
@@ -45,26 +42,30 @@ resource "docker_container" "spark_master" {
     name = docker_network.pyspark_workspace_network.name
   }
   ports {
-    internal = 8080
-    external = 8080
-  } 
+    internal = var.spark_master_webui_port
+    external = var.spark_master_webui_port
+  }
   ports {
-    internal = 7077
-    external = 7077
+    internal = var.spark_master_port_internal
+    external = var.spark_master_port_external
   }
   env = [
     "SPARK_MODE=master",
-    "SPARK_MASTER_PORT=7077",
-    "SPARK_MASTER_WEBUI_PORT=8080"
+    "SPARK_MASTER_PORT=${var.spark_master_port_internal}",
+    "SPARK_MASTER_WEBUI_PORT=${var.spark_master_webui_port}"
   ]
   volumes {
     container_path = "/opt/bitnami/java"
     volume_name    = docker_volume.spark_master_opt_java.name
   }
+  volumes {
+    container_path = "/opt/bitnami/spark/"
+    volume_name    = docker_volume.spark_master_spark_command.name
+  }
   mounts {
     target = "/container/pyspark_workspace"
-    type = "bind"
-    source      = abspath(".")
+    type   = "bind"
+    source = abspath(".")
   }
   depends_on = [docker_image.pyspark_workspace]
 }
@@ -77,13 +78,13 @@ resource "docker_container" "spark_worker_1" {
   }
   env = [
     "SPARK_MODE=worker",
-    "SPARK_MASTER_URL=spark://spark-master:7077",
-    "SPARK_WORKER_WEBUI_PORT=8081"
+    "SPARK_MASTER_URL=spark://spark-master:${var.spark_master_port_internal}",
+    "SPARK_WORKER_WEBUI_PORT=${var.spark_worker_webui_port_1}"
   ]
   mounts {
     target = "/container/pyspark_workspace"
-    type = "bind"
-    source      = abspath(".")
+    type   = "bind"
+    source = abspath(".")
   }
   depends_on = [docker_container.spark_master, docker_image.pyspark_workspace]
 }
@@ -96,22 +97,22 @@ resource "docker_container" "spark_worker_2" {
   }
   env = [
     "SPARK_MODE=worker",
-    "SPARK_MASTER_URL=spark://spark-master:7077",
-    "SPARK_WORKER_WEBUI_PORT=8082"
+    "SPARK_MASTER_URL=spark://spark-master:${var.spark_master_port_internal}",
+    "SPARK_WORKER_WEBUI_PORT=${var.spark_worker_webui_port_2}"
   ]
   mounts {
     target = "/container/pyspark_workspace"
-    type = "bind"
-    source      = abspath(".")
+    type   = "bind"
+    source = abspath(".")
   }
   depends_on = [docker_container.spark_master, docker_image.pyspark_workspace]
 }
 
 resource "docker_container" "python_environment" {
-  name  = "python_environment"
-  image = "python:3.11.9"
-  stdin_open = true  # Keep STDIN open even if not attached
-  tty = true         # Allocate a pseudo-TTY 
+  name        = "python_environment"
+  image       = var.python_image
+  stdin_open  = true
+  tty         = true
   working_dir = "/container/pyspark_workspace"
   networks_advanced {
     name = docker_network.pyspark_workspace_network.name
@@ -122,6 +123,10 @@ resource "docker_container" "python_environment" {
   volumes {
     container_path = "/spark_opt_java/"
     volume_name    = docker_volume.spark_master_opt_java.name
+  }
+  volumes {
+    container_path = "/spark_command/"
+    volume_name    = docker_volume.spark_master_spark_command.name
   }
   volumes {
     container_path = "/usr/local/lib/python3.11/site-packages"
@@ -144,71 +149,119 @@ resource "docker_container" "python_environment" {
 }
 
 resource "docker_container" "postgres_database_1" {
-  name  = "postgres_database_1"
-  image = "postgres:latest"
+  name     = "postgres_database_1"
+  image    = var.postgres_image
+  hostname = var.postgres_hostname
   networks_advanced {
     name = docker_network.pyspark_workspace_network.name
   }
+  env = [
+    "POSTGRES_USER=${local.postgres_user}",
+    "POSTGRES_PASSWORD=${local.postgres_password}"
+  ]
   ports {
-    internal = 5432
-    external = 3000
+    internal = var.postgres_port_internal
+    external = var.postgres_port_external
   }
   mounts {
     target = "/var/lib/postgresql/data"
     type   = "bind"
     source = abspath("./local_data_storage/postgres")
   }
-  
-  env = local.postgres_env
-  # depends_on = [docker_image.pyspark_workspace]
+  mounts {
+    target = "/source_code/init_script/"
+    type   = "bind"
+    source = abspath("./source_code/init_script/")
+  }
+  provisioner "local-exec" {
+    command     = "Start-Sleep -Seconds 90"
+    interpreter = ["PowerShell", "-Command"]
+  }
+  provisioner "local-exec" {
+    command    = "docker exec ${docker_container.postgres_database_1.name} psql -h localhost -U ${local.postgres_user} -f /source_code/init_script/AirFlow_Metadata/init_DB.sql"
+    on_failure = continue
+  }
 }
 
 resource "docker_container" "sqlserver_database_1" {
-  name  = "sqlserver_database_1"
-  image = "mcr.microsoft.com/mssql/server:2022-latest"
-  user  = "0"
+  name     = "sqlserver_database_1"
+  image    = var.sqlserver_image
+  hostname = var.sqlserver_hostname_1
+  user     = "0"
   networks_advanced {
     name = docker_network.pyspark_workspace_network.name
   }
   ports {
-    internal = 1433
-    external = 1000
+    internal = var.sqlserver_port_internal
+    external = var.sqlserver_port_external_1
   }
-  env = concat(
-    ["ACCEPT_EULA=Y"],
-    local.sqlserver_1_env
-  )
+  env = [
+    "ACCEPT_EULA=Y",
+    "SA_PASSWORD=${local.sqlserver_sa_password_1}"
+  ]
   mounts {
     target = "/var/opt/mssql/data"
     type   = "bind"
     source = abspath("./local_data_storage/sql_server_1")
   }
-  
-  # depends_on = [docker_image.pyspark_workspace]
+  mounts {
+    target = "/source_code/init_script/"
+    type   = "bind"
+    source = abspath("./source_code/init_script/")
+  }
+  provisioner "local-exec" {
+    command     = "Start-Sleep -Seconds 90"
+    interpreter = ["PowerShell", "-Command"]
+  }
+  provisioner "local-exec" {
+    command = "docker exec sqlserver_database_1 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_1} -i /source_code/init_script/SQL_Server_1/init_DB.sql"
+  }
+  provisioner "local-exec" {
+    command = "docker exec sqlserver_database_1 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_1} -i /source_code/init_script/SQL_Server_1/init_DB_CreditStagingDB.sql"
+  }
 }
 
 resource "docker_container" "sqlserver_database_2" {
-  name  = "sqlserver_database_2"
-  image = "mcr.microsoft.com/mssql/server:2022-latest"
-  user  = "0"
+  name     = "sqlserver_database_2"
+  image    = var.sqlserver_image
+  hostname = var.sqlserver_hostname_2
+  user     = "0"
   networks_advanced {
     name = docker_network.pyspark_workspace_network.name
   }
   ports {
-    internal = 1433
-    external = 2000
+    internal = var.sqlserver_port_internal
+    external = var.sqlserver_port_external_2
   }
-  env = concat(
-    ["ACCEPT_EULA=Y"],
-    local.sqlserver_2_env
-  )
+  env = [
+    "ACCEPT_EULA=Y",
+    "SA_PASSWORD=${local.sqlserver_sa_password_2}"
+  ]
   mounts {
     target = "/var/opt/mssql/data"
     type   = "bind"
     source = abspath("./local_data_storage/sql_server_2")
   }
-  
-  # depends_on = [docker_image.pyspark_workspace]
+  mounts {
+    target = "/source_code/init_script/"
+    type   = "bind"
+    source = abspath("./source_code/init_script/")
+  }
+  provisioner "local-exec" {
+    command     = "Start-Sleep -Seconds 90"
+    interpreter = ["PowerShell", "-Command"]
+  }
+  provisioner "local-exec" {
+    command = "docker exec sqlserver_database_2 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_2} -i /source_code/init_script/SQL_Server_2/init_DB.sql"
+  }
+  provisioner "local-exec" {
+    command = "docker exec sqlserver_database_2 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_2} -i /source_code/init_script/SQL_Server_2/init_DB_CreditLakehouseDB.sql"
+  }
+  provisioner "local-exec" {
+    command = "docker exec sqlserver_database_2 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_2} -i /source_code/init_script/SQL_Server_2/init_DB_CreditDW.sql"
+  }
+
+
 }
 
 

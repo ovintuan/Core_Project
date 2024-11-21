@@ -1,0 +1,31 @@
+2024-11-21 02:21:42.901 [info] 
+
+
+
+
+2024-11-21 02:21:43.058 [info] Extension host agent started.
+2024-11-21 02:21:45.813 [debug] No uninstalled extensions found.
+2024-11-21 02:21:46.537 [info] [127.0.0.1][3c9711c9][ManagementConnection] New connection established.
+2024-11-21 02:21:46.541 [info] [127.0.0.1][75389a36][ExtensionHostConnection] New connection established.
+2024-11-21 02:21:46.554 [info] [127.0.0.1][75389a36][ExtensionHostConnection] <378> Launched Extension Host Process.
+2024-11-21 02:21:46.574 [info] Log level changed to info
+2024-11-21 02:22:04.396 [info] Getting Manifest... streetsidesoftware.code-spell-checker
+2024-11-21 02:22:05.638 [info] Installing extension: streetsidesoftware.code-spell-checker {"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"},"pinned":false,"operation":3,"isApplicationScoped":true,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"installOnlyNewlyAddedFromExtensionPack":true,"profileLocation":{"$mid":1,"fsPath":"/root/.vscode-server/extensions/extensions.json","external":"file:///root/.vscode-server/extensions/extensions.json","path":"/root/.vscode-server/extensions/extensions.json","scheme":"file"}}
+2024-11-21 02:22:36.229 [info] [127.0.0.1][75389a36][ExtensionHostConnection] The client has reconnected.
+2024-11-21 02:22:45.196 [info] Extension signature verification result for streetsidesoftware.code-spell-checker: Success. Executed: true. Duration: 30172ms.
+2024-11-21 02:22:57.111 [info] [127.0.0.1][75389a36][ExtensionHostConnection] The client has reconnected.
+2024-11-21 02:23:17.852 [info] [127.0.0.1][75389a36][ExtensionHostConnection] The client has reconnected.
+2024-11-21 02:23:29.612 [info] Extracted extension to file:///root/.vscode-server/extensions/streetsidesoftware.code-spell-checker-4.0.21: streetsidesoftware.code-spell-checker
+2024-11-21 02:23:29.860 [info] Renamed to /root/.vscode-server/extensions/streetsidesoftware.code-spell-checker-4.0.21
+2024-11-21 02:23:30.827 [info] Marked extension as uninstalled streetsidesoftware.code-spell-checker-4.0.20
+2024-11-21 02:23:31.062 [info] Extension installed successfully: streetsidesoftware.code-spell-checker file:///root/.vscode-server/extensions/extensions.json
+2024-11-21 02:23:38.397 [info] [127.0.0.1][75389a36][ExtensionHostConnection] The client has reconnected.
+2024-11-21 02:25:41.934 [error] [File Watcher] Unexpected error: inotify_add_watch on '/container/pyspark_workspace/local_data_storage/.vscode-server/extensions/.ef013c41-d95d-4c54-9f77-1dc82c3a74b9/node_modules/@cspell/dict-r' failed: No such file or directory (EUNKNOWN) (path: /container/pyspark_workspace)
+2024-11-21 02:25:41.953 [error] [File Watcher (universal)] inotify_add_watch on '/container/pyspark_workspace/local_data_storage/.vscode-server/extensions/.ef013c41-d95d-4c54-9f77-1dc82c3a74b9/node_modules/@cspell/dict-r' failed: No such file or directory
+2024-11-21 03:07:36.422 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-21 03:07:58.550 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-21 03:09:16.261 [info] [127.0.0.1][3c9711c9][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-21 03:09:26.134 [info] [127.0.0.1][75389a36][ExtensionHostConnection] <378> Extension Host Process exited with code: 0, signal: null.
+2024-11-21 03:09:30.284 [info] [127.0.0.1][dde2489f][ManagementConnection] New connection established.
+2024-11-21 03:09:30.863 [info] [127.0.0.1][2527f166][ExtensionHostConnection] New connection established.
+2024-11-21 03:09:31.178 [info] [127.0.0.1][2527f166][ExtensionHostConnection] <24275> Launched Extension Host Process.

@@ -1,0 +1,20 @@
+Visual Studio Code (1.95.3, attached-container, desktop)
+Jupyter Extension Version: 2024.10.0.
+Python Extension Version: 2024.20.0.
+Pylance Extension Version: 2024.11.2.
+Platform: linux (x64).
+Temp Storage folder ~/.vscode-server/data/User/globalStorage/ms-toolsai.jupyter/version-2024.10.0
+Workspace folder /container/pyspark_workspace, Home = /root
+16:45:01.879 [info] Starting Kernel (Python Path: /usr/local/bin/python, Unknown, 3.11.9) for '/container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb' (disableUI=true)
+16:45:11.941 [warn] Failed to get activated env vars for /usr/local/bin/python in 10066ms
+16:45:11.956 [warn] Failed to get activated env vars for /usr/local/bin/python in 8549ms
+16:45:12.009 [info] Process Execution: /usr/local/bin/python -c "import site;print("USER_BASE_VALUE");print(site.USER_BASE);print("USER_BASE_VALUE");"
+16:45:12.320 [info] Process Execution: /usr/local/bin/python -m pip list
+16:45:12.329 [info] Process Execution: /usr/local/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+16:45:12.350 [info] Process Execution: /usr/local/bin/python -m ipykernel_launcher --f=/~/.local/share/jupyter/runtime/kernel-v3b04f7bdda35fe6d7534dcb8f829111ea1faede2e.json
+    > cwd: //container/pyspark_workspace/source_code/sample_code
+16:45:15.656 [warn] Disposing old controller startUsingPythonInterpreter:'.jvsc74a57bd06699b966c21a81be21759e40053de52c009daad87cbe5a3dc643468ce4ab3367.d:\Program Files\Python\python.exe.d:\Program Files\Python\python.exe.-m#ipykernel_launcher' for view = 'jupyter-notebook'
+16:45:15.660 [warn] Disposing old controller startUsingPythonInterpreter:'.jvsc74a57bd06699b966c21a81be21759e40053de52c009daad87cbe5a3dc643468ce4ab3367.d:\Program Files\Python\python.exe.d:\Program Files\Python\python.exe.-m#ipykernel_launcher (Interactive)' for view = 'interactive'
+16:45:24.495 [info] Kernel successfully started
+16:46:37.246 [warn] Failed to get activated env vars for /usr/local/bin/python in 552ms
+16:46:37.261 [info] Process Execution: /usr/local/bin/python /~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/pythonFiles/printJupyterDataDir.py

@@ -1,0 +1,197 @@
+2024-11-20 17:51:19.813 [info] 
+
+
+
+
+2024-11-20 17:51:19.924 [info] Extension host agent started.
+2024-11-20 17:51:22.522 [info] [127.0.0.1][e27eb51f][ManagementConnection] New connection established.
+2024-11-20 17:51:22.540 [debug] Removing uninstalled extensions: ["github.copilot-chat-0.22.2"]
+2024-11-20 17:51:22.565 [info] [127.0.0.1][21a3bc30][ExtensionHostConnection] New connection established.
+2024-11-20 17:51:22.595 [info] [127.0.0.1][21a3bc30][ExtensionHostConnection] <390> Launched Extension Host Process.
+2024-11-20 17:51:22.656 [info] Log level changed to info
+2024-11-20 17:51:24.913 [warning] [copilot-chat]: Couldn't find message for key github.copilot.badge.signUp.
+2024-11-20 17:51:24.916 [warning] [copilot-chat]: Couldn't find message for key github.copilot.badge.star.
+2024-11-20 17:51:24.917 [warning] [copilot-chat]: Couldn't find message for key github.copilot.badge.youtube.
+2024-11-20 17:51:24.919 [warning] [copilot-chat]: Couldn't find message for key github.copilot.badge.twitter.
+2024-11-20 17:51:24.921 [warning] [copilot-chat]: Couldn't find message for key copilot.vscode.tool.description.
+2024-11-20 17:51:24.927 [warning] [copilot-chat]: Couldn't find message for key copilot.description.
+2024-11-20 17:51:24.929 [warning] [copilot-chat]: Couldn't find message for key copilot.edits.description.
+2024-11-20 17:51:24.931 [warning] [copilot-chat]: Couldn't find message for key copilot.description.
+2024-11-20 17:51:24.933 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.doc.description.
+2024-11-20 17:51:24.935 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.fix.description.
+2024-11-20 17:51:24.937 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.explain.description.
+2024-11-20 17:51:24.947 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.review.description.
+2024-11-20 17:51:24.949 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.tests.description.
+2024-11-20 17:51:24.952 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.fixTestFailure.description.
+2024-11-20 17:51:24.954 [warning] [copilot-chat]: Couldn't find message for key copilot.description.
+2024-11-20 17:51:24.956 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.fix.description.
+2024-11-20 17:51:24.959 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.explain.description.
+2024-11-20 17:51:24.960 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.description.
+2024-11-20 17:51:24.962 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.sampleRequest.
+2024-11-20 17:51:24.963 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.explain.description.
+2024-11-20 17:51:24.966 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.review.description.
+2024-11-20 17:51:24.968 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.tests.description.
+2024-11-20 17:51:24.975 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.fix.description.
+2024-11-20 17:51:24.978 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.fix.sampleRequest.
+2024-11-20 17:51:24.979 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.new.description.
+2024-11-20 17:51:24.981 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.new.sampleRequest.
+2024-11-20 17:51:24.984 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.newNotebook.description.
+2024-11-20 17:51:24.985 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.newNotebook.sampleRequest.
+2024-11-20 17:51:24.986 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.fixTestFailure.description.
+2024-11-20 17:51:24.991 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.semanticSearch.description.
+2024-11-20 17:51:24.994 [warning] [copilot-chat]: Couldn't find message for key copilot.workspace.semanticSearch.sampleRequest.
+2024-11-20 17:51:24.997 [warning] [copilot-chat]: Couldn't find message for key copilot.vscode.setupTests.description.
+2024-11-20 17:51:25.001 [warning] [copilot-chat]: Couldn't find message for key copilot.vscode.setupTests.sampleRequest.
+2024-11-20 17:51:25.002 [warning] [copilot-chat]: Couldn't find message for key copilot.vscode.description.
+2024-11-20 17:51:25.003 [warning] [copilot-chat]: Couldn't find message for key copilot.vscode.sampleRequest.
+2024-11-20 17:51:25.004 [warning] [copilot-chat]: Couldn't find message for key copilot.vscode.search.description.
+2024-11-20 17:51:25.005 [warning] [copilot-chat]: Couldn't find message for key copilot.vscode.search.sampleRequest.
+2024-11-20 17:51:25.006 [warning] [copilot-chat]: Couldn't find message for key copilot.vscode.runCommand.description.
+2024-11-20 17:51:25.007 [warning] [copilot-chat]: Couldn't find message for key copilot.vscode.runCommand.sampleRequest.
+2024-11-20 17:51:25.008 [warning] [copilot-chat]: Couldn't find message for key copilot.vscode.startDebugging.description.
+2024-11-20 17:51:25.010 [warning] [copilot-chat]: Couldn't find message for key copilot.vscode.startDebugging.sampleRequest.
+2024-11-20 17:51:25.011 [warning] [copilot-chat]: Couldn't find message for key copilot.terminal.description.
+2024-11-20 17:51:25.013 [warning] [copilot-chat]: Couldn't find message for key copilot.terminal.sampleRequest.
+2024-11-20 17:51:25.014 [warning] [copilot-chat]: Couldn't find message for key copilot.terminal.explain.description.
+2024-11-20 17:51:25.016 [warning] [copilot-chat]: Couldn't find message for key copilot.terminal.explain.sampleRequest.
+2024-11-20 17:51:25.017 [warning] [copilot-chat]: Couldn't find message for key copilot.terminal.description.
+2024-11-20 17:51:25.018 [warning] [copilot-chat]: Couldn't find message for key copilot.terminal.sampleRequest.
+2024-11-20 17:51:25.020 [warning] [copilot-chat]: Couldn't find message for key copilot.terminal.explain.description.
+2024-11-20 17:51:25.021 [warning] [copilot-chat]: Couldn't find message for key copilot.terminal.explain.sampleRequest.
+2024-11-20 17:51:25.022 [warning] [copilot-chat]: Couldn't find message for key github.copilot.viewsWelcome.signIn.
+2024-11-20 17:51:25.023 [warning] [copilot-chat]: Couldn't find message for key github.copilot.viewsWelcome.signInGHE.
+2024-11-20 17:51:25.024 [warning] [copilot-chat]: Couldn't find message for key github.copilot.viewsWelcome.individual.
+2024-11-20 17:51:25.025 [warning] [copilot-chat]: Couldn't find message for key github.copilot.viewsWelcome.individual.expired.
+2024-11-20 17:51:25.026 [warning] [copilot-chat]: Couldn't find message for key github.copilot.viewsWelcome.enterprise.
+2024-11-20 17:51:25.027 [warning] [copilot-chat]: Couldn't find message for key github.copilot.viewsWelcome.offline.
+2024-11-20 17:51:25.029 [warning] [copilot-chat]: Couldn't find message for key github.copilot.viewsWelcome.contactSupport.
+2024-11-20 17:51:25.031 [warning] [copilot-chat]: Couldn't find message for key github.copilot.viewsWelcome.chatDisabled.
+2024-11-20 17:51:25.031 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.explainThis.
+2024-11-20 17:51:25.032 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.explainThis.
+2024-11-20 17:51:25.033 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.reviewAndComment.
+2024-11-20 17:51:25.035 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.applyReviewSuggestion.
+2024-11-20 17:51:25.036 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.applyReviewSuggestionAndNext.
+2024-11-20 17:51:25.037 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.discardReviewSuggestion.
+2024-11-20 17:51:25.038 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.discardReviewSuggestionAndNext.
+2024-11-20 17:51:25.041 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.discardAllReviewSuggestion.
+2024-11-20 17:51:25.042 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.reviewStagedChanges.
+2024-11-20 17:51:25.044 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.reviewUnstagedChanges.
+2024-11-20 17:51:25.045 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.reviewChanges.
+2024-11-20 17:51:25.047 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.gotoPreviousReviewSuggestion.
+2024-11-20 17:51:25.048 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.gotoNextReviewSuggestion.
+2024-11-20 17:51:25.050 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.continueReviewInInlineChat.
+2024-11-20 17:51:25.050 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.continueReviewInChat.
+2024-11-20 17:51:25.051 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.helpfulReviewSuggestion.
+2024-11-20 17:51:25.053 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.unhelpfulReviewSuggestion.
+2024-11-20 17:51:25.054 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.generateThis.
+2024-11-20 17:51:25.055 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.generateDocs.
+2024-11-20 17:51:25.057 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.generateTests.
+2024-11-20 17:51:25.058 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.fixThis.
+2024-11-20 17:51:25.060 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.sendChatFeedback.
+2024-11-20 17:51:25.062 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.logWorkbenchState.
+2024-11-20 17:51:25.064 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.explainTerminalSelection.
+2024-11-20 17:51:25.066 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.explainTerminalSelectionContextMenu.
+2024-11-20 17:51:25.067 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.explainTerminalLastCommand.
+2024-11-20 17:51:25.068 [warning] [copilot-chat]: Couldn't find message for key github.copilot.git.generateCommitMessage.
+2024-11-20 17:51:25.070 [warning] [copilot-chat]: Couldn't find message for key github.copilot.devcontainer.generateDevContainerConfig.
+2024-11-20 17:51:25.070 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.fixTestFailure.
+2024-11-20 17:51:25.071 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.fixTestFailure.
+2024-11-20 17:51:25.073 [warning] [copilot-chat]: Couldn't find message for key github.copilot.chat.attachFile.
+2024-11-20 17:51:25.074 [warning] [copilot-chat]: Couldn't find message for key github.copilot.chat.attachSelection.
+2024-11-20 17:51:25.075 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.collectDiagnostics.
+2024-11-20 17:51:25.077 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.generateSTest.
+2024-11-20 17:51:25.078 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.generateConfiguration.
+2024-11-20 17:51:25.079 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.openWalkthrough.
+2024-11-20 17:51:25.080 [warning] [copilot-chat]: Couldn't find message for key github.copilot.command.buildLocalWorkspaceIndex.
+2024-11-20 17:51:25.081 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.enableCodeActions.
+2024-11-20 17:51:25.082 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.renameSuggestions.triggerAutomatically.
+2024-11-20 17:51:25.083 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.localeOverride.
+2024-11-20 17:51:25.084 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.terminalChatLocation.
+2024-11-20 17:51:25.085 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.terminalChatLocation.chatView.
+2024-11-20 17:51:25.086 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.terminalChatLocation.quickChat.
+2024-11-20 17:51:25.087 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.terminalChatLocation.terminal.
+2024-11-20 17:51:25.090 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.scopeSelection.
+2024-11-20 17:51:25.091 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.followUps.
+2024-11-20 17:51:25.092 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.followUps.always.
+2024-11-20 17:51:25.094 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.followUps.firstOnly.
+2024-11-20 17:51:25.096 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.followUps.never.
+2024-11-20 17:51:25.097 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.useProjectTemplates.
+2024-11-20 17:51:25.098 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.runCommand.enabled.
+2024-11-20 17:51:25.099 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.fixTestFailure.enabled.
+2024-11-20 17:51:25.100 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.codeGeneration.useInstructionFiles.
+2024-11-20 17:51:25.101 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.edits.enabled.
+2024-11-20 17:51:25.103 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.startDebugging.enabled.
+2024-11-20 17:51:25.104 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.reviewSelection.enabled.
+2024-11-20 17:51:25.108 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.reviewSelection.instruction.file.
+2024-11-20 17:51:25.109 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.reviewSelection.instruction.text.
+2024-11-20 17:51:25.110 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.reviewSelection.instructions.
+2024-11-20 17:51:25.111 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.codeGeneration.instruction.file.
+2024-11-20 17:51:25.113 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.codeGeneration.instruction.text.
+2024-11-20 17:51:25.114 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.codeGeneration.instructions.
+2024-11-20 17:51:25.115 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.experimental.testGeneration.instruction.file.
+2024-11-20 17:51:25.117 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.experimental.testGeneration.instruction.text.
+2024-11-20 17:51:25.119 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.testGeneration.instructions.
+2024-11-20 17:51:25.120 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.generateTests.codeLens.
+2024-11-20 17:51:25.122 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.temporalContext.enabled.
+2024-11-20 17:51:25.124 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.inlineChatCompletionTrigger.enabled.
+2024-11-20 17:51:25.126 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.inlineChatHint.enabled.
+2024-11-20 17:51:25.128 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.setupTests.enabled.
+2024-11-20 17:51:25.131 [warning] [copilot-chat]: Couldn't find message for key github.copilot.config.search.semanticTextResults.
+2024-11-20 17:51:25.133 [warning] [copilot-chat]: Couldn't find message for key github.copilot.submenu.copilot.label.
+2024-11-20 17:51:25.133 [warning] [copilot-chat]: Couldn't find message for key github.copilot.submenu.copilot.label.
+2024-11-20 17:51:25.135 [warning] [copilot-chat]: Couldn't find message for key github.copilot.submenu.reviewComment.apply.label.
+2024-11-20 17:51:25.137 [warning] [copilot-chat]: Couldn't find message for key github.copilot.submenu.reviewComment.discard.label.
+2024-11-20 17:51:25.142 [warning] [copilot-chat]: Couldn't find message for key github.copilot.icon.
+2024-11-20 17:51:25.143 [warning] [copilot-chat]: Couldn't find message for key github.copilot.icon.
+2024-11-20 17:51:25.144 [warning] [copilot-chat]: Couldn't find message for key github.copilot.icon.
+2024-11-20 17:51:25.147 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.title.
+2024-11-20 17:51:25.150 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.description.
+2024-11-20 17:51:25.151 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.signIn.title.
+2024-11-20 17:51:25.153 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.signIn.description.
+2024-11-20 17:51:25.155 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.signIn.media.altText.
+2024-11-20 17:51:25.157 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.firstSuggest.title.
+2024-11-20 17:51:25.158 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.firstSuggest.description.
+2024-11-20 17:51:25.160 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.firstSuggest.media.altText.
+2024-11-20 17:51:25.160 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.panelChat.title.
+2024-11-20 17:51:25.163 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.panelChat.description.
+2024-11-20 17:51:25.164 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.panelChat.media.altText.
+2024-11-20 17:51:25.165 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.inlineChatNotMac.title.
+2024-11-20 17:51:25.169 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.inlineChatNotMac.description.
+2024-11-20 17:51:25.170 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.inlineChatNotMac.media.altText.
+2024-11-20 17:51:25.171 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.inlineChatMac.title.
+2024-11-20 17:51:25.173 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.inlineChatMac.description.
+2024-11-20 17:51:25.174 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.inlineChatMac.media.altText.
+2024-11-20 17:51:25.175 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.iterate.title.
+2024-11-20 17:51:25.176 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.iterate.description.
+2024-11-20 17:51:25.178 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.iterate.media.altText.
+2024-11-20 17:51:25.179 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.creativity.title.
+2024-11-20 17:51:25.182 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.creativity.description.
+2024-11-20 17:51:25.183 [warning] [copilot-chat]: Couldn't find message for key github.copilot.walkthrough.creativity.media.altText.
+2024-11-20 17:51:31.816 [info] Deleted uninstalled extension from disk github.copilot-chat /root/.vscode-server/extensions/github.copilot-chat-0.22.2
+2024-11-20 17:51:42.499 [error] No ptyHost response to createProcess after 5 seconds
+2024-11-20 19:21:58.912 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:24:06.579 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:25:25.521 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:26:05.699 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:27:13.634 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:27:29.139 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:27:50.048 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:28:06.800 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:28:35.887 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:29:23.040 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:29:43.642 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:30:31.874 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:31:13.019 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:31:49.372 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:32:46.597 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:35:34.973 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:44:46.631 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 19:45:28.873 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-20 22:46:28.736 [info] [127.0.0.1][e27eb51f][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-11-21 02:05:51.671 [info] [127.0.0.1][f4179fd2][ManagementConnection] New connection established.
+2024-11-21 02:05:58.043 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-21 02:06:01.565 [info] [127.0.0.1][bbe3bf62][ExtensionHostConnection] New connection established.
+2024-11-21 02:06:06.877 [info] [127.0.0.1][bbe3bf62][ExtensionHostConnection] <50181> Launched Extension Host Process.
+2024-11-21 02:06:06.880 [error] No ptyHost heartbeat after 12 seconds
+2024-11-21 02:06:38.414 [warning] No ptyHost heartbeat after 6 seconds
+2024-11-21 02:11:02.863 [warning] No ptyHost heartbeat after 6 seconds

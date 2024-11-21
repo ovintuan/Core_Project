@@ -1,0 +1,1219 @@
+Visual Studio Code (1.95.3, attached-container, desktop)
+Jupyter Extension Version: 2024.10.0.
+Python Extension Version: 2024.20.0.
+Pylance Extension Version: 2024.11.2.
+Platform: linux (x64).
+Temp Storage folder ~/.vscode-server/data/User/globalStorage/ms-toolsai.jupyter/version-2024.10.0
+Workspace folder /container/pyspark_workspace, Home = /root
+17:52:43.007 [info] Starting Kernel (Python Path: /usr/local/bin/python, Unknown, 3.11.9) for '/container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb' (disableUI=true)
+17:52:48.654 [warn] Failed to get activated env vars for /usr/local/bin/python in 5654ms
+17:52:48.669 [warn] Failed to get activated env vars for /usr/local/bin/python in 2873ms
+17:52:49.118 [info] Process Execution: /usr/local/bin/python -c "import site;print("USER_BASE_VALUE");print(site.USER_BASE);print("USER_BASE_VALUE");"
+17:52:49.543 [warn] Failed to get activated env vars for /usr/local/bin/python in 249ms
+17:52:52.214 [info] Process Execution: /usr/local/bin/python -m pip list
+17:52:52.228 [info] Process Execution: /usr/local/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+17:52:52.273 [info] Process Execution: /usr/local/bin/python -m ipykernel_launcher --f=/~/.local/share/jupyter/runtime/kernel-v35f8d2c123491c886baafd838d44ab69ce0800c60.json
+    > cwd: //container/pyspark_workspace/source_code/sample_code
+17:52:52.410 [warn] Disposing old controller startUsingPythonInterpreter:'.jvsc74a57bd06699b966c21a81be21759e40053de52c009daad87cbe5a3dc643468ce4ab3367.d:\Program Files\Python\python.exe.d:\Program Files\Python\python.exe.-m#ipykernel_launcher' for view = 'jupyter-notebook'
+17:52:52.416 [warn] Disposing old controller startUsingPythonInterpreter:'.jvsc74a57bd06699b966c21a81be21759e40053de52c009daad87cbe5a3dc643468ce4ab3367.d:\Program Files\Python\python.exe.d:\Program Files\Python\python.exe.-m#ipykernel_launcher (Interactive)' for view = 'interactive'
+17:53:09.062 [info] Kernel successfully started
+17:53:09.436 [warn] Failed to get activated env vars for /usr/local/bin/python in 270ms
+17:53:09.465 [info] Process Execution: /usr/local/bin/python /~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/pythonFiles/printJupyterDataDir.py
+18:06:41.905 [info] Restart requested /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+18:06:42.399 [warn] Failed to get activated env vars for /usr/local/bin/python in 193ms
+18:06:42.424 [info] Process Execution: /usr/local/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+18:06:42.456 [info] Process Execution: /usr/local/bin/python -m ipykernel_launcher --f=/~/.local/share/jupyter/runtime/kernel-v31e62322a3f8488337bedf5b2aa0342f0df44d3f4.json
+    > cwd: //container/pyspark_workspace/source_code/sample_code
+18:06:46.268 [info] Restarted b5390a22-5011-47f6-837f-1506fd3ad930
+18:08:02.084 [info] Restart requested /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+18:08:03.421 [warn] Failed to get activated env vars for /usr/local/bin/python in 1319ms
+18:08:03.437 [info] Process Execution: /usr/local/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+18:08:03.453 [info] Process Execution: /usr/local/bin/python -m ipykernel_launcher --f=/~/.local/share/jupyter/runtime/kernel-v30bc7255dfb4ee409c807b0709a325be51bc00ee9.json
+    > cwd: //container/pyspark_workspace/source_code/sample_code
+18:08:06.087 [info] Restarted b5390a22-5011-47f6-837f-1506fd3ad930
+18:15:04.422 [info] Restart requested /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+18:15:04.542 [warn] Failed to get activated env vars for /usr/local/bin/python in 100ms
+18:15:04.566 [info] Process Execution: /usr/local/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+18:15:04.588 [info] Process Execution: /usr/local/bin/python -m ipykernel_launcher --f=/~/.local/share/jupyter/runtime/kernel-v356d532ddb3c291b35064b16143a3f3673fe9d457.json
+    > cwd: //container/pyspark_workspace/source_code/sample_code
+18:15:06.882 [info] Restarted b5390a22-5011-47f6-837f-1506fd3ad930
+18:16:34.475 [info] Restart requested /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+18:16:34.577 [warn] Failed to get activated env vars for /usr/local/bin/python in 80ms
+18:16:34.593 [info] Process Execution: /usr/local/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+18:16:34.607 [info] Process Execution: /usr/local/bin/python -m ipykernel_launcher --f=/~/.local/share/jupyter/runtime/kernel-v3ebc447c4dcd0f674256f3e0c25f72840c6b6ab63.json
+    > cwd: //container/pyspark_workspace/source_code/sample_code
+18:16:36.213 [info] Restarted b5390a22-5011-47f6-837f-1506fd3ad930
+18:24:24.522 [warn] Cell completed with errors iu [Error]: [Errno 2] No such file or directory: './local_data_storage/master_data/CustomerProductAccountIDs.csv'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'FileNotFoundError',
+  evalue: "[Errno 2] No such file or directory: './local_data_storage/master_data/CustomerProductAccountIDs.csv'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mFileNotFoundError\x1B[0m                         Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[8], line 4\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mimport\x1B[39;00m \x1B[38;5;21;01mtime\x1B[39;00m\n' +
+      '\x1B[1;32m      3\x1B[0m \x1B[38;5;28;01mfrom\x1B[39;00m \x1B[38;5;21;01mpyspark\x1B[39;00m\x1B[38;5;21;01m.\x1B[39;00m\x1B[38;5;21;01msql\x1B[39;00m \x1B[38;5;28;01mimport\x1B[39;00m SparkSession\n' +
+      '\x1B[0;32m----> 4\x1B[0m \x1B[38;5;28;01mfrom\x1B[39;00m \x1B[38;5;21;01mgenerate_data\x1B[39;00m\x1B[38;5;21;01m.\x1B[39;00m\x1B[38;5;21;01mgenerate_dummy_data\x1B[39;00m \x1B[38;5;28;01mimport\x1B[39;00m DummyDataGenerator\n' +
+      '\x1B[1;32m      6\x1B[0m \x1B[38;5;66;03m# Retrieve input variables from Airflow task parameters\x1B[39;00m\n' +
+      "\x1B[1;32m      7\x1B[0m server_name \x1B[38;5;241m=\x1B[39m \x1B[38;5;124m'\x1B[39m\x1B[38;5;124msqlserver_database_1\x1B[39m\x1B[38;5;124m'\x1B[39m\n",
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:16\x1B[0m\n' +
+      '\x1B[1;32m     13\x1B[0m         reader \x1B[38;5;241m=\x1B[39m csv\x1B[38;5;241m.\x1B[39mDictReader(file)\n' +
+      '\x1B[1;32m     14\x1B[0m         \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28mlist\x1B[39m(reader)\n' +
+      "\x1B[0;32m---> 16\x1B[0m customer_product_account_ids \x1B[38;5;241m=\x1B[39m \x1B[43mload_ids_and_product_info\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43m./local_data_storage/master_data/CustomerProductAccountIDs.csv\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m\n" +
+      '\x1B[1;32m     18\x1B[0m \x1B[38;5;66;03m# Load Product information from CSV file\x1B[39;00m\n' +
+      '\x1B[1;32m     19\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mload_product_info\x1B[39m(file_path):\n',
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:12\x1B[0m, in \x1B[0;36mload_ids_and_product_info\x1B[0;34m(file_path)\x1B[0m\n' +
+      '\x1B[1;32m     11\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mload_ids_and_product_info\x1B[39m(file_path):\n' +
+      "\x1B[0;32m---> 12\x1B[0m     \x1B[38;5;28;01mwith\x1B[39;00m \x1B[38;5;28;43mopen\x1B[39;49m\x1B[43m(\x1B[49m\x1B[43mfile_path\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mmode\x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43mr\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m \x1B[38;5;28;01mas\x1B[39;00m file:\n" +
+      '\x1B[1;32m     13\x1B[0m         reader \x1B[38;5;241m=\x1B[39m csv\x1B[38;5;241m.\x1B[39mDictReader(file)\n' +
+      '\x1B[1;32m     14\x1B[0m         \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28mlist\x1B[39m(reader)\n',
+    "\x1B[0;31mFileNotFoundError\x1B[0m: [Errno 2] No such file or directory: './local_data_storage/master_data/CustomerProductAccountIDs.csv'"
+  ]
+}
+18:32:21.779 [warn] Cell completed with errors iu [Error]: module 'sys' has no attribute 'args'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "module 'sys' has no attribute 'args'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[11], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43msys\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43margs\x1B[49m\n',
+    "\x1B[0;31mAttributeError\x1B[0m: module 'sys' has no attribute 'args'"
+  ]
+}
+18:32:21.870 [warn] Error in background execution:
+ Traceback (most recent call last):
+  File "/tmp/ipykernel_14633/1660720928.py", line 17, in bg_main
+    output.update({"application/vnd.vscode.bg.execution.15.result": do_implementation()}, raw=True)
+                                                                    ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_14633/1660720928.py", line 13, in do_implementation
+    return get_ipython().kernel.do_complete("sys.args", 4)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 509, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 545, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 886, in rectify_completions
+    completions = list(completions)
+                  ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 2871, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 3003, in _completions
+    assert before.endswith(matched_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+18:32:22.322 [warn] Error in background execution:
+ Traceback (most recent call last):
+  File "/tmp/ipykernel_14633/3769577227.py", line 17, in bg_main
+    output.update({"application/vnd.vscode.bg.execution.16.result": do_implementation()}, raw=True)
+                                                                    ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_14633/3769577227.py", line 13, in do_implementation
+    return get_ipython().kernel.do_complete("sys.args", 4)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 509, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 545, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 886, in rectify_completions
+    completions = list(completions)
+                  ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 2871, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 3003, in _completions
+    assert before.endswith(matched_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+18:34:45.214 [warn] Cell completed with errors iu [Error]: name '__file__' is not defined
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'NameError',
+  evalue: "name '__file__' is not defined",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mNameError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[13], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m current_dir \x1B[38;5;241m=\x1B[39m os\x1B[38;5;241m.\x1B[39mpath\x1B[38;5;241m.\x1B[39mdirname(os\x1B[38;5;241m.\x1B[39mpath\x1B[38;5;241m.\x1B[39mabspath(\x1B[38;5;18;43m__file__\x1B[39;49m))\n',
+    "\x1B[0;31mNameError\x1B[0m: name '__file__' is not defined"
+  ]
+}
+18:35:07.682 [warn] Cell completed with errors iu [Error]: [Errno 2] No such file or directory: '/new/path/to/directory'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'FileNotFoundError',
+  evalue: "[Errno 2] No such file or directory: '/new/path/to/directory'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mFileNotFoundError\x1B[0m                         Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[16], line 2\x1B[0m\n' +
+      "\x1B[1;32m      1\x1B[0m new_path \x1B[38;5;241m=\x1B[39m \x1B[38;5;124m'\x1B[39m\x1B[38;5;124m/new/path/to/directory\x1B[39m\x1B[38;5;124m'\x1B[39m\n" +
+      '\x1B[0;32m----> 2\x1B[0m \x1B[43mos\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mchdir\x1B[49m\x1B[43m(\x1B[49m\x1B[43mnew_path\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m      3\x1B[0m current_path \x1B[38;5;241m=\x1B[39m os\x1B[38;5;241m.\x1B[39mgetcwd()\n' +
+      '\x1B[1;32m      4\x1B[0m \x1B[38;5;28mprint\x1B[39m(current_path)\n',
+    "\x1B[0;31mFileNotFoundError\x1B[0m: [Errno 2] No such file or directory: '/new/path/to/directory'"
+  ]
+}
+18:35:54.531 [warn] Error in background execution:
+ Traceback (most recent call last):
+  File "/tmp/ipykernel_14633/1416073525.py", line 17, in bg_main
+    output.update({"application/vnd.vscode.bg.execution.23.result": do_implementation()}, raw=True)
+                                                                    ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_14633/1416073525.py", line 13, in do_implementation
+    return get_ipython().kernel.do_complete("os.", 2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 509, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 545, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 886, in rectify_completions
+    completions = list(completions)
+                  ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 2871, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 3003, in _completions
+    assert before.endswith(matched_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+18:35:59.088 [warn] Error in background execution:
+ Traceback (most recent call last):
+  File "/tmp/ipykernel_14633/1378640759.py", line 17, in bg_main
+    output.update({"application/vnd.vscode.bg.execution.25.result": do_implementation()}, raw=True)
+                                                                    ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_14633/1378640759.py", line 13, in do_implementation
+    return get_ipython().kernel.do_complete("os.ap", 4)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 509, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 545, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 886, in rectify_completions
+    completions = list(completions)
+                  ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 2871, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 3003, in _completions
+    assert before.endswith(matched_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+18:36:01.319 [warn] Error in background execution:
+ Traceback (most recent call last):
+  File "/tmp/ipykernel_14633/1909559025.py", line 17, in bg_main
+    output.update({"application/vnd.vscode.bg.execution.28.result": do_implementation()}, raw=True)
+                                                                    ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_14633/1909559025.py", line 13, in do_implementation
+    return get_ipython().kernel.do_complete("os.pạt", 5)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 509, in do_complete
+    return self._experimental_do_complete(code, cursor_pos)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/ipykernel/ipkernel.py", line 545, in _experimental_do_complete
+    completions = list(_rectify_completions(code, raw_completions))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 886, in rectify_completions
+    completions = list(completions)
+                  ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 2871, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/usr/local/lib/python3.11/site-packages/IPython/core/completer.py", line 3003, in _completions
+    assert before.endswith(matched_text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+18:36:06.065 [info] Too many pending requests 1 for kernel 6130451a-3c26-4686-87b6-f39b451dbaa2, waiting for it to be ready.
+18:50:31.753 [info] Restart requested /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+18:50:32.516 [warn] Failed to get activated env vars for /usr/local/bin/python in 473ms
+18:50:32.545 [info] Process Execution: /usr/local/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+18:50:32.583 [info] Process Execution: /usr/local/bin/python -m ipykernel_launcher --f=/~/.local/share/jupyter/runtime/kernel-v370c6d973272b88e472b803807c35077ab8c53e0d.json
+    > cwd: //container/pyspark_workspace/source_code/sample_code
+18:50:36.052 [info] Restarted b5390a22-5011-47f6-837f-1506fd3ad930
+19:03:21.092 [warn] Cell completed with errors iu [Error]: [Errno 2] No such file or directory: '/../local_data_storage/master_data/CustomerProductAccountIDs.csv'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'FileNotFoundError',
+  evalue: "[Errno 2] No such file or directory: '/../local_data_storage/master_data/CustomerProductAccountIDs.csv'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mFileNotFoundError\x1B[0m                         Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[8], line 4\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mimport\x1B[39;00m \x1B[38;5;21;01mtime\x1B[39;00m\n' +
+      '\x1B[1;32m      3\x1B[0m \x1B[38;5;28;01mfrom\x1B[39;00m \x1B[38;5;21;01mpyspark\x1B[39;00m\x1B[38;5;21;01m.\x1B[39;00m\x1B[38;5;21;01msql\x1B[39;00m \x1B[38;5;28;01mimport\x1B[39;00m SparkSession\n' +
+      '\x1B[0;32m----> 4\x1B[0m \x1B[38;5;28;01mfrom\x1B[39;00m \x1B[38;5;21;01mgenerate_data\x1B[39;00m\x1B[38;5;21;01m.\x1B[39;00m\x1B[38;5;21;01mgenerate_dummy_data\x1B[39;00m \x1B[38;5;28;01mimport\x1B[39;00m DummyDataGenerator\n' +
+      '\x1B[1;32m      6\x1B[0m \x1B[38;5;66;03m# Retrieve input variables from Airflow task parameters\x1B[39;00m\n' +
+      "\x1B[1;32m      7\x1B[0m server_name \x1B[38;5;241m=\x1B[39m \x1B[38;5;124m'\x1B[39m\x1B[38;5;124msqlserver_database_1\x1B[39m\x1B[38;5;124m'\x1B[39m\n",
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:16\x1B[0m\n' +
+      '\x1B[1;32m     13\x1B[0m         reader \x1B[38;5;241m=\x1B[39m csv\x1B[38;5;241m.\x1B[39mDictReader(file)\n' +
+      '\x1B[1;32m     14\x1B[0m         \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28mlist\x1B[39m(reader)\n' +
+      "\x1B[0;32m---> 16\x1B[0m customer_product_account_ids \x1B[38;5;241m=\x1B[39m \x1B[43mload_ids_and_product_info\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43m/../local_data_storage/master_data/CustomerProductAccountIDs.csv\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m\n" +
+      '\x1B[1;32m     18\x1B[0m \x1B[38;5;66;03m# Load Product information from CSV file\x1B[39;00m\n' +
+      '\x1B[1;32m     19\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mload_product_info\x1B[39m(file_path):\n',
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:12\x1B[0m, in \x1B[0;36mload_ids_and_product_info\x1B[0;34m(file_path)\x1B[0m\n' +
+      '\x1B[1;32m     11\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mload_ids_and_product_info\x1B[39m(file_path):\n' +
+      "\x1B[0;32m---> 12\x1B[0m     \x1B[38;5;28;01mwith\x1B[39;00m \x1B[38;5;28;43mopen\x1B[39;49m\x1B[43m(\x1B[49m\x1B[43mfile_path\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mmode\x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43mr\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m \x1B[38;5;28;01mas\x1B[39;00m file:\n" +
+      '\x1B[1;32m     13\x1B[0m         reader \x1B[38;5;241m=\x1B[39m csv\x1B[38;5;241m.\x1B[39mDictReader(file)\n' +
+      '\x1B[1;32m     14\x1B[0m         \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28mlist\x1B[39m(reader)\n',
+    "\x1B[0;31mFileNotFoundError\x1B[0m: [Errno 2] No such file or directory: '/../local_data_storage/master_data/CustomerProductAccountIDs.csv'"
+  ]
+}
+19:04:56.590 [warn] Cell completed with errors iu [Error]: An error occurred while calling o65.save.
+: java.sql.SQLException: No suitable driver
+	at java.sql/java.sql.DriverManager.getDriver(DriverManager.java:299)
+	at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.$anonfun$driverClass$2(JDBCOptions.scala:109)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.<init>(JDBCOptions.scala:109)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcOptionsInWrite.<init>(JDBCOptions.scala:254)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcOptionsInWrite.<init>(JDBCOptions.scala:258)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:47)
+	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'Py4JJavaError',
+  evalue: 'An error occurred while calling o65.save.\n' +
+    ': java.sql.SQLException: No suitable driver\n' +
+    '\tat java.sql/java.sql.DriverManager.getDriver(DriverManager.java:299)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.$anonfun$driverClass$2(JDBCOptions.scala:109)\n' +
+    '\tat scala.Option.getOrElse(Option.scala:189)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.<init>(JDBCOptions.scala:109)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcOptionsInWrite.<init>(JDBCOptions.scala:254)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcOptionsInWrite.<init>(JDBCOptions.scala:258)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:47)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)\n' +
+    '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n' +
+    '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n' +
+    '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)\n' +
+    '\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)\n' +
+    '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n' +
+    '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n' +
+    '\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n' +
+    '\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n' +
+    '\tat py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\n' +
+    '\tat py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\n' +
+    '\tat py4j.Gateway.invoke(Gateway.java:282)\n' +
+    '\tat py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\n' +
+    '\tat py4j.commands.CallCommand.execute(CallCommand.java:79)\n' +
+    '\tat py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)\n' +
+    '\tat py4j.ClientServerConnection.run(ClientServerConnection.java:106)\n' +
+    '\tat java.base/java.lang.Thread.run(Thread.java:840)\n',
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mPy4JJavaError\x1B[0m                             Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[9], line 33\x1B[0m\n' +
+      '\x1B[1;32m     31\x1B[0m customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m generator\x1B[38;5;241m.\x1B[39mgenerate_data(\x1B[38;5;241m100\x1B[39m)\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[0;32m---> 33\x1B[0m \x1B[43minsert_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43mCustomerProductAccount\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n" +
+      '\x1B[1;32m     34\x1B[0m \x1B[38;5;66;03m# Generate and insert data for AccountTransactionHistory table\x1B[39;00m\n' +
+      "\x1B[1;32m     35\x1B[0m insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountTransactionHistory\x1B[39m\x1B[38;5;124m'\x1B[39m, account_transaction_history_data)\n",
+    'Cell \x1B[0;32mIn[9], line 26\x1B[0m, in \x1B[0;36minsert_data\x1B[0;34m(table_name, data)\x1B[0m\n' +
+      '\x1B[1;32m     17\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21minsert_data\x1B[39m(table_name, data):\n' +
+      '\x1B[1;32m     18\x1B[0m     df \x1B[38;5;241m=\x1B[39m spark\x1B[38;5;241m.\x1B[39mcreateDataFrame(data)\n' +
+      '\x1B[1;32m     19\x1B[0m     \x1B[43mdf\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mwrite\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     20\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mformat\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mjdbc\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     21\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43murl\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mjdbc_url\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     22\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mdbtable\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mtable_name\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     23\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43muser\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43musername\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     24\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mpassword\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mpassword\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     25\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mmode\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mappend\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[0;32m---> 26\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msave\x1B[49m\x1B[43m(\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/readwriter.py:1461\x1B[0m, in \x1B[0;36mDataFrameWriter.save\x1B[0;34m(self, path, format, mode, partitionBy, **options)\x1B[0m\n' +
+      '\x1B[1;32m   1459\x1B[0m     \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mformat(\x1B[38;5;28mformat\x1B[39m)\n' +
+      '\x1B[1;32m   1460\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m path \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[0;32m-> 1461\x1B[0m     \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jwrite\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msave\x1B[49m\x1B[43m(\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1462\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[1;32m   1463\x1B[0m     \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jwrite\x1B[38;5;241m.\x1B[39msave(path)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/py4j/java_gateway.py:1322\x1B[0m, in \x1B[0;36mJavaMember.__call__\x1B[0;34m(self, *args)\x1B[0m\n' +
+      '\x1B[1;32m   1316\x1B[0m command \x1B[38;5;241m=\x1B[39m proto\x1B[38;5;241m.\x1B[39mCALL_COMMAND_NAME \x1B[38;5;241m+\x1B[39m\\\n' +
+      '\x1B[1;32m   1317\x1B[0m     \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcommand_header \x1B[38;5;241m+\x1B[39m\\\n' +
+      '\x1B[1;32m   1318\x1B[0m     args_command \x1B[38;5;241m+\x1B[39m\\\n' +
+      '\x1B[1;32m   1319\x1B[0m     proto\x1B[38;5;241m.\x1B[39mEND_COMMAND_PART\n' +
+      '\x1B[1;32m   1321\x1B[0m answer \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgateway_client\x1B[38;5;241m.\x1B[39msend_command(command)\n' +
+      '\x1B[0;32m-> 1322\x1B[0m return_value \x1B[38;5;241m=\x1B[39m \x1B[43mget_return_value\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m   1323\x1B[0m \x1B[43m    \x1B[49m\x1B[43manswer\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgateway_client\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mtarget_id\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mname\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1325\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m temp_arg \x1B[38;5;129;01min\x1B[39;00m temp_args:\n' +
+      '\x1B[1;32m   1326\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28mhasattr\x1B[39m(temp_arg, \x1B[38;5;124m"\x1B[39m\x1B[38;5;124m_detach\x1B[39m\x1B[38;5;124m"\x1B[39m):\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/errors/exceptions/captured.py:179\x1B[0m, in \x1B[0;36mcapture_sql_exception.<locals>.deco\x1B[0;34m(*a, **kw)\x1B[0m\n' +
+      '\x1B[1;32m    177\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdeco\x1B[39m(\x1B[38;5;241m*\x1B[39ma: Any, \x1B[38;5;241m*\x1B[39m\x1B[38;5;241m*\x1B[39mkw: Any) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m Any:\n' +
+      '\x1B[1;32m    178\x1B[0m     \x1B[38;5;28;01mtry\x1B[39;00m:\n' +
+      '\x1B[0;32m--> 179\x1B[0m         \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[43mf\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m*\x1B[39;49m\x1B[43ma\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m*\x1B[39;49m\x1B[38;5;241;43m*\x1B[39;49m\x1B[43mkw\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m    180\x1B[0m     \x1B[38;5;28;01mexcept\x1B[39;00m Py4JJavaError \x1B[38;5;28;01mas\x1B[39;00m e:\n' +
+      '\x1B[1;32m    181\x1B[0m         converted \x1B[38;5;241m=\x1B[39m convert_exception(e\x1B[38;5;241m.\x1B[39mjava_exception)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/py4j/protocol.py:326\x1B[0m, in \x1B[0;36mget_return_value\x1B[0;34m(answer, gateway_client, target_id, name)\x1B[0m\n' +
+      '\x1B[1;32m    324\x1B[0m value \x1B[38;5;241m=\x1B[39m OUTPUT_CONVERTER[\x1B[38;5;28mtype\x1B[39m](answer[\x1B[38;5;241m2\x1B[39m:], gateway_client)\n' +
+      '\x1B[1;32m    325\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m answer[\x1B[38;5;241m1\x1B[39m] \x1B[38;5;241m==\x1B[39m REFERENCE_TYPE:\n' +
+      '\x1B[0;32m--> 326\x1B[0m     \x1B[38;5;28;01mraise\x1B[39;00m Py4JJavaError(\n' +
+      '\x1B[1;32m    327\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAn error occurred while calling \x1B[39m\x1B[38;5;132;01m{0}\x1B[39;00m\x1B[38;5;132;01m{1}\x1B[39;00m\x1B[38;5;132;01m{2}\x1B[39;00m\x1B[38;5;124m.\x1B[39m\x1B[38;5;130;01m\\n\x1B[39;00m\x1B[38;5;124m"\x1B[39m\x1B[38;5;241m.\x1B[39m\n' +
+      '\x1B[1;32m    328\x1B[0m         \x1B[38;5;28mformat\x1B[39m(target_id, \x1B[38;5;124m"\x1B[39m\x1B[38;5;124m.\x1B[39m\x1B[38;5;124m"\x1B[39m, name), value)\n' +
+      '\x1B[1;32m    329\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[1;32m    330\x1B[0m     \x1B[38;5;28;01mraise\x1B[39;00m Py4JError(\n' +
+      '\x1B[1;32m    331\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAn error occurred while calling \x1B[39m\x1B[38;5;132;01m{0}\x1B[39;00m\x1B[38;5;132;01m{1}\x1B[39;00m\x1B[38;5;132;01m{2}\x1B[39;00m\x1B[38;5;124m. Trace:\x1B[39m\x1B[38;5;130;01m\\n\x1B[39;00m\x1B[38;5;132;01m{3}\x1B[39;00m\x1B[38;5;130;01m\\n\x1B[39;00m\x1B[38;5;124m"\x1B[39m\x1B[38;5;241m.\x1B[39m\n' +
+      '\x1B[1;32m    332\x1B[0m         \x1B[38;5;28mformat\x1B[39m(target_id, \x1B[38;5;124m"\x1B[39m\x1B[38;5;124m.\x1B[39m\x1B[38;5;124m"\x1B[39m, name, value))\n',
+    '\x1B[0;31mPy4JJavaError\x1B[0m: An error occurred while calling o65.save.\n' +
+      ': java.sql.SQLException: No suitable driver\n' +
+      '\tat java.sql/java.sql.DriverManager.getDriver(DriverManager.java:299)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.$anonfun$driverClass$2(JDBCOptions.scala:109)\n' +
+      '\tat scala.Option.getOrElse(Option.scala:189)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.<init>(JDBCOptions.scala:109)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcOptionsInWrite.<init>(JDBCOptions.scala:254)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcOptionsInWrite.<init>(JDBCOptions.scala:258)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:47)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)\n' +
+      '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n' +
+      '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n' +
+      '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)\n' +
+      '\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)\n' +
+      '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n' +
+      '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n' +
+      '\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n' +
+      '\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n' +
+      '\tat py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\n' +
+      '\tat py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\n' +
+      '\tat py4j.Gateway.invoke(Gateway.java:282)\n' +
+      '\tat py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\n' +
+      '\tat py4j.commands.CallCommand.execute(CallCommand.java:79)\n' +
+      '\tat py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)\n' +
+      '\tat py4j.ClientServerConnection.run(ClientServerConnection.java:106)\n' +
+      '\tat java.base/java.lang.Thread.run(Thread.java:840)\n'
+  ]
+}
+19:05:22.446 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[11], line 33\x1B[0m\n' +
+      '\x1B[1;32m     31\x1B[0m customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m generator\x1B[38;5;241m.\x1B[39mgenerate_data(\x1B[38;5;241m100\x1B[39m)\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[0;32m---> 33\x1B[0m \x1B[43minsert_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43mCustomerProductAccount\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n" +
+      '\x1B[1;32m     34\x1B[0m \x1B[38;5;66;03m# Generate and insert data for AccountTransactionHistory table\x1B[39;00m\n' +
+      "\x1B[1;32m     35\x1B[0m insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountTransactionHistory\x1B[39m\x1B[38;5;124m'\x1B[39m, account_transaction_history_data)\n",
+    'Cell \x1B[0;32mIn[11], line 18\x1B[0m, in \x1B[0;36minsert_data\x1B[0;34m(table_name, data)\x1B[0m\n' +
+      '\x1B[1;32m     17\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21minsert_data\x1B[39m(table_name, data):\n' +
+      '\x1B[0;32m---> 18\x1B[0m     df \x1B[38;5;241m=\x1B[39m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mcreateDataFrame\x1B[49m\x1B[43m(\x1B[49m\x1B[43mdata\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     19\x1B[0m     df\x1B[38;5;241m.\x1B[39mwrite \\\n' +
+      '\x1B[1;32m     20\x1B[0m         \x1B[38;5;241m.\x1B[39mformat(\x1B[38;5;124m"\x1B[39m\x1B[38;5;124mjdbc\x1B[39m\x1B[38;5;124m"\x1B[39m) \\\n' +
+      '\x1B[1;32m     21\x1B[0m         \x1B[38;5;241m.\x1B[39moption(\x1B[38;5;124m"\x1B[39m\x1B[38;5;124murl\x1B[39m\x1B[38;5;124m"\x1B[39m, jdbc_url) \\\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m     25\x1B[0m         \x1B[38;5;241m.\x1B[39mmode(\x1B[38;5;124m"\x1B[39m\x1B[38;5;124mappend\x1B[39m\x1B[38;5;124m"\x1B[39m) \\\n' +
+      '\x1B[1;32m     26\x1B[0m         \x1B[38;5;241m.\x1B[39msave()\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1443\x1B[0m, in \x1B[0;36mSparkSession.createDataFrame\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1438\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m has_pandas \x1B[38;5;129;01mand\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(data, pd\x1B[38;5;241m.\x1B[39mDataFrame):\n' +
+      '\x1B[1;32m   1439\x1B[0m     \x1B[38;5;66;03m# Create a DataFrame from pandas DataFrame.\x1B[39;00m\n' +
+      '\x1B[1;32m   1440\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28msuper\x1B[39m(SparkSession, \x1B[38;5;28mself\x1B[39m)\x1B[38;5;241m.\x1B[39mcreateDataFrame(  \x1B[38;5;66;03m# type: ignore[call-overload]\x1B[39;00m\n' +
+      '\x1B[1;32m   1441\x1B[0m         data, schema, samplingRatio, verifySchema\n' +
+      '\x1B[1;32m   1442\x1B[0m     )\n' +
+      '\x1B[0;32m-> 1443\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_create_dataframe\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m   1444\x1B[0m \x1B[43m    \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43msamplingRatio\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mverifySchema\x1B[49m\x1B[43m  \x1B[49m\x1B[38;5;66;43;03m# type: ignore[arg-type]\x1B[39;49;00m\n' +
+      '\x1B[1;32m   1445\x1B[0m \x1B[43m\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1485\x1B[0m, in \x1B[0;36mSparkSession._create_dataframe\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1483\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_createFromRDD(data\x1B[38;5;241m.\x1B[39mmap(prepare), schema, samplingRatio)\n' +
+      '\x1B[1;32m   1484\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[0;32m-> 1485\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_createFromLocal\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;28;43mmap\x1B[39;49m\x1B[43m(\x1B[49m\x1B[43mprepare\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m)\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1486\x1B[0m \x1B[38;5;28;01massert\x1B[39;00m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m\n' +
+      '\x1B[1;32m   1487\x1B[0m jrdd \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm\x1B[38;5;241m.\x1B[39mSerDeUtil\x1B[38;5;241m.\x1B[39mtoJavaArray(rdd\x1B[38;5;241m.\x1B[39m_to_java_object_rdd())\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1116\x1B[0m, in \x1B[0;36mSparkSession._createFromLocal\x1B[0;34m(self, data, schema)\x1B[0m\n' +
+      '\x1B[1;32m   1114\x1B[0m \x1B[38;5;66;03m# convert python objects to sql data\x1B[39;00m\n' +
+      '\x1B[1;32m   1115\x1B[0m internal_data \x1B[38;5;241m=\x1B[39m [struct\x1B[38;5;241m.\x1B[39mtoInternal(row) \x1B[38;5;28;01mfor\x1B[39;00m row \x1B[38;5;129;01min\x1B[39;00m tupled_data]\n' +
+      '\x1B[0;32m-> 1116\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_sc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43minternal_data\x1B[49m\x1B[43m)\x1B[49m, struct\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:05:43.617 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[12], line 33\x1B[0m\n' +
+      '\x1B[1;32m     31\x1B[0m customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m generator\x1B[38;5;241m.\x1B[39mgenerate_data(\x1B[38;5;241m100\x1B[39m)\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[0;32m---> 33\x1B[0m \x1B[43minsert_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43mCustomerProductAccount\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n" +
+      '\x1B[1;32m     34\x1B[0m \x1B[38;5;66;03m# Generate and insert data for AccountTransactionHistory table\x1B[39;00m\n' +
+      "\x1B[1;32m     35\x1B[0m insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountTransactionHistory\x1B[39m\x1B[38;5;124m'\x1B[39m, account_transaction_history_data)\n",
+    'Cell \x1B[0;32mIn[12], line 18\x1B[0m, in \x1B[0;36minsert_data\x1B[0;34m(table_name, data)\x1B[0m\n' +
+      '\x1B[1;32m     17\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21minsert_data\x1B[39m(table_name, data):\n' +
+      '\x1B[0;32m---> 18\x1B[0m     df \x1B[38;5;241m=\x1B[39m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mcreateDataFrame\x1B[49m\x1B[43m(\x1B[49m\x1B[43mdata\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1443\x1B[0m, in \x1B[0;36mSparkSession.createDataFrame\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1438\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m has_pandas \x1B[38;5;129;01mand\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(data, pd\x1B[38;5;241m.\x1B[39mDataFrame):\n' +
+      '\x1B[1;32m   1439\x1B[0m     \x1B[38;5;66;03m# Create a DataFrame from pandas DataFrame.\x1B[39;00m\n' +
+      '\x1B[1;32m   1440\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28msuper\x1B[39m(SparkSession, \x1B[38;5;28mself\x1B[39m)\x1B[38;5;241m.\x1B[39mcreateDataFrame(  \x1B[38;5;66;03m# type: ignore[call-overload]\x1B[39;00m\n' +
+      '\x1B[1;32m   1441\x1B[0m         data, schema, samplingRatio, verifySchema\n' +
+      '\x1B[1;32m   1442\x1B[0m     )\n' +
+      '\x1B[0;32m-> 1443\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_create_dataframe\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m   1444\x1B[0m \x1B[43m    \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43msamplingRatio\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mverifySchema\x1B[49m\x1B[43m  \x1B[49m\x1B[38;5;66;43;03m# type: ignore[arg-type]\x1B[39;49;00m\n' +
+      '\x1B[1;32m   1445\x1B[0m \x1B[43m\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1485\x1B[0m, in \x1B[0;36mSparkSession._create_dataframe\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1483\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_createFromRDD(data\x1B[38;5;241m.\x1B[39mmap(prepare), schema, samplingRatio)\n' +
+      '\x1B[1;32m   1484\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[0;32m-> 1485\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_createFromLocal\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;28;43mmap\x1B[39;49m\x1B[43m(\x1B[49m\x1B[43mprepare\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m)\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1486\x1B[0m \x1B[38;5;28;01massert\x1B[39;00m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m\n' +
+      '\x1B[1;32m   1487\x1B[0m jrdd \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm\x1B[38;5;241m.\x1B[39mSerDeUtil\x1B[38;5;241m.\x1B[39mtoJavaArray(rdd\x1B[38;5;241m.\x1B[39m_to_java_object_rdd())\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1116\x1B[0m, in \x1B[0;36mSparkSession._createFromLocal\x1B[0;34m(self, data, schema)\x1B[0m\n' +
+      '\x1B[1;32m   1114\x1B[0m \x1B[38;5;66;03m# convert python objects to sql data\x1B[39;00m\n' +
+      '\x1B[1;32m   1115\x1B[0m internal_data \x1B[38;5;241m=\x1B[39m [struct\x1B[38;5;241m.\x1B[39mtoInternal(row) \x1B[38;5;28;01mfor\x1B[39;00m row \x1B[38;5;129;01min\x1B[39;00m tupled_data]\n' +
+      '\x1B[0;32m-> 1116\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_sc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43minternal_data\x1B[49m\x1B[43m)\x1B[49m, struct\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:06:08.114 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[14], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mcreateDataFrame\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1443\x1B[0m, in \x1B[0;36mSparkSession.createDataFrame\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1438\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m has_pandas \x1B[38;5;129;01mand\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(data, pd\x1B[38;5;241m.\x1B[39mDataFrame):\n' +
+      '\x1B[1;32m   1439\x1B[0m     \x1B[38;5;66;03m# Create a DataFrame from pandas DataFrame.\x1B[39;00m\n' +
+      '\x1B[1;32m   1440\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28msuper\x1B[39m(SparkSession, \x1B[38;5;28mself\x1B[39m)\x1B[38;5;241m.\x1B[39mcreateDataFrame(  \x1B[38;5;66;03m# type: ignore[call-overload]\x1B[39;00m\n' +
+      '\x1B[1;32m   1441\x1B[0m         data, schema, samplingRatio, verifySchema\n' +
+      '\x1B[1;32m   1442\x1B[0m     )\n' +
+      '\x1B[0;32m-> 1443\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_create_dataframe\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m   1444\x1B[0m \x1B[43m    \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43msamplingRatio\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mverifySchema\x1B[49m\x1B[43m  \x1B[49m\x1B[38;5;66;43;03m# type: ignore[arg-type]\x1B[39;49;00m\n' +
+      '\x1B[1;32m   1445\x1B[0m \x1B[43m\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1485\x1B[0m, in \x1B[0;36mSparkSession._create_dataframe\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1483\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_createFromRDD(data\x1B[38;5;241m.\x1B[39mmap(prepare), schema, samplingRatio)\n' +
+      '\x1B[1;32m   1484\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[0;32m-> 1485\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_createFromLocal\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;28;43mmap\x1B[39;49m\x1B[43m(\x1B[49m\x1B[43mprepare\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m)\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1486\x1B[0m \x1B[38;5;28;01massert\x1B[39;00m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m\n' +
+      '\x1B[1;32m   1487\x1B[0m jrdd \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm\x1B[38;5;241m.\x1B[39mSerDeUtil\x1B[38;5;241m.\x1B[39mtoJavaArray(rdd\x1B[38;5;241m.\x1B[39m_to_java_object_rdd())\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1116\x1B[0m, in \x1B[0;36mSparkSession._createFromLocal\x1B[0;34m(self, data, schema)\x1B[0m\n' +
+      '\x1B[1;32m   1114\x1B[0m \x1B[38;5;66;03m# convert python objects to sql data\x1B[39;00m\n' +
+      '\x1B[1;32m   1115\x1B[0m internal_data \x1B[38;5;241m=\x1B[39m [struct\x1B[38;5;241m.\x1B[39mtoInternal(row) \x1B[38;5;28;01mfor\x1B[39;00m row \x1B[38;5;129;01min\x1B[39;00m tupled_data]\n' +
+      '\x1B[0;32m-> 1116\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_sc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43minternal_data\x1B[49m\x1B[43m)\x1B[49m, struct\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:06:58.661 [warn] Cell completed with errors iu [Error]: [CANNOT_INFER_SCHEMA_FOR_TYPE] Can not infer schema for type: `str`.
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'PySparkTypeError',
+  evalue: '[CANNOT_INFER_SCHEMA_FOR_TYPE] Can not infer schema for type: `str`.',
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mPySparkTypeError\x1B[0m                          Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[17], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mcreateDataFrame\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m[\x1B[49m\x1B[38;5;241;43m0\x1B[39;49m\x1B[43m]\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1443\x1B[0m, in \x1B[0;36mSparkSession.createDataFrame\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1438\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m has_pandas \x1B[38;5;129;01mand\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(data, pd\x1B[38;5;241m.\x1B[39mDataFrame):\n' +
+      '\x1B[1;32m   1439\x1B[0m     \x1B[38;5;66;03m# Create a DataFrame from pandas DataFrame.\x1B[39;00m\n' +
+      '\x1B[1;32m   1440\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28msuper\x1B[39m(SparkSession, \x1B[38;5;28mself\x1B[39m)\x1B[38;5;241m.\x1B[39mcreateDataFrame(  \x1B[38;5;66;03m# type: ignore[call-overload]\x1B[39;00m\n' +
+      '\x1B[1;32m   1441\x1B[0m         data, schema, samplingRatio, verifySchema\n' +
+      '\x1B[1;32m   1442\x1B[0m     )\n' +
+      '\x1B[0;32m-> 1443\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_create_dataframe\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m   1444\x1B[0m \x1B[43m    \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43msamplingRatio\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mverifySchema\x1B[49m\x1B[43m  \x1B[49m\x1B[38;5;66;43;03m# type: ignore[arg-type]\x1B[39;49;00m\n' +
+      '\x1B[1;32m   1445\x1B[0m \x1B[43m\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1485\x1B[0m, in \x1B[0;36mSparkSession._create_dataframe\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1483\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_createFromRDD(data\x1B[38;5;241m.\x1B[39mmap(prepare), schema, samplingRatio)\n' +
+      '\x1B[1;32m   1484\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[0;32m-> 1485\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_createFromLocal\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;28;43mmap\x1B[39;49m\x1B[43m(\x1B[49m\x1B[43mprepare\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m)\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1486\x1B[0m \x1B[38;5;28;01massert\x1B[39;00m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m\n' +
+      '\x1B[1;32m   1487\x1B[0m jrdd \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm\x1B[38;5;241m.\x1B[39mSerDeUtil\x1B[38;5;241m.\x1B[39mtoJavaArray(rdd\x1B[38;5;241m.\x1B[39m_to_java_object_rdd())\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1093\x1B[0m, in \x1B[0;36mSparkSession._createFromLocal\x1B[0;34m(self, data, schema)\x1B[0m\n' +
+      '\x1B[1;32m   1090\x1B[0m     data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlist\x1B[39m(data)\n' +
+      '\x1B[1;32m   1092\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m schema \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;129;01mor\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(schema, (\x1B[38;5;28mlist\x1B[39m, \x1B[38;5;28mtuple\x1B[39m)):\n' +
+      '\x1B[0;32m-> 1093\x1B[0m     struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_inferSchemaFromList\x1B[49m\x1B[43m(\x1B[49m\x1B[43mdata\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mnames\x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43mschema\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1094\x1B[0m     converter \x1B[38;5;241m=\x1B[39m _create_converter(struct)\n' +
+      '\x1B[1;32m   1095\x1B[0m     tupled_data: Iterable[Tuple] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mmap\x1B[39m(converter, data)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:955\x1B[0m, in \x1B[0;36mSparkSession._inferSchemaFromList\x1B[0;34m(self, data, names)\x1B[0m\n' +
+      '\x1B[1;32m    953\x1B[0m infer_array_from_first_element \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jconf\x1B[38;5;241m.\x1B[39mlegacyInferArrayTypeFromFirstElement()\n' +
+      '\x1B[1;32m    954\x1B[0m prefer_timestamp_ntz \x1B[38;5;241m=\x1B[39m is_timestamp_ntz_preferred()\n' +
+      '\x1B[0;32m--> 955\x1B[0m schema \x1B[38;5;241m=\x1B[39m \x1B[43mreduce\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m    956\x1B[0m \x1B[43m    \x1B[49m\x1B[43m_merge_type\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    957\x1B[0m \x1B[43m    \x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m    958\x1B[0m \x1B[43m        \x1B[49m\x1B[43m_infer_schema\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m    959\x1B[0m \x1B[43m            \x1B[49m\x1B[43mrow\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    960\x1B[0m \x1B[43m            \x1B[49m\x1B[43mnames\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    961\x1B[0m \x1B[43m            \x1B[49m\x1B[43minfer_dict_as_struct\x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43minfer_dict_as_struct\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    962\x1B[0m \x1B[43m            \x1B[49m\x1B[43minfer_array_from_first_element\x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43minfer_array_from_first_element\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    963\x1B[0m \x1B[43m            \x1B[49m\x1B[43mprefer_timestamp_ntz\x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43mprefer_timestamp_ntz\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    964\x1B[0m \x1B[43m        \x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m    965\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;28;43;01mfor\x1B[39;49;00m\x1B[43m \x1B[49m\x1B[43mrow\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;129;43;01min\x1B[39;49;00m\x1B[43m \x1B[49m\x1B[43mdata\x1B[49m\n' +
+      '\x1B[1;32m    966\x1B[0m \x1B[43m    \x1B[49m\x1B[43m)\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    967\x1B[0m \x1B[43m\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m    968\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m _has_nulltype(schema):\n' +
+      '\x1B[1;32m    969\x1B[0m     \x1B[38;5;28;01mraise\x1B[39;00m PySparkValueError(\n' +
+      '\x1B[1;32m    970\x1B[0m         error_class\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCANNOT_DETERMINE_TYPE\x1B[39m\x1B[38;5;124m"\x1B[39m,\n' +
+      '\x1B[1;32m    971\x1B[0m         message_parameters\x1B[38;5;241m=\x1B[39m{},\n' +
+      '\x1B[1;32m    972\x1B[0m     )\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:958\x1B[0m, in \x1B[0;36m<genexpr>\x1B[0;34m(.0)\x1B[0m\n' +
+      '\x1B[1;32m    953\x1B[0m infer_array_from_first_element \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jconf\x1B[38;5;241m.\x1B[39mlegacyInferArrayTypeFromFirstElement()\n' +
+      '\x1B[1;32m    954\x1B[0m prefer_timestamp_ntz \x1B[38;5;241m=\x1B[39m is_timestamp_ntz_preferred()\n' +
+      '\x1B[1;32m    955\x1B[0m schema \x1B[38;5;241m=\x1B[39m reduce(\n' +
+      '\x1B[1;32m    956\x1B[0m     _merge_type,\n' +
+      '\x1B[1;32m    957\x1B[0m     (\n' +
+      '\x1B[0;32m--> 958\x1B[0m         \x1B[43m_infer_schema\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m    959\x1B[0m \x1B[43m            \x1B[49m\x1B[43mrow\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    960\x1B[0m \x1B[43m            \x1B[49m\x1B[43mnames\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    961\x1B[0m \x1B[43m            \x1B[49m\x1B[43minfer_dict_as_struct\x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43minfer_dict_as_struct\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    962\x1B[0m \x1B[43m            \x1B[49m\x1B[43minfer_array_from_first_element\x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43minfer_array_from_first_element\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    963\x1B[0m \x1B[43m            \x1B[49m\x1B[43mprefer_timestamp_ntz\x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43mprefer_timestamp_ntz\x1B[49m\x1B[43m,\x1B[49m\n' +
+      '\x1B[1;32m    964\x1B[0m \x1B[43m        \x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m    965\x1B[0m         \x1B[38;5;28;01mfor\x1B[39;00m row \x1B[38;5;129;01min\x1B[39;00m data\n' +
+      '\x1B[1;32m    966\x1B[0m     ),\n' +
+      '\x1B[1;32m    967\x1B[0m )\n' +
+      '\x1B[1;32m    968\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m _has_nulltype(schema):\n' +
+      '\x1B[1;32m    969\x1B[0m     \x1B[38;5;28;01mraise\x1B[39;00m PySparkValueError(\n' +
+      '\x1B[1;32m    970\x1B[0m         error_class\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCANNOT_DETERMINE_TYPE\x1B[39m\x1B[38;5;124m"\x1B[39m,\n' +
+      '\x1B[1;32m    971\x1B[0m         message_parameters\x1B[38;5;241m=\x1B[39m{},\n' +
+      '\x1B[1;32m    972\x1B[0m     )\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/types.py:1684\x1B[0m, in \x1B[0;36m_infer_schema\x1B[0;34m(row, names, infer_dict_as_struct, infer_array_from_first_element, prefer_timestamp_ntz)\x1B[0m\n' +
+      '\x1B[1;32m   1681\x1B[0m     items \x1B[38;5;241m=\x1B[39m \x1B[38;5;28msorted\x1B[39m(row\x1B[38;5;241m.\x1B[39m\x1B[38;5;18m__dict__\x1B[39m\x1B[38;5;241m.\x1B[39mitems())\n' +
+      '\x1B[1;32m   1683\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[0;32m-> 1684\x1B[0m     \x1B[38;5;28;01mraise\x1B[39;00m PySparkTypeError(\n' +
+      '\x1B[1;32m   1685\x1B[0m         error_class\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCANNOT_INFER_SCHEMA_FOR_TYPE\x1B[39m\x1B[38;5;124m"\x1B[39m,\n' +
+      '\x1B[1;32m   1686\x1B[0m         message_parameters\x1B[38;5;241m=\x1B[39m{\x1B[38;5;124m"\x1B[39m\x1B[38;5;124mdata_type\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mtype\x1B[39m(row)\x1B[38;5;241m.\x1B[39m\x1B[38;5;18m__name__\x1B[39m},\n' +
+      '\x1B[1;32m   1687\x1B[0m     )\n' +
+      '\x1B[1;32m   1689\x1B[0m fields \x1B[38;5;241m=\x1B[39m []\n' +
+      '\x1B[1;32m   1690\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m k, v \x1B[38;5;129;01min\x1B[39;00m items:\n',
+    '\x1B[0;31mPySparkTypeError\x1B[0m: [CANNOT_INFER_SCHEMA_FOR_TYPE] Can not infer schema for type: `str`.'
+  ]
+}
+19:07:52.907 [warn] Cell completed with errors iu [Error]: name 'sc' is not defined
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'NameError',
+  evalue: "name 'sc' is not defined",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mNameError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[19], line 5\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mjson_to_spark_df\x1B[39m(json_data):\n' +
+      '\x1B[1;32m      3\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m spark\x1B[38;5;241m.\x1B[39mread\x1B[38;5;241m.\x1B[39mjson(sc\x1B[38;5;241m.\x1B[39mparallelize([json\x1B[38;5;241m.\x1B[39mdumps(customer_product_account_data)]))\n' +
+      '\x1B[0;32m----> 5\x1B[0m df_customer_product_account \x1B[38;5;241m=\x1B[39m \x1B[43mjson_to_spark_df\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m      6\x1B[0m df_customer_product_account\x1B[38;5;241m.\x1B[39mshow()\n',
+    'Cell \x1B[0;32mIn[19], line 3\x1B[0m, in \x1B[0;36mjson_to_spark_df\x1B[0;34m(json_data)\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mjson_to_spark_df\x1B[39m(json_data):\n' +
+      '\x1B[0;32m----> 3\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m spark\x1B[38;5;241m.\x1B[39mread\x1B[38;5;241m.\x1B[39mjson(\x1B[43msc\x1B[49m\x1B[38;5;241m.\x1B[39mparallelize([json\x1B[38;5;241m.\x1B[39mdumps(customer_product_account_data)]))\n',
+    "\x1B[0;31mNameError\x1B[0m: name 'sc' is not defined"
+  ]
+}
+19:07:55.823 [warn] Cell completed with errors iu [Error]: name 'sc' is not defined
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'NameError',
+  evalue: "name 'sc' is not defined",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mNameError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[20], line 5\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mjson_to_spark_df\x1B[39m(json_data):\n' +
+      '\x1B[1;32m      3\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m spark\x1B[38;5;241m.\x1B[39mread\x1B[38;5;241m.\x1B[39mjson(sc\x1B[38;5;241m.\x1B[39mparallelize([json\x1B[38;5;241m.\x1B[39mdumps(customer_product_account_data)]))\n' +
+      '\x1B[0;32m----> 5\x1B[0m df_customer_product_account \x1B[38;5;241m=\x1B[39m \x1B[43mjson_to_spark_df\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m      6\x1B[0m df_customer_product_account\x1B[38;5;241m.\x1B[39mshow()\n',
+    'Cell \x1B[0;32mIn[20], line 3\x1B[0m, in \x1B[0;36mjson_to_spark_df\x1B[0;34m(json_data)\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mjson_to_spark_df\x1B[39m(json_data):\n' +
+      '\x1B[0;32m----> 3\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m spark\x1B[38;5;241m.\x1B[39mread\x1B[38;5;241m.\x1B[39mjson(\x1B[43msc\x1B[49m\x1B[38;5;241m.\x1B[39mparallelize([json\x1B[38;5;241m.\x1B[39mdumps(customer_product_account_data)]))\n',
+    "\x1B[0;31mNameError\x1B[0m: name 'sc' is not defined"
+  ]
+}
+19:08:00.511 [warn] Cell completed with errors iu [Error]: 'SparkSession' object has no attribute 'parallelize'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'SparkSession' object has no attribute 'parallelize'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[21], line 5\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mjson_to_spark_df\x1B[39m(json_data):\n' +
+      '\x1B[1;32m      3\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m spark\x1B[38;5;241m.\x1B[39mread\x1B[38;5;241m.\x1B[39mjson(spark\x1B[38;5;241m.\x1B[39mparallelize([json\x1B[38;5;241m.\x1B[39mdumps(customer_product_account_data)]))\n' +
+      '\x1B[0;32m----> 5\x1B[0m df_customer_product_account \x1B[38;5;241m=\x1B[39m \x1B[43mjson_to_spark_df\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m      6\x1B[0m df_customer_product_account\x1B[38;5;241m.\x1B[39mshow()\n',
+    'Cell \x1B[0;32mIn[21], line 3\x1B[0m, in \x1B[0;36mjson_to_spark_df\x1B[0;34m(json_data)\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mjson_to_spark_df\x1B[39m(json_data):\n' +
+      '\x1B[0;32m----> 3\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m spark\x1B[38;5;241m.\x1B[39mread\x1B[38;5;241m.\x1B[39mjson(\x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m([json\x1B[38;5;241m.\x1B[39mdumps(customer_product_account_data)]))\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'SparkSession' object has no attribute 'parallelize'"
+  ]
+}
+19:08:09.398 [warn] Cell completed with errors iu [Error]: name 'parallelize' is not defined
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'NameError',
+  evalue: "name 'parallelize' is not defined",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mNameError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[22], line 1\x1B[0m\n\x1B[0;32m----> 1\x1B[0m \x1B[43mparallelize\x1B[49m\n',
+    "\x1B[0;31mNameError\x1B[0m: name 'parallelize' is not defined"
+  ]
+}
+19:08:48.697 [warn] Cell completed with errors iu [Error]: 'SparkSession' object has no attribute 'parallelize'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'SparkSession' object has no attribute 'parallelize'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[23], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'SparkSession' object has no attribute 'parallelize'"
+  ]
+}
+19:08:56.418 [warn] Cell completed with errors iu [Error]: 'SparkSession' object has no attribute 'parallelize'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'SparkSession' object has no attribute 'parallelize'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[24], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43msqlContext\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'SparkSession' object has no attribute 'parallelize'"
+  ]
+}
+19:11:26.087 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[25], line 5\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mjson_to_spark_df\x1B[39m(json_data):\n' +
+      '\x1B[1;32m      3\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m spark\x1B[38;5;241m.\x1B[39mread\x1B[38;5;241m.\x1B[39mjson(spark\x1B[38;5;241m.\x1B[39m_sc\x1B[38;5;241m.\x1B[39mparallelize([json\x1B[38;5;241m.\x1B[39mdumps(customer_product_account_data)]))\n' +
+      '\x1B[0;32m----> 5\x1B[0m df_customer_product_account \x1B[38;5;241m=\x1B[39m \x1B[43mjson_to_spark_df\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m      6\x1B[0m df_customer_product_account\x1B[38;5;241m.\x1B[39mshow()\n',
+    'Cell \x1B[0;32mIn[25], line 3\x1B[0m, in \x1B[0;36mjson_to_spark_df\x1B[0;34m(json_data)\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mjson_to_spark_df\x1B[39m(json_data):\n' +
+      '\x1B[0;32m----> 3\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m spark\x1B[38;5;241m.\x1B[39mread\x1B[38;5;241m.\x1B[39mjson(\x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_sc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43m[\x1B[49m\x1B[43mjson\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdumps\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\x1B[43m]\x1B[49m\x1B[43m)\x1B[49m)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:11:48.817 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[26], line 5\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mjson_to_spark_df\x1B[39m(json_data):\n' +
+      '\x1B[1;32m      3\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m spark\x1B[38;5;241m.\x1B[39mread\x1B[38;5;241m.\x1B[39mjson(spark\x1B[38;5;241m.\x1B[39m_sc\x1B[38;5;241m.\x1B[39mparallelize(customer_product_account_data))\n' +
+      '\x1B[0;32m----> 5\x1B[0m df_customer_product_account \x1B[38;5;241m=\x1B[39m \x1B[43mjson_to_spark_df\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m      6\x1B[0m df_customer_product_account\x1B[38;5;241m.\x1B[39mshow()\n',
+    'Cell \x1B[0;32mIn[26], line 3\x1B[0m, in \x1B[0;36mjson_to_spark_df\x1B[0;34m(json_data)\x1B[0m\n' +
+      '\x1B[1;32m      2\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mjson_to_spark_df\x1B[39m(json_data):\n' +
+      '\x1B[0;32m----> 3\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m spark\x1B[38;5;241m.\x1B[39mread\x1B[38;5;241m.\x1B[39mjson(\x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_sc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:12:00.519 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[27], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_sc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:14:17.613 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[28], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msparkContext\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:14:26.228 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[29], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msparkContext\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m[\x1B[49m\x1B[38;5;241;43m0\x1B[39;49m\x1B[43m]\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:14:34.483 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[30], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msparkContext\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43m[\x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m[\x1B[49m\x1B[38;5;241;43m0\x1B[39;49m\x1B[43m]\x1B[49m\x1B[43m]\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:17:02.897 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[35], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mcreateDataFrame\x1B[49m\x1B[43m(\x1B[49m\x1B[43m[\x1B[49m\x1B[43mRow\x1B[49m\x1B[43m(\x1B[49m\x1B[43mi\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43;01mfor\x1B[39;49;00m\x1B[43m \x1B[49m\x1B[43mi\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;129;43;01min\x1B[39;49;00m\x1B[43m \x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m]\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1443\x1B[0m, in \x1B[0;36mSparkSession.createDataFrame\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1438\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m has_pandas \x1B[38;5;129;01mand\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(data, pd\x1B[38;5;241m.\x1B[39mDataFrame):\n' +
+      '\x1B[1;32m   1439\x1B[0m     \x1B[38;5;66;03m# Create a DataFrame from pandas DataFrame.\x1B[39;00m\n' +
+      '\x1B[1;32m   1440\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28msuper\x1B[39m(SparkSession, \x1B[38;5;28mself\x1B[39m)\x1B[38;5;241m.\x1B[39mcreateDataFrame(  \x1B[38;5;66;03m# type: ignore[call-overload]\x1B[39;00m\n' +
+      '\x1B[1;32m   1441\x1B[0m         data, schema, samplingRatio, verifySchema\n' +
+      '\x1B[1;32m   1442\x1B[0m     )\n' +
+      '\x1B[0;32m-> 1443\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_create_dataframe\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m   1444\x1B[0m \x1B[43m    \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43msamplingRatio\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mverifySchema\x1B[49m\x1B[43m  \x1B[49m\x1B[38;5;66;43;03m# type: ignore[arg-type]\x1B[39;49;00m\n' +
+      '\x1B[1;32m   1445\x1B[0m \x1B[43m\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1485\x1B[0m, in \x1B[0;36mSparkSession._create_dataframe\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1483\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_createFromRDD(data\x1B[38;5;241m.\x1B[39mmap(prepare), schema, samplingRatio)\n' +
+      '\x1B[1;32m   1484\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[0;32m-> 1485\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_createFromLocal\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;28;43mmap\x1B[39;49m\x1B[43m(\x1B[49m\x1B[43mprepare\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m)\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1486\x1B[0m \x1B[38;5;28;01massert\x1B[39;00m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m\n' +
+      '\x1B[1;32m   1487\x1B[0m jrdd \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm\x1B[38;5;241m.\x1B[39mSerDeUtil\x1B[38;5;241m.\x1B[39mtoJavaArray(rdd\x1B[38;5;241m.\x1B[39m_to_java_object_rdd())\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1116\x1B[0m, in \x1B[0;36mSparkSession._createFromLocal\x1B[0;34m(self, data, schema)\x1B[0m\n' +
+      '\x1B[1;32m   1114\x1B[0m \x1B[38;5;66;03m# convert python objects to sql data\x1B[39;00m\n' +
+      '\x1B[1;32m   1115\x1B[0m internal_data \x1B[38;5;241m=\x1B[39m [struct\x1B[38;5;241m.\x1B[39mtoInternal(row) \x1B[38;5;28;01mfor\x1B[39;00m row \x1B[38;5;129;01min\x1B[39;00m tupled_data]\n' +
+      '\x1B[0;32m-> 1116\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_sc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43minternal_data\x1B[49m\x1B[43m)\x1B[49m, struct\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:18:43.731 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[40], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mcreateDataFrame\x1B[49m\x1B[43m(\x1B[49m\x1B[43m[\x1B[49m\x1B[43mRow\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m*\x1B[39;49m\x1B[38;5;241;43m*\x1B[39;49m\x1B[43mi\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43;01mfor\x1B[39;49;00m\x1B[43m \x1B[49m\x1B[43mi\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;129;43;01min\x1B[39;49;00m\x1B[43m \x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m]\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1443\x1B[0m, in \x1B[0;36mSparkSession.createDataFrame\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1438\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m has_pandas \x1B[38;5;129;01mand\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(data, pd\x1B[38;5;241m.\x1B[39mDataFrame):\n' +
+      '\x1B[1;32m   1439\x1B[0m     \x1B[38;5;66;03m# Create a DataFrame from pandas DataFrame.\x1B[39;00m\n' +
+      '\x1B[1;32m   1440\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28msuper\x1B[39m(SparkSession, \x1B[38;5;28mself\x1B[39m)\x1B[38;5;241m.\x1B[39mcreateDataFrame(  \x1B[38;5;66;03m# type: ignore[call-overload]\x1B[39;00m\n' +
+      '\x1B[1;32m   1441\x1B[0m         data, schema, samplingRatio, verifySchema\n' +
+      '\x1B[1;32m   1442\x1B[0m     )\n' +
+      '\x1B[0;32m-> 1443\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_create_dataframe\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m   1444\x1B[0m \x1B[43m    \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43msamplingRatio\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mverifySchema\x1B[49m\x1B[43m  \x1B[49m\x1B[38;5;66;43;03m# type: ignore[arg-type]\x1B[39;49;00m\n' +
+      '\x1B[1;32m   1445\x1B[0m \x1B[43m\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1485\x1B[0m, in \x1B[0;36mSparkSession._create_dataframe\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1483\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_createFromRDD(data\x1B[38;5;241m.\x1B[39mmap(prepare), schema, samplingRatio)\n' +
+      '\x1B[1;32m   1484\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[0;32m-> 1485\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_createFromLocal\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;28;43mmap\x1B[39;49m\x1B[43m(\x1B[49m\x1B[43mprepare\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m)\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1486\x1B[0m \x1B[38;5;28;01massert\x1B[39;00m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m\n' +
+      '\x1B[1;32m   1487\x1B[0m jrdd \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm\x1B[38;5;241m.\x1B[39mSerDeUtil\x1B[38;5;241m.\x1B[39mtoJavaArray(rdd\x1B[38;5;241m.\x1B[39m_to_java_object_rdd())\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1116\x1B[0m, in \x1B[0;36mSparkSession._createFromLocal\x1B[0;34m(self, data, schema)\x1B[0m\n' +
+      '\x1B[1;32m   1114\x1B[0m \x1B[38;5;66;03m# convert python objects to sql data\x1B[39;00m\n' +
+      '\x1B[1;32m   1115\x1B[0m internal_data \x1B[38;5;241m=\x1B[39m [struct\x1B[38;5;241m.\x1B[39mtoInternal(row) \x1B[38;5;28;01mfor\x1B[39;00m row \x1B[38;5;129;01min\x1B[39;00m tupled_data]\n' +
+      '\x1B[0;32m-> 1116\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_sc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43minternal_data\x1B[49m\x1B[43m)\x1B[49m, struct\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:19:09.095 [warn] Cell completed with errors iu [Error]: invalid syntax (3946763465.py, line 2)
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'SyntaxError',
+  evalue: 'invalid syntax (3946763465.py, line 2)',
+  traceback: [
+    '\x1B[0;36m  Cell \x1B[0;32mIn[42], line 2\x1B[0;36m\x1B[0m\n' +
+      '\x1B[0;31m    a [Row(**i) for i in customer_product_account_data]\x1B[0m\n' +
+      '\x1B[0m                ^\x1B[0m\n' +
+      '\x1B[0;31mSyntaxError\x1B[0m\x1B[0;31m:\x1B[0m invalid syntax\n'
+  ]
+}
+19:19:24.557 [warn] Cell completed with errors iu [Error]: 'NoneType' object has no attribute 'sc'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'AttributeError',
+  evalue: "'NoneType' object has no attribute 'sc'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mAttributeError\x1B[0m                            Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[44], line 3\x1B[0m\n' +
+      '\x1B[1;32m      1\x1B[0m \x1B[38;5;66;03m# spark.createDataFrame()\x1B[39;00m\n' +
+      '\x1B[1;32m      2\x1B[0m a  \x1B[38;5;241m=\x1B[39m [Row(\x1B[38;5;241m*\x1B[39m\x1B[38;5;241m*\x1B[39mi) \x1B[38;5;28;01mfor\x1B[39;00m i \x1B[38;5;129;01min\x1B[39;00m customer_product_account_data]\n' +
+      '\x1B[0;32m----> 3\x1B[0m \x1B[43mspark\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mcreateDataFrame\x1B[49m\x1B[43m(\x1B[49m\x1B[43ma\x1B[49m\x1B[43m)\x1B[49m\x1B[38;5;241m.\x1B[39mshow()\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1443\x1B[0m, in \x1B[0;36mSparkSession.createDataFrame\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1438\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m has_pandas \x1B[38;5;129;01mand\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(data, pd\x1B[38;5;241m.\x1B[39mDataFrame):\n' +
+      '\x1B[1;32m   1439\x1B[0m     \x1B[38;5;66;03m# Create a DataFrame from pandas DataFrame.\x1B[39;00m\n' +
+      '\x1B[1;32m   1440\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28msuper\x1B[39m(SparkSession, \x1B[38;5;28mself\x1B[39m)\x1B[38;5;241m.\x1B[39mcreateDataFrame(  \x1B[38;5;66;03m# type: ignore[call-overload]\x1B[39;00m\n' +
+      '\x1B[1;32m   1441\x1B[0m         data, schema, samplingRatio, verifySchema\n' +
+      '\x1B[1;32m   1442\x1B[0m     )\n' +
+      '\x1B[0;32m-> 1443\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_create_dataframe\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m   1444\x1B[0m \x1B[43m    \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43msamplingRatio\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mverifySchema\x1B[49m\x1B[43m  \x1B[49m\x1B[38;5;66;43;03m# type: ignore[arg-type]\x1B[39;49;00m\n' +
+      '\x1B[1;32m   1445\x1B[0m \x1B[43m\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1485\x1B[0m, in \x1B[0;36mSparkSession._create_dataframe\x1B[0;34m(self, data, schema, samplingRatio, verifySchema)\x1B[0m\n' +
+      '\x1B[1;32m   1483\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_createFromRDD(data\x1B[38;5;241m.\x1B[39mmap(prepare), schema, samplingRatio)\n' +
+      '\x1B[1;32m   1484\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[0;32m-> 1485\x1B[0m     rdd, struct \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_createFromLocal\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;28;43mmap\x1B[39;49m\x1B[43m(\x1B[49m\x1B[43mprepare\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mdata\x1B[49m\x1B[43m)\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mschema\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1486\x1B[0m \x1B[38;5;28;01massert\x1B[39;00m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m\n' +
+      '\x1B[1;32m   1487\x1B[0m jrdd \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jvm\x1B[38;5;241m.\x1B[39mSerDeUtil\x1B[38;5;241m.\x1B[39mtoJavaArray(rdd\x1B[38;5;241m.\x1B[39m_to_java_object_rdd())\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/session.py:1116\x1B[0m, in \x1B[0;36mSparkSession._createFromLocal\x1B[0;34m(self, data, schema)\x1B[0m\n' +
+      '\x1B[1;32m   1114\x1B[0m \x1B[38;5;66;03m# convert python objects to sql data\x1B[39;00m\n' +
+      '\x1B[1;32m   1115\x1B[0m internal_data \x1B[38;5;241m=\x1B[39m [struct\x1B[38;5;241m.\x1B[39mtoInternal(row) \x1B[38;5;28;01mfor\x1B[39;00m row \x1B[38;5;129;01min\x1B[39;00m tupled_data]\n' +
+      '\x1B[0;32m-> 1116\x1B[0m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_sc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mparallelize\x1B[49m\x1B[43m(\x1B[49m\x1B[43minternal_data\x1B[49m\x1B[43m)\x1B[49m, struct\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:783\x1B[0m, in \x1B[0;36mSparkContext.parallelize\x1B[0;34m(self, c, numSlices)\x1B[0m\n' +
+      '\x1B[1;32m    751\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mparallelize\x1B[39m(\x1B[38;5;28mself\x1B[39m, c: Iterable[T], numSlices: Optional[\x1B[38;5;28mint\x1B[39m] \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m RDD[T]:\n' +
+      '\x1B[1;32m    752\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    753\x1B[0m \x1B[38;5;124;03m    Distribute a local Python collection to form an RDD. Using range\x1B[39;00m\n' +
+      '\x1B[1;32m    754\x1B[0m \x1B[38;5;124;03m    is recommended if the input represents a range for performance.\x1B[39;00m\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      "\x1B[1;32m    781\x1B[0m \x1B[38;5;124;03m    [['a'], ['b', 'c']]\x1B[39;00m\n" +
+      '\x1B[1;32m    782\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 783\x1B[0m     numSlices \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mint\x1B[39m(numSlices) \x1B[38;5;28;01mif\x1B[39;00m numSlices \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m \x1B[38;5;28;01melse\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mdefaultParallelism\x1B[49m\n' +
+      '\x1B[1;32m    784\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(c, \x1B[38;5;28mrange\x1B[39m):\n' +
+      '\x1B[1;32m    785\x1B[0m         size \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mlen\x1B[39m(c)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/context.py:630\x1B[0m, in \x1B[0;36mSparkContext.defaultParallelism\x1B[0;34m(self)\x1B[0m\n' +
+      '\x1B[1;32m    618\x1B[0m \x1B[38;5;129m@property\x1B[39m\n' +
+      '\x1B[1;32m    619\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdefaultParallelism\x1B[39m(\x1B[38;5;28mself\x1B[39m) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m \x1B[38;5;28mint\x1B[39m:\n' +
+      '\x1B[1;32m    620\x1B[0m \x1B[38;5;250m    \x1B[39m\x1B[38;5;124;03m"""\x1B[39;00m\n' +
+      '\x1B[1;32m    621\x1B[0m \x1B[38;5;124;03m    Default level of parallelism to use when not given by user (e.g. for reduce tasks)\x1B[39;00m\n' +
+      '\x1B[1;32m    622\x1B[0m \n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m    628\x1B[0m \x1B[38;5;124;03m    True\x1B[39;00m\n' +
+      '\x1B[1;32m    629\x1B[0m \x1B[38;5;124;03m    """\x1B[39;00m\n' +
+      '\x1B[0;32m--> 630\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jsc\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msc\x1B[49m()\x1B[38;5;241m.\x1B[39mdefaultParallelism()\n',
+    "\x1B[0;31mAttributeError\x1B[0m: 'NoneType' object has no attribute 'sc'"
+  ]
+}
+19:22:12.445 [warn] Cell completed with errors iu [Error]: closing parenthesis ']' does not match opening parenthesis '(' (694322398.py, line 18)
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'SyntaxError',
+  evalue: "closing parenthesis ']' does not match opening parenthesis '(' (694322398.py, line 18)",
+  traceback: [
+    '\x1B[0;36m  Cell \x1B[0;32mIn[49], line 18\x1B[0;36m\x1B[0m\n' +
+      '\x1B[0;31m    df = spark.createDataFrame(Row(**i) for i in data]).show()\x1B[0m\n' +
+      '\x1B[0m                                                     ^\x1B[0m\n' +
+      "\x1B[0;31mSyntaxError\x1B[0m\x1B[0;31m:\x1B[0m closing parenthesis ']' does not match opening parenthesis '('\n"
+  ]
+}
+19:22:20.438 [info] Interrupt kernel execution
+19:22:20.479 [info] Interrupt requested /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+19:22:21.127 [info] Interrupt kernel execution
+19:22:21.283 [info] Interrupting kernel: python3119jvsc74a57bd0949777d72b0d2535278d3dc13498b2535136f6dfe0678499012e853ee9abcab1
+19:22:21.321 [info] Interrupting kernel via SIGINT
+19:22:21.471 [info] Interrupt requested & sent for /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb in notebookEditor.
+22:46:29.856 [info] Dispose Kernel '/container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb' associated with '/container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb'
+22:46:31.784 [warn] Cancel all remaining cells due to dead kernel

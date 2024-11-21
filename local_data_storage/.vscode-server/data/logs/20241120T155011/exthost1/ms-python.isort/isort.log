@@ -1,0 +1,26 @@
+2024-11-20 15:52:24.445 [info] Name: isort
+2024-11-20 15:52:24.446 [info] Module: isort
+2024-11-20 15:52:24.446 [info] Python extension loading
+2024-11-20 15:52:24.447 [info] Waiting for interpreter from python extension.
+2024-11-20 15:52:26.683 [info] No interpreter found from setting isort.interpreter
+2024-11-20 15:52:26.685 [info] Getting interpreter from ms-python.python extension for workspace /container/pyspark_workspace
+2024-11-20 15:52:26.689 [info] Python extension loaded
+2024-11-20 15:52:28.021 [info] No interpreter found for /container/pyspark_workspace in settings or from ms-python.python extension
+2024-11-20 15:52:28.031 [error] Python interpreter missing:
+[Option 1] Select python interpreter using the ms-python.python.
+[Option 2] Set an interpreter using "isort.interpreter" setting.
+ Please use Python 3.7 or greater.
+2024-11-20 15:58:35.107 [info] No interpreter found from setting isort.interpreter
+2024-11-20 15:58:35.108 [info] Getting interpreter from ms-python.python extension for workspace /container/pyspark_workspace
+2024-11-20 15:58:35.109 [info] No interpreter found from setting isort.interpreter
+2024-11-20 15:58:35.109 [info] Getting interpreter from ms-python.python extension for workspace /container/pyspark_workspace
+2024-11-20 15:58:35.196 [info] No interpreter found for /container/pyspark_workspace in settings or from ms-python.python extension
+2024-11-20 15:58:35.197 [error] Python interpreter missing:
+[Option 1] Select python interpreter using the ms-python.python.
+[Option 2] Set an interpreter using "isort.interpreter" setting.
+ Please use Python 3.7 or greater.
+2024-11-20 15:58:35.198 [info] No interpreter found for /container/pyspark_workspace in settings or from ms-python.python extension
+2024-11-20 15:58:35.199 [error] Python interpreter missing:
+[Option 1] Select python interpreter using the ms-python.python.
+[Option 2] Set an interpreter using "isort.interpreter" setting.
+ Please use Python 3.7 or greater.
