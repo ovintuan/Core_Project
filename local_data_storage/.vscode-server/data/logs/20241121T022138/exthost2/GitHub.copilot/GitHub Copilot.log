@@ -1,5 +1,0 @@
-2024-11-21 03:10:24.403 [info] [certificates] Removed 3 expired certificates
-2024-11-21 03:10:28.037 [info] [fetcher] Using Helix fetcher, Electron fetcher is not available.
-2024-11-21 03:10:28.041 [info] [code-referencing] Public code references are enabled.
-2024-11-21 03:10:28.361 [info] [auth] Successfully authenticated
-2024-11-21 03:15:27.987 [warning] [relatedFiles] unknown language python

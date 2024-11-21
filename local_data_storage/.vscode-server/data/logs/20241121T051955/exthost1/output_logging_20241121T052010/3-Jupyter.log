@@ -1,0 +1,1374 @@
+Visual Studio Code (1.95.3, attached-container, desktop)
+Jupyter Extension Version: 2024.10.0.
+Python Extension Version: 2024.20.0.
+Pylance Extension Version: 2024.11.2.
+Platform: linux (x64).
+Temp Storage folder ~/.vscode-server/data/User/globalStorage/ms-toolsai.jupyter/version-2024.10.0
+Workspace folder /container/pyspark_workspace, Home = /root
+05:21:41.653 [info] Starting Kernel (Python Path: /usr/local/bin/python, Unknown, 3.11.9) for '/container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb' (disableUI=true)
+05:21:46.491 [warn] Failed to get activated env vars for /usr/local/bin/python in 4840ms
+05:21:46.542 [warn] Failed to get activated env vars for /usr/local/bin/python in 4238ms
+05:21:46.619 [info] Process Execution: /usr/local/bin/python -c "import site;print("USER_BASE_VALUE");print(site.USER_BASE);print("USER_BASE_VALUE");"
+05:21:47.433 [info] Process Execution: /usr/local/bin/python -m pip list
+05:21:47.444 [info] Process Execution: /usr/local/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+05:21:47.572 [info] Process Execution: /usr/local/bin/python -m ipykernel_launcher --f=/~/.local/share/jupyter/runtime/kernel-v30fa3abdcbd6e5d247c6ffeddab951ea703038587.json
+    > cwd: //container/pyspark_workspace/source_code/sample_code
+05:22:06.494 [info] Kernel successfully started
+05:22:06.722 [info] Process Execution: /usr/local/bin/python /~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/pythonFiles/printJupyterDataDir.py
+05:23:26.828 [warn] Cell completed with errors iu [Error]: Provider.phone_number() got an unexpected keyword argument 'style'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'TypeError',
+  evalue: "Provider.phone_number() got an unexpected keyword argument 'style'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mTypeError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[6], line 33\x1B[0m\n' +
+      '\x1B[1;32m     30\x1B[0m generator \x1B[38;5;241m=\x1B[39m DummyDataGenerator()\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(\x1B[38;5;241m1\x1B[39m):\n' +
+      '\x1B[0;32m---> 33\x1B[0m     customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m \x1B[43mgenerator\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m20\x1B[39;49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     34\x1B[0m     \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[1;32m     35\x1B[0m     insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerProductAccount\x1B[39m\x1B[38;5;124m'\x1B[39m, customer_product_account_data)\n",
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:85\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_data\x1B[0;34m(self, num_records)\x1B[0m\n' +
+      '\x1B[1;32m     83\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(num_records):\n' +
+      '\x1B[1;32m     84\x1B[0m     record_id \x1B[38;5;241m=\x1B[39m choice(\x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcustomer_product_account_ids)\n' +
+      '\x1B[0;32m---> 85\x1B[0m     customer_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_customer_product_account_data\x1B[49m\x1B[43m(\x1B[49m\x1B[43mrecord_id\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     86\x1B[0m     transaction_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgenerate_account_transaction_history_data(record_id)\n' +
+      '\x1B[1;32m     87\x1B[0m     customer_product_account_data\x1B[38;5;241m.\x1B[39mappend(customer_data)\n',
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:43\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_customer_product_account_data\x1B[0;34m(self, record_id)\x1B[0m\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mgenerate_customer_product_account_data\x1B[39m(\x1B[38;5;28mself\x1B[39m, record_id):\n' +
+      "\x1B[1;32m     33\x1B[0m     product \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mproduct_info[record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m]]\n" +
+      '\x1B[1;32m     34\x1B[0m     record \x1B[38;5;241m=\x1B[39m {\n' +
+      `\x1B[1;32m     35\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     36\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mFirstName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mfirst_name(),\n' +
+      '\x1B[1;32m     37\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLastName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mlast_name(),\n' +
+      '\x1B[1;32m     38\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDateOfBirth\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_of_birth()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     39\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mSSN\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mssn(),\n' +
+      '\x1B[1;32m     40\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mWard\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mstreet_name(),\n' +
+      '\x1B[1;32m     41\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDistrict\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      '\x1B[1;32m     42\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCity\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      `\x1B[0;32m---> 43\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mPhoneNumber\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mfake\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mphone_number\x1B[49m\x1B[43m(\x1B[49m\x1B[43mstyle\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43m \x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43minternational\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m,\n` +
+      '\x1B[1;32m     44\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mEmail\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39memail(),\n' +
+      `\x1B[1;32m     45\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     46\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     47\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     48\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     49\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLimitAmount\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m1000.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      '\x1B[1;32m     50\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mBalance\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m0.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      `\x1B[1;32m     51\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mOpenDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m-5y\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      `\x1B[1;32m     52\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCloseDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m+5y\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      '\x1B[1;32m     53\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mStatusID\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mstr\x1B[39m(uuid\x1B[38;5;241m.\x1B[39muuid4()),\n' +
+      '\x1B[1;32m     54\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCreatedDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     55\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mUpdateDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat()\n' +
+      '\x1B[1;32m     56\x1B[0m     }\n' +
+      '\x1B[1;32m     57\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m record\n',
+    "\x1B[0;31mTypeError\x1B[0m: Provider.phone_number() got an unexpected keyword argument 'style'"
+  ]
+}
+05:24:45.647 [warn] Cell completed with errors iu [Error]: Provider.phone_number() got an unexpected keyword argument 'style'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'TypeError',
+  evalue: "Provider.phone_number() got an unexpected keyword argument 'style'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mTypeError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[15], line 33\x1B[0m\n' +
+      '\x1B[1;32m     30\x1B[0m generator \x1B[38;5;241m=\x1B[39m DummyDataGenerator()\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(\x1B[38;5;241m1\x1B[39m):\n' +
+      '\x1B[0;32m---> 33\x1B[0m     customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m \x1B[43mgenerator\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m20\x1B[39;49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     34\x1B[0m     \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[1;32m     35\x1B[0m     insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerProductAccount\x1B[39m\x1B[38;5;124m'\x1B[39m, customer_product_account_data)\n",
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:85\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_data\x1B[0;34m(self, num_records)\x1B[0m\n' +
+      '\x1B[1;32m     83\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(num_records):\n' +
+      '\x1B[1;32m     84\x1B[0m     record_id \x1B[38;5;241m=\x1B[39m choice(\x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcustomer_product_account_ids)\n' +
+      '\x1B[0;32m---> 85\x1B[0m     customer_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_customer_product_account_data\x1B[49m\x1B[43m(\x1B[49m\x1B[43mrecord_id\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     86\x1B[0m     transaction_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgenerate_account_transaction_history_data(record_id)\n' +
+      '\x1B[1;32m     87\x1B[0m     customer_product_account_data\x1B[38;5;241m.\x1B[39mappend(customer_data)\n',
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:43\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_customer_product_account_data\x1B[0;34m(self, record_id)\x1B[0m\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mgenerate_customer_product_account_data\x1B[39m(\x1B[38;5;28mself\x1B[39m, record_id):\n' +
+      "\x1B[1;32m     33\x1B[0m     product \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mproduct_info[record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m]]\n" +
+      '\x1B[1;32m     34\x1B[0m     record \x1B[38;5;241m=\x1B[39m {\n' +
+      `\x1B[1;32m     35\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     36\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mFirstName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mfirst_name(),\n' +
+      '\x1B[1;32m     37\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLastName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mlast_name(),\n' +
+      '\x1B[1;32m     38\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDateOfBirth\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_of_birth()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     39\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mSSN\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mssn(),\n' +
+      '\x1B[1;32m     40\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mWard\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mstreet_name(),\n' +
+      '\x1B[1;32m     41\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDistrict\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      '\x1B[1;32m     42\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCity\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      `\x1B[0;32m---> 43\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mPhoneNumber\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mfake\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mphone_number\x1B[49m\x1B[43m(\x1B[49m\x1B[43mstyle\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43m \x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43minternational\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m,\n` +
+      '\x1B[1;32m     44\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mEmail\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39memail(),\n' +
+      `\x1B[1;32m     45\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     46\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     47\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     48\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     49\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLimitAmount\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m1000.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      '\x1B[1;32m     50\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mBalance\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m0.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      `\x1B[1;32m     51\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mOpenDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m-5y\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      `\x1B[1;32m     52\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCloseDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m+5y\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      '\x1B[1;32m     53\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mStatusID\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mstr\x1B[39m(uuid\x1B[38;5;241m.\x1B[39muuid4()),\n' +
+      '\x1B[1;32m     54\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCreatedDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     55\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mUpdateDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat()\n' +
+      '\x1B[1;32m     56\x1B[0m     }\n' +
+      '\x1B[1;32m     57\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m record\n',
+    "\x1B[0;31mTypeError\x1B[0m: Provider.phone_number() got an unexpected keyword argument 'style'"
+  ]
+}
+05:25:41.597 [warn] Disposing old controller startUsingPythonInterpreter:'.jvsc74a57bd06699b966c21a81be21759e40053de52c009daad87cbe5a3dc643468ce4ab3367.d:\Program Files\Python\python.exe.d:\Program Files\Python\python.exe.-m#ipykernel_launcher' for view = 'jupyter-notebook'
+05:25:41.601 [warn] Disposing old controller startUsingPythonInterpreter:'.jvsc74a57bd06699b966c21a81be21759e40053de52c009daad87cbe5a3dc643468ce4ab3367.d:\Program Files\Python\python.exe.d:\Program Files\Python\python.exe.-m#ipykernel_launcher (Interactive)' for view = 'interactive'
+05:26:24.801 [warn] Cell completed with errors iu [Error]: Provider.phone_number() got an unexpected keyword argument 'style'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'TypeError',
+  evalue: "Provider.phone_number() got an unexpected keyword argument 'style'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mTypeError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[16], line 33\x1B[0m\n' +
+      '\x1B[1;32m     30\x1B[0m generator \x1B[38;5;241m=\x1B[39m DummyDataGenerator()\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(\x1B[38;5;241m1\x1B[39m):\n' +
+      '\x1B[0;32m---> 33\x1B[0m     customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m \x1B[43mgenerator\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m20\x1B[39;49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     34\x1B[0m     \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[1;32m     35\x1B[0m     insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerProductAccount\x1B[39m\x1B[38;5;124m'\x1B[39m, customer_product_account_data)\n",
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:85\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_data\x1B[0;34m(self, num_records)\x1B[0m\n' +
+      '\x1B[1;32m     83\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(num_records):\n' +
+      '\x1B[1;32m     84\x1B[0m     record_id \x1B[38;5;241m=\x1B[39m choice(\x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcustomer_product_account_ids)\n' +
+      '\x1B[0;32m---> 85\x1B[0m     customer_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_customer_product_account_data\x1B[49m\x1B[43m(\x1B[49m\x1B[43mrecord_id\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     86\x1B[0m     transaction_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgenerate_account_transaction_history_data(record_id)\n' +
+      '\x1B[1;32m     87\x1B[0m     customer_product_account_data\x1B[38;5;241m.\x1B[39mappend(customer_data)\n',
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:43\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_customer_product_account_data\x1B[0;34m(self, record_id)\x1B[0m\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mgenerate_customer_product_account_data\x1B[39m(\x1B[38;5;28mself\x1B[39m, record_id):\n' +
+      "\x1B[1;32m     33\x1B[0m     product \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mproduct_info[record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m]]\n" +
+      '\x1B[1;32m     34\x1B[0m     record \x1B[38;5;241m=\x1B[39m {\n' +
+      `\x1B[1;32m     35\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     36\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mFirstName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mfirst_name(),\n' +
+      '\x1B[1;32m     37\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLastName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mlast_name(),\n' +
+      '\x1B[1;32m     38\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDateOfBirth\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_of_birth()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     39\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mSSN\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mssn(),\n' +
+      '\x1B[1;32m     40\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mWard\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mstreet_name(),\n' +
+      '\x1B[1;32m     41\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDistrict\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      '\x1B[1;32m     42\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCity\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      `\x1B[0;32m---> 43\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mPhoneNumber\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mfake\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mphone_number\x1B[49m\x1B[43m(\x1B[49m\x1B[43mstyle\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43m \x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43minternational\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m,\n` +
+      '\x1B[1;32m     44\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mEmail\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39memail(),\n' +
+      `\x1B[1;32m     45\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     46\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     47\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     48\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     49\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLimitAmount\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m1000.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      '\x1B[1;32m     50\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mBalance\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m0.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      `\x1B[1;32m     51\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mOpenDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m-5y\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      `\x1B[1;32m     52\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCloseDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m+5y\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      '\x1B[1;32m     53\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mStatusID\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mstr\x1B[39m(uuid\x1B[38;5;241m.\x1B[39muuid4()),\n' +
+      '\x1B[1;32m     54\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCreatedDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     55\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mUpdateDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat()\n' +
+      '\x1B[1;32m     56\x1B[0m     }\n' +
+      '\x1B[1;32m     57\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m record\n',
+    "\x1B[0;31mTypeError\x1B[0m: Provider.phone_number() got an unexpected keyword argument 'style'"
+  ]
+}
+05:26:47.369 [warn] Cell completed with errors iu [Error]: Provider.phone_number() got an unexpected keyword argument 'style'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'TypeError',
+  evalue: "Provider.phone_number() got an unexpected keyword argument 'style'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mTypeError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[17], line 33\x1B[0m\n' +
+      '\x1B[1;32m     30\x1B[0m generator \x1B[38;5;241m=\x1B[39m DummyDataGenerator()\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(\x1B[38;5;241m1\x1B[39m):\n' +
+      '\x1B[0;32m---> 33\x1B[0m     customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m \x1B[43mgenerator\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m20\x1B[39;49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     34\x1B[0m     \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[1;32m     35\x1B[0m     insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerProductAccount\x1B[39m\x1B[38;5;124m'\x1B[39m, customer_product_account_data)\n",
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:85\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_data\x1B[0;34m(self, num_records)\x1B[0m\n' +
+      '\x1B[1;32m     83\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(num_records):\n' +
+      '\x1B[1;32m     84\x1B[0m     record_id \x1B[38;5;241m=\x1B[39m choice(\x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcustomer_product_account_ids)\n' +
+      '\x1B[0;32m---> 85\x1B[0m     customer_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_customer_product_account_data\x1B[49m\x1B[43m(\x1B[49m\x1B[43mrecord_id\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     86\x1B[0m     transaction_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgenerate_account_transaction_history_data(record_id)\n' +
+      '\x1B[1;32m     87\x1B[0m     customer_product_account_data\x1B[38;5;241m.\x1B[39mappend(customer_data)\n',
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:43\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_customer_product_account_data\x1B[0;34m(self, record_id)\x1B[0m\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mgenerate_customer_product_account_data\x1B[39m(\x1B[38;5;28mself\x1B[39m, record_id):\n' +
+      "\x1B[1;32m     33\x1B[0m     product \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mproduct_info[record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m]]\n" +
+      '\x1B[1;32m     34\x1B[0m     record \x1B[38;5;241m=\x1B[39m {\n' +
+      `\x1B[1;32m     35\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     36\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mFirstName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mfirst_name(),\n' +
+      '\x1B[1;32m     37\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLastName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mlast_name(),\n' +
+      '\x1B[1;32m     38\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDateOfBirth\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_of_birth()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     39\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mSSN\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mssn(),\n' +
+      '\x1B[1;32m     40\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mWard\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mstreet_name(),\n' +
+      '\x1B[1;32m     41\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDistrict\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      '\x1B[1;32m     42\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCity\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      `\x1B[0;32m---> 43\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mPhoneNumber\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mfake\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mphone_number\x1B[49m\x1B[43m(\x1B[49m\x1B[43mstyle\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43m \x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43minternational\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m,\n` +
+      '\x1B[1;32m     44\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mEmail\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39memail(),\n' +
+      `\x1B[1;32m     45\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     46\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     47\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     48\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     49\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLimitAmount\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m1000.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      '\x1B[1;32m     50\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mBalance\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m0.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      `\x1B[1;32m     51\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mOpenDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m-5y\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      `\x1B[1;32m     52\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCloseDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m+5y\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      '\x1B[1;32m     53\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mStatusID\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mstr\x1B[39m(uuid\x1B[38;5;241m.\x1B[39muuid4()),\n' +
+      '\x1B[1;32m     54\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCreatedDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     55\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mUpdateDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat()\n' +
+      '\x1B[1;32m     56\x1B[0m     }\n' +
+      '\x1B[1;32m     57\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m record\n',
+    "\x1B[0;31mTypeError\x1B[0m: Provider.phone_number() got an unexpected keyword argument 'style'"
+  ]
+}
+05:30:46.624 [warn] Cell completed with errors iu [Error]: name 'faker' is not defined
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'NameError',
+  evalue: "name 'faker' is not defined",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mNameError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[18], line 1\x1B[0m\n\x1B[0;32m----> 1\x1B[0m \x1B[43mfaker\x1B[49m\n',
+    "\x1B[0;31mNameError\x1B[0m: name 'faker' is not defined"
+  ]
+}
+05:30:59.253 [warn] Cell completed with errors iu [Error]: No module named 'Faker'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'ModuleNotFoundError',
+  evalue: "No module named 'Faker'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mModuleNotFoundError\x1B[0m                       Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[19], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[38;5;28;01mfrom\x1B[39;00m \x1B[38;5;21;01mFaker\x1B[39;00m \x1B[38;5;28;01mimport\x1B[39;00m faker\n',
+    "\x1B[0;31mModuleNotFoundError\x1B[0m: No module named 'Faker'"
+  ]
+}
+05:31:25.136 [info] Disposing request as the cell (-1) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:31:25.137 [info] Disposing request as the cell (-1) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:31:25.140 [info] Disposing request as the cell (-1) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:38:17.248 [warn] Cell completed with errors iu [Error]: Provider.phone_number() got an unexpected keyword argument 'style'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'TypeError',
+  evalue: "Provider.phone_number() got an unexpected keyword argument 'style'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mTypeError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[21], line 33\x1B[0m\n' +
+      '\x1B[1;32m     30\x1B[0m generator \x1B[38;5;241m=\x1B[39m DummyDataGenerator()\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(\x1B[38;5;241m1\x1B[39m):\n' +
+      '\x1B[0;32m---> 33\x1B[0m     customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m \x1B[43mgenerator\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m20\x1B[39;49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     34\x1B[0m     \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[1;32m     35\x1B[0m     insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerProductAccount\x1B[39m\x1B[38;5;124m'\x1B[39m, customer_product_account_data)\n",
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:85\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_data\x1B[0;34m(self, num_records)\x1B[0m\n' +
+      '\x1B[1;32m     83\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(num_records):\n' +
+      '\x1B[1;32m     84\x1B[0m     record_id \x1B[38;5;241m=\x1B[39m choice(\x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcustomer_product_account_ids)\n' +
+      '\x1B[0;32m---> 85\x1B[0m     customer_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_customer_product_account_data\x1B[49m\x1B[43m(\x1B[49m\x1B[43mrecord_id\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     86\x1B[0m     transaction_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgenerate_account_transaction_history_data(record_id)\n' +
+      '\x1B[1;32m     87\x1B[0m     customer_product_account_data\x1B[38;5;241m.\x1B[39mappend(customer_data)\n',
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:43\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_customer_product_account_data\x1B[0;34m(self, record_id)\x1B[0m\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mgenerate_customer_product_account_data\x1B[39m(\x1B[38;5;28mself\x1B[39m, record_id):\n' +
+      "\x1B[1;32m     33\x1B[0m     product \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mproduct_info[record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m]]\n" +
+      '\x1B[1;32m     34\x1B[0m     record \x1B[38;5;241m=\x1B[39m {\n' +
+      `\x1B[1;32m     35\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     36\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mFirstName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mfirst_name(),\n' +
+      '\x1B[1;32m     37\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLastName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mlast_name(),\n' +
+      '\x1B[1;32m     38\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDateOfBirth\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_of_birth()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     39\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mSSN\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mssn(),\n' +
+      '\x1B[1;32m     40\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mWard\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mstreet_name(),\n' +
+      '\x1B[1;32m     41\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDistrict\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      '\x1B[1;32m     42\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCity\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      `\x1B[0;32m---> 43\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mPhoneNumber\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mfake\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mphone_number\x1B[49m\x1B[43m(\x1B[49m\x1B[43mstyle\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43m \x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43minternational\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m,\n` +
+      '\x1B[1;32m     44\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mEmail\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39memail(),\n' +
+      `\x1B[1;32m     45\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     46\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     47\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     48\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     49\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLimitAmount\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m1000.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      '\x1B[1;32m     50\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mBalance\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m0.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      `\x1B[1;32m     51\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mOpenDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m-5y\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      `\x1B[1;32m     52\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCloseDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m+5y\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      '\x1B[1;32m     53\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mStatusID\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mstr\x1B[39m(uuid\x1B[38;5;241m.\x1B[39muuid4()),\n' +
+      '\x1B[1;32m     54\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCreatedDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     55\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mUpdateDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat()\n' +
+      '\x1B[1;32m     56\x1B[0m     }\n' +
+      '\x1B[1;32m     57\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m record\n',
+    "\x1B[0;31mTypeError\x1B[0m: Provider.phone_number() got an unexpected keyword argument 'style'"
+  ]
+}
+05:38:42.011 [warn] Cell completed with errors iu [Error]: Provider.phone_number() got an unexpected keyword argument 'style'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'TypeError',
+  evalue: "Provider.phone_number() got an unexpected keyword argument 'style'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mTypeError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[22], line 33\x1B[0m\n' +
+      '\x1B[1;32m     30\x1B[0m generator \x1B[38;5;241m=\x1B[39m DummyDataGenerator()\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(\x1B[38;5;241m1\x1B[39m):\n' +
+      '\x1B[0;32m---> 33\x1B[0m     customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m \x1B[43mgenerator\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m20\x1B[39;49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     34\x1B[0m     \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[1;32m     35\x1B[0m     insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerProductAccount\x1B[39m\x1B[38;5;124m'\x1B[39m, customer_product_account_data)\n",
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:85\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_data\x1B[0;34m(self, num_records)\x1B[0m\n' +
+      '\x1B[1;32m     83\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(num_records):\n' +
+      '\x1B[1;32m     84\x1B[0m     record_id \x1B[38;5;241m=\x1B[39m choice(\x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcustomer_product_account_ids)\n' +
+      '\x1B[0;32m---> 85\x1B[0m     customer_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_customer_product_account_data\x1B[49m\x1B[43m(\x1B[49m\x1B[43mrecord_id\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     86\x1B[0m     transaction_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgenerate_account_transaction_history_data(record_id)\n' +
+      '\x1B[1;32m     87\x1B[0m     customer_product_account_data\x1B[38;5;241m.\x1B[39mappend(customer_data)\n',
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:43\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_customer_product_account_data\x1B[0;34m(self, record_id)\x1B[0m\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mgenerate_customer_product_account_data\x1B[39m(\x1B[38;5;28mself\x1B[39m, record_id):\n' +
+      "\x1B[1;32m     33\x1B[0m     product \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mproduct_info[record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m]]\n" +
+      '\x1B[1;32m     34\x1B[0m     record \x1B[38;5;241m=\x1B[39m {\n' +
+      `\x1B[1;32m     35\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     36\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mFirstName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mfirst_name(),\n' +
+      '\x1B[1;32m     37\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLastName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mlast_name(),\n' +
+      '\x1B[1;32m     38\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDateOfBirth\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_of_birth()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     39\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mSSN\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mssn(),\n' +
+      '\x1B[1;32m     40\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mWard\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mstreet_name(),\n' +
+      '\x1B[1;32m     41\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDistrict\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      '\x1B[1;32m     42\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCity\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      `\x1B[0;32m---> 43\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mPhoneNumber\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mfake\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mphone_number\x1B[49m\x1B[43m(\x1B[49m\x1B[43mstyle\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43m \x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43minternational\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m,\n` +
+      '\x1B[1;32m     44\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mEmail\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39memail(),\n' +
+      `\x1B[1;32m     45\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     46\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     47\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     48\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     49\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLimitAmount\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m1000.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      '\x1B[1;32m     50\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mBalance\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m0.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      `\x1B[1;32m     51\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mOpenDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m-5y\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      `\x1B[1;32m     52\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCloseDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m+5y\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      '\x1B[1;32m     53\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mStatusID\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mstr\x1B[39m(uuid\x1B[38;5;241m.\x1B[39muuid4()),\n' +
+      '\x1B[1;32m     54\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCreatedDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     55\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mUpdateDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat()\n' +
+      '\x1B[1;32m     56\x1B[0m     }\n' +
+      '\x1B[1;32m     57\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m record\n',
+    "\x1B[0;31mTypeError\x1B[0m: Provider.phone_number() got an unexpected keyword argument 'style'"
+  ]
+}
+05:39:40.770 [warn] Cell completed with errors iu [Error]: Provider.phone_number() got an unexpected keyword argument 'style'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'TypeError',
+  evalue: "Provider.phone_number() got an unexpected keyword argument 'style'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mTypeError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[23], line 33\x1B[0m\n' +
+      '\x1B[1;32m     30\x1B[0m generator \x1B[38;5;241m=\x1B[39m DummyDataGenerator()\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(\x1B[38;5;241m1\x1B[39m):\n' +
+      '\x1B[0;32m---> 33\x1B[0m     customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m \x1B[43mgenerator\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m20\x1B[39;49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     34\x1B[0m     \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[1;32m     35\x1B[0m     insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerProductAccount\x1B[39m\x1B[38;5;124m'\x1B[39m, customer_product_account_data)\n",
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:85\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_data\x1B[0;34m(self, num_records)\x1B[0m\n' +
+      '\x1B[1;32m     83\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(num_records):\n' +
+      '\x1B[1;32m     84\x1B[0m     record_id \x1B[38;5;241m=\x1B[39m choice(\x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcustomer_product_account_ids)\n' +
+      '\x1B[0;32m---> 85\x1B[0m     customer_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_customer_product_account_data\x1B[49m\x1B[43m(\x1B[49m\x1B[43mrecord_id\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     86\x1B[0m     transaction_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgenerate_account_transaction_history_data(record_id)\n' +
+      '\x1B[1;32m     87\x1B[0m     customer_product_account_data\x1B[38;5;241m.\x1B[39mappend(customer_data)\n',
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:43\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_customer_product_account_data\x1B[0;34m(self, record_id)\x1B[0m\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mgenerate_customer_product_account_data\x1B[39m(\x1B[38;5;28mself\x1B[39m, record_id):\n' +
+      "\x1B[1;32m     33\x1B[0m     product \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mproduct_info[record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m]]\n" +
+      '\x1B[1;32m     34\x1B[0m     record \x1B[38;5;241m=\x1B[39m {\n' +
+      `\x1B[1;32m     35\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     36\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mFirstName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mfirst_name(),\n' +
+      '\x1B[1;32m     37\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLastName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mlast_name(),\n' +
+      '\x1B[1;32m     38\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDateOfBirth\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_of_birth()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     39\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mSSN\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mssn(),\n' +
+      '\x1B[1;32m     40\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mWard\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mstreet_name(),\n' +
+      '\x1B[1;32m     41\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDistrict\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      '\x1B[1;32m     42\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCity\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      `\x1B[0;32m---> 43\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mPhoneNumber\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mfake\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mphone_number\x1B[49m\x1B[43m(\x1B[49m\x1B[43mstyle\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43m \x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43minternational\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m,\n` +
+      '\x1B[1;32m     44\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mEmail\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39memail(),\n' +
+      `\x1B[1;32m     45\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     46\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     47\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     48\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     49\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLimitAmount\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m1000.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      '\x1B[1;32m     50\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mBalance\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m0.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      `\x1B[1;32m     51\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mOpenDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m-5y\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      `\x1B[1;32m     52\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCloseDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m+5y\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      '\x1B[1;32m     53\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mStatusID\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mstr\x1B[39m(uuid\x1B[38;5;241m.\x1B[39muuid4()),\n' +
+      '\x1B[1;32m     54\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCreatedDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     55\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mUpdateDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat()\n' +
+      '\x1B[1;32m     56\x1B[0m     }\n' +
+      '\x1B[1;32m     57\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m record\n',
+    "\x1B[0;31mTypeError\x1B[0m: Provider.phone_number() got an unexpected keyword argument 'style'"
+  ]
+}
+05:40:35.727 [warn] Cell completed with errors iu [Error]: Provider.phone_number() got an unexpected keyword argument 'style'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'TypeError',
+  evalue: "Provider.phone_number() got an unexpected keyword argument 'style'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mTypeError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[26], line 28\x1B[0m\n' +
+      '\x1B[1;32m     25\x1B[0m generator \x1B[38;5;241m=\x1B[39m DummyDataGenerator()\n' +
+      '\x1B[1;32m     27\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(\x1B[38;5;241m1\x1B[39m):\n' +
+      '\x1B[0;32m---> 28\x1B[0m     customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m \x1B[43mgenerator\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m20\x1B[39;49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     29\x1B[0m     \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[1;32m     30\x1B[0m     insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerProductAccount\x1B[39m\x1B[38;5;124m'\x1B[39m, customer_product_account_data)\n",
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:85\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_data\x1B[0;34m(self, num_records)\x1B[0m\n' +
+      '\x1B[1;32m     83\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(num_records):\n' +
+      '\x1B[1;32m     84\x1B[0m     record_id \x1B[38;5;241m=\x1B[39m choice(\x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcustomer_product_account_ids)\n' +
+      '\x1B[0;32m---> 85\x1B[0m     customer_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_customer_product_account_data\x1B[49m\x1B[43m(\x1B[49m\x1B[43mrecord_id\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     86\x1B[0m     transaction_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgenerate_account_transaction_history_data(record_id)\n' +
+      '\x1B[1;32m     87\x1B[0m     customer_product_account_data\x1B[38;5;241m.\x1B[39mappend(customer_data)\n',
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:43\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_customer_product_account_data\x1B[0;34m(self, record_id)\x1B[0m\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mgenerate_customer_product_account_data\x1B[39m(\x1B[38;5;28mself\x1B[39m, record_id):\n' +
+      "\x1B[1;32m     33\x1B[0m     product \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mproduct_info[record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m]]\n" +
+      '\x1B[1;32m     34\x1B[0m     record \x1B[38;5;241m=\x1B[39m {\n' +
+      `\x1B[1;32m     35\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     36\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mFirstName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mfirst_name(),\n' +
+      '\x1B[1;32m     37\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLastName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mlast_name(),\n' +
+      '\x1B[1;32m     38\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDateOfBirth\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_of_birth()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     39\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mSSN\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mssn(),\n' +
+      '\x1B[1;32m     40\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mWard\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mstreet_name(),\n' +
+      '\x1B[1;32m     41\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDistrict\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      '\x1B[1;32m     42\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCity\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      `\x1B[0;32m---> 43\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mPhoneNumber\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mfake\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mphone_number\x1B[49m\x1B[43m(\x1B[49m\x1B[43mstyle\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43m \x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43minternational\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m,\n` +
+      '\x1B[1;32m     44\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mEmail\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39memail(),\n' +
+      `\x1B[1;32m     45\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     46\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     47\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     48\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     49\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLimitAmount\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m1000.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      '\x1B[1;32m     50\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mBalance\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m0.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      `\x1B[1;32m     51\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mOpenDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m-5y\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      `\x1B[1;32m     52\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCloseDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m+5y\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      '\x1B[1;32m     53\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mStatusID\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mstr\x1B[39m(uuid\x1B[38;5;241m.\x1B[39muuid4()),\n' +
+      '\x1B[1;32m     54\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCreatedDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     55\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mUpdateDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat()\n' +
+      '\x1B[1;32m     56\x1B[0m     }\n' +
+      '\x1B[1;32m     57\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m record\n',
+    "\x1B[0;31mTypeError\x1B[0m: Provider.phone_number() got an unexpected keyword argument 'style'"
+  ]
+}
+05:40:54.531 [warn] Cell completed with errors iu [Error]: DummyDataGenerator.generate_data() missing 1 required positional argument: 'num_records'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'TypeError',
+  evalue: "DummyDataGenerator.generate_data() missing 1 required positional argument: 'num_records'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mTypeError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[28], line 1\x1B[0m\n' +
+      '\x1B[0;32m----> 1\x1B[0m \x1B[43mDummyDataGenerator\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m20\x1B[39;49m\x1B[43m)\x1B[49m\n',
+    "\x1B[0;31mTypeError\x1B[0m: DummyDataGenerator.generate_data() missing 1 required positional argument: 'num_records'"
+  ]
+}
+05:41:08.636 [info] Disposing request as the cell (-1) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:41:08.636 [info] Disposing request as the cell (-1) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:41:08.637 [info] Disposing request as the cell (-1) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:42:13.957 [warn] Cell completed with errors iu [Error]: Provider.phone_number() got an unexpected keyword argument 'style'
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'TypeError',
+  evalue: "Provider.phone_number() got an unexpected keyword argument 'style'",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mTypeError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[29], line 28\x1B[0m\n' +
+      '\x1B[1;32m     25\x1B[0m generator \x1B[38;5;241m=\x1B[39m DummyDataGenerator()\n' +
+      '\x1B[1;32m     27\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(\x1B[38;5;241m1\x1B[39m):\n' +
+      '\x1B[0;32m---> 28\x1B[0m     customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m \x1B[43mgenerator\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m20\x1B[39;49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     29\x1B[0m     \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[1;32m     30\x1B[0m     insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerProductAccount\x1B[39m\x1B[38;5;124m'\x1B[39m, customer_product_account_data)\n",
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:85\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_data\x1B[0;34m(self, num_records)\x1B[0m\n' +
+      '\x1B[1;32m     83\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(num_records):\n' +
+      '\x1B[1;32m     84\x1B[0m     record_id \x1B[38;5;241m=\x1B[39m choice(\x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcustomer_product_account_ids)\n' +
+      '\x1B[0;32m---> 85\x1B[0m     customer_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgenerate_customer_product_account_data\x1B[49m\x1B[43m(\x1B[49m\x1B[43mrecord_id\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m     86\x1B[0m     transaction_data \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgenerate_account_transaction_history_data(record_id)\n' +
+      '\x1B[1;32m     87\x1B[0m     customer_product_account_data\x1B[38;5;241m.\x1B[39mappend(customer_data)\n',
+    'File \x1B[0;32m/container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py:43\x1B[0m, in \x1B[0;36mDummyDataGenerator.generate_customer_product_account_data\x1B[0;34m(self, record_id)\x1B[0m\n' +
+      '\x1B[1;32m     32\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mgenerate_customer_product_account_data\x1B[39m(\x1B[38;5;28mself\x1B[39m, record_id):\n' +
+      "\x1B[1;32m     33\x1B[0m     product \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mproduct_info[record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m]]\n" +
+      '\x1B[1;32m     34\x1B[0m     record \x1B[38;5;241m=\x1B[39m {\n' +
+      `\x1B[1;32m     35\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     36\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mFirstName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mfirst_name(),\n' +
+      '\x1B[1;32m     37\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLastName\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mlast_name(),\n' +
+      '\x1B[1;32m     38\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDateOfBirth\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_of_birth()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     39\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mSSN\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mssn(),\n' +
+      '\x1B[1;32m     40\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mWard\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mstreet_name(),\n' +
+      '\x1B[1;32m     41\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mDistrict\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      '\x1B[1;32m     42\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCity\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mcity(),\n' +
+      `\x1B[0;32m---> 43\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mPhoneNumber\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mfake\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mphone_number\x1B[49m\x1B[43m(\x1B[49m\x1B[43mstyle\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m=\x1B[39;49m\x1B[43m \x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43minternational\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m)\x1B[49m,\n` +
+      '\x1B[1;32m     44\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mEmail\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39memail(),\n' +
+      `\x1B[1;32m     45\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     46\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mProductName\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     47\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m"\x1B[39m: product[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mInterestRate\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      `\x1B[1;32m     48\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m"\x1B[39m: record_id[\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountID\x1B[39m\x1B[38;5;124m'\x1B[39m],\n` +
+      '\x1B[1;32m     49\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mLimitAmount\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m1000.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      '\x1B[1;32m     50\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mBalance\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mround\x1B[39m(uniform(\x1B[38;5;241m0.0\x1B[39m, \x1B[38;5;241m50000.0\x1B[39m), \x1B[38;5;241m2\x1B[39m),\n' +
+      `\x1B[1;32m     51\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mOpenDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m-5y\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      `\x1B[1;32m     52\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCloseDate\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mfake\x1B[38;5;241m.\x1B[39mdate_between(start_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mtoday\x1B[39m\x1B[38;5;124m'\x1B[39m, end_date\x1B[38;5;241m=\x1B[39m\x1B[38;5;124m'\x1B[39m\x1B[38;5;124m+5y\x1B[39m\x1B[38;5;124m'\x1B[39m)\x1B[38;5;241m.\x1B[39misoformat(),\n` +
+      '\x1B[1;32m     53\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mStatusID\x1B[39m\x1B[38;5;124m"\x1B[39m: \x1B[38;5;28mstr\x1B[39m(uuid\x1B[38;5;241m.\x1B[39muuid4()),\n' +
+      '\x1B[1;32m     54\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mCreatedDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat(),\n' +
+      '\x1B[1;32m     55\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mUpdateDate\x1B[39m\x1B[38;5;124m"\x1B[39m: datetime\x1B[38;5;241m.\x1B[39mnow()\x1B[38;5;241m.\x1B[39misoformat()\n' +
+      '\x1B[1;32m     56\x1B[0m     }\n' +
+      '\x1B[1;32m     57\x1B[0m     \x1B[38;5;28;01mreturn\x1B[39;00m record\n',
+    "\x1B[0;31mTypeError\x1B[0m: Provider.phone_number() got an unexpected keyword argument 'style'"
+  ]
+}
+05:42:33.136 [info] Restart requested /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:42:33.995 [warn] Failed to get activated env vars for /usr/local/bin/python in 285ms
+05:42:34.025 [info] Process Execution: /usr/local/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+05:42:34.507 [info] Process Execution: /usr/local/bin/python -m ipykernel_launcher --f=/~/.local/share/jupyter/runtime/kernel-v3510a24eaaa0fd0235d684d534c54722b472cd47b.json
+    > cwd: //container/pyspark_workspace/source_code/sample_code
+05:42:37.702 [info] Restarted 475641cb-8d02-418f-9d60-2571623e0e17
+05:43:54.409 [warn] Cell completed with errors iu [Error]: An error occurred while calling o69.save.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 10 in stage 0.0 failed 4 times, most recent failure: Lost task 10.3 in stage 0.0 (TID 18) (172.18.0.10 executor 1): java.sql.BatchUpdateException: String or binary data would be truncated in table 'CreditStagingDB.dbo.CustomerProductAccount', column 'Email'. Truncated value: 'hoangjohn@example.ne'.
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeBatch(SQLServerPreparedStatement.java:2273)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:753)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)
+	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+	at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2458)
+	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$1(RDD.scala:1039)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:410)
+	at org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:1037)
+	at org.apache.spark.sql.Dataset.$anonfun$foreachPartition$1(Dataset.scala:3516)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.Dataset.$anonfun$withNewRDDExecutionId$1(Dataset.scala:4311)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.Dataset.withNewRDDExecutionId(Dataset.scala:4309)
+	at org.apache.spark.sql.Dataset.foreachPartition(Dataset.scala:3516)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.saveTable(JdbcUtils.scala:903)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:70)
+	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.sql.BatchUpdateException: String or binary data would be truncated in table 'CreditStagingDB.dbo.CustomerProductAccount', column 'Email'. Truncated value: 'hoangjohn@example.ne'.
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeBatch(SQLServerPreparedStatement.java:2273)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:753)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)
+	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+	at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	... 1 more
+
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'Py4JJavaError',
+  evalue: 'An error occurred while calling o69.save.\n' +
+    ": org.apache.spark.SparkException: Job aborted due to stage failure: Task 10 in stage 0.0 failed 4 times, most recent failure: Lost task 10.3 in stage 0.0 (TID 18) (172.18.0.10 executor 1): java.sql.BatchUpdateException: String or binary data would be truncated in table 'CreditStagingDB.dbo.CustomerProductAccount', column 'Email'. Truncated value: 'hoangjohn@example.ne'.\n" +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeBatch(SQLServerPreparedStatement.java:2273)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:753)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)\n' +
+    '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)\n' +
+    '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)\n' +
+    '\tat org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)\n' +
+    '\tat org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)\n' +
+    '\tat org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)\n' +
+    '\tat org.apache.spark.scheduler.Task.run(Task.scala:141)\n' +
+    '\tat org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)\n' +
+    '\tat org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)\n' +
+    '\tat org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)\n' +
+    '\tat org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)\n' +
+    '\tat org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)\n' +
+    '\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n' +
+    '\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n' +
+    '\tat java.base/java.lang.Thread.run(Thread.java:840)\n' +
+    '\n' +
+    'Driver stacktrace:\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)\n' +
+    '\tat scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)\n' +
+    '\tat scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)\n' +
+    '\tat scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)\n' +
+    '\tat scala.Option.foreach(Option.scala:407)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)\n' +
+    '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)\n' +
+    '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)\n' +
+    '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)\n' +
+    '\tat org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)\n' +
+    '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)\n' +
+    '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)\n' +
+    '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)\n' +
+    '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2458)\n' +
+    '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$1(RDD.scala:1039)\n' +
+    '\tat org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)\n' +
+    '\tat org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)\n' +
+    '\tat org.apache.spark.rdd.RDD.withScope(RDD.scala:410)\n' +
+    '\tat org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:1037)\n' +
+    '\tat org.apache.spark.sql.Dataset.$anonfun$foreachPartition$1(Dataset.scala:3516)\n' +
+    '\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n' +
+    '\tat org.apache.spark.sql.Dataset.$anonfun$withNewRDDExecutionId$1(Dataset.scala:4311)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)\n' +
+    '\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)\n' +
+    '\tat org.apache.spark.sql.Dataset.withNewRDDExecutionId(Dataset.scala:4309)\n' +
+    '\tat org.apache.spark.sql.Dataset.foreachPartition(Dataset.scala:3516)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.saveTable(JdbcUtils.scala:903)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:70)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)\n' +
+    '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n' +
+    '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n' +
+    '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)\n' +
+    '\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)\n' +
+    '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n' +
+    '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n' +
+    '\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n' +
+    '\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n' +
+    '\tat py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\n' +
+    '\tat py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\n' +
+    '\tat py4j.Gateway.invoke(Gateway.java:282)\n' +
+    '\tat py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\n' +
+    '\tat py4j.commands.CallCommand.execute(CallCommand.java:79)\n' +
+    '\tat py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)\n' +
+    '\tat py4j.ClientServerConnection.run(ClientServerConnection.java:106)\n' +
+    '\tat java.base/java.lang.Thread.run(Thread.java:840)\n' +
+    "Caused by: java.sql.BatchUpdateException: String or binary data would be truncated in table 'CreditStagingDB.dbo.CustomerProductAccount', column 'Email'. Truncated value: 'hoangjohn@example.ne'.\n" +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeBatch(SQLServerPreparedStatement.java:2273)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:753)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)\n' +
+    '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)\n' +
+    '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)\n' +
+    '\tat org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)\n' +
+    '\tat org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)\n' +
+    '\tat org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)\n' +
+    '\tat org.apache.spark.scheduler.Task.run(Task.scala:141)\n' +
+    '\tat org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)\n' +
+    '\tat org.apache.spark.util.SparkErrorUtils.tryWithSafeFina'... 460 more characters,
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mPy4JJavaError\x1B[0m                             Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[10], line 30\x1B[0m\n' +
+      '\x1B[1;32m     28\x1B[0m customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m generator\x1B[38;5;241m.\x1B[39mgenerate_data(\x1B[38;5;241m20\x1B[39m)\n' +
+      '\x1B[1;32m     29\x1B[0m \x1B[38;5;66;03m# Generate and insert data for CustomerProductAccount table\x1B[39;00m\n' +
+      "\x1B[0;32m---> 30\x1B[0m \x1B[43minsert_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43mCustomerProductAccount\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mcustomer_product_account_data\x1B[49m\x1B[43m)\x1B[49m\n" +
+      '\x1B[1;32m     31\x1B[0m \x1B[38;5;66;03m# Generate and insert data for AccountTransactionHistory table\x1B[39;00m\n' +
+      "\x1B[1;32m     32\x1B[0m insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mAccountTransactionHistory\x1B[39m\x1B[38;5;124m'\x1B[39m, account_transaction_history_data)\n",
+    'Cell \x1B[0;32mIn[10], line 23\x1B[0m, in \x1B[0;36minsert_data\x1B[0;34m(table_name, data)\x1B[0m\n' +
+      '\x1B[1;32m     12\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21minsert_data\x1B[39m(table_name, data):\n' +
+      '\x1B[1;32m     13\x1B[0m     df \x1B[38;5;241m=\x1B[39m spark\x1B[38;5;241m.\x1B[39mcreateDataFrame([Row(\x1B[38;5;241m*\x1B[39m\x1B[38;5;241m*\x1B[39mi) \x1B[38;5;28;01mfor\x1B[39;00m i \x1B[38;5;129;01min\x1B[39;00m data])\n' +
+      '\x1B[1;32m     14\x1B[0m     \x1B[43mdf\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mwrite\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     15\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mformat\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mjdbc\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     16\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43murl\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mjdbc_url\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     17\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mdbtable\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mtable_name\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     18\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43muser\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43musername\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     19\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mpassword\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mpassword\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     20\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mencrypt\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43;01mTrue\x1B[39;49;00m\x1B[43m)\x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     21\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mtrustServerCertificate\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43;01mTrue\x1B[39;49;00m\x1B[43m)\x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     22\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mmode\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mappend\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[0;32m---> 23\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msave\x1B[49m\x1B[43m(\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/readwriter.py:1461\x1B[0m, in \x1B[0;36mDataFrameWriter.save\x1B[0;34m(self, path, format, mode, partitionBy, **options)\x1B[0m\n' +
+      '\x1B[1;32m   1459\x1B[0m     \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mformat(\x1B[38;5;28mformat\x1B[39m)\n' +
+      '\x1B[1;32m   1460\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m path \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[0;32m-> 1461\x1B[0m     \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jwrite\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msave\x1B[49m\x1B[43m(\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1462\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[1;32m   1463\x1B[0m     \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jwrite\x1B[38;5;241m.\x1B[39msave(path)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/py4j/java_gateway.py:1322\x1B[0m, in \x1B[0;36mJavaMember.__call__\x1B[0;34m(self, *args)\x1B[0m\n' +
+      '\x1B[1;32m   1316\x1B[0m command \x1B[38;5;241m=\x1B[39m proto\x1B[38;5;241m.\x1B[39mCALL_COMMAND_NAME \x1B[38;5;241m+\x1B[39m\\\n' +
+      '\x1B[1;32m   1317\x1B[0m     \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcommand_header \x1B[38;5;241m+\x1B[39m\\\n' +
+      '\x1B[1;32m   1318\x1B[0m     args_command \x1B[38;5;241m+\x1B[39m\\\n' +
+      '\x1B[1;32m   1319\x1B[0m     proto\x1B[38;5;241m.\x1B[39mEND_COMMAND_PART\n' +
+      '\x1B[1;32m   1321\x1B[0m answer \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgateway_client\x1B[38;5;241m.\x1B[39msend_command(command)\n' +
+      '\x1B[0;32m-> 1322\x1B[0m return_value \x1B[38;5;241m=\x1B[39m \x1B[43mget_return_value\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m   1323\x1B[0m \x1B[43m    \x1B[49m\x1B[43manswer\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgateway_client\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mtarget_id\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mname\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1325\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m temp_arg \x1B[38;5;129;01min\x1B[39;00m temp_args:\n' +
+      '\x1B[1;32m   1326\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28mhasattr\x1B[39m(temp_arg, \x1B[38;5;124m"\x1B[39m\x1B[38;5;124m_detach\x1B[39m\x1B[38;5;124m"\x1B[39m):\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/errors/exceptions/captured.py:179\x1B[0m, in \x1B[0;36mcapture_sql_exception.<locals>.deco\x1B[0;34m(*a, **kw)\x1B[0m\n' +
+      '\x1B[1;32m    177\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdeco\x1B[39m(\x1B[38;5;241m*\x1B[39ma: Any, \x1B[38;5;241m*\x1B[39m\x1B[38;5;241m*\x1B[39mkw: Any) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m Any:\n' +
+      '\x1B[1;32m    178\x1B[0m     \x1B[38;5;28;01mtry\x1B[39;00m:\n' +
+      '\x1B[0;32m--> 179\x1B[0m         \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[43mf\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m*\x1B[39;49m\x1B[43ma\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m*\x1B[39;49m\x1B[38;5;241;43m*\x1B[39;49m\x1B[43mkw\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m    180\x1B[0m     \x1B[38;5;28;01mexcept\x1B[39;00m Py4JJavaError \x1B[38;5;28;01mas\x1B[39;00m e:\n' +
+      '\x1B[1;32m    181\x1B[0m         converted \x1B[38;5;241m=\x1B[39m convert_exception(e\x1B[38;5;241m.\x1B[39mjava_exception)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/py4j/protocol.py:326\x1B[0m, in \x1B[0;36mget_return_value\x1B[0;34m(answer, gateway_client, target_id, name)\x1B[0m\n' +
+      '\x1B[1;32m    324\x1B[0m value \x1B[38;5;241m=\x1B[39m OUTPUT_CONVERTER[\x1B[38;5;28mtype\x1B[39m](answer[\x1B[38;5;241m2\x1B[39m:], gateway_client)\n' +
+      '\x1B[1;32m    325\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m answer[\x1B[38;5;241m1\x1B[39m] \x1B[38;5;241m==\x1B[39m REFERENCE_TYPE:\n' +
+      '\x1B[0;32m--> 326\x1B[0m     \x1B[38;5;28;01mraise\x1B[39;00m Py4JJavaError(\n' +
+      '\x1B[1;32m    327\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAn error occurred while calling \x1B[39m\x1B[38;5;132;01m{0}\x1B[39;00m\x1B[38;5;132;01m{1}\x1B[39;00m\x1B[38;5;132;01m{2}\x1B[39;00m\x1B[38;5;124m.\x1B[39m\x1B[38;5;130;01m\\n\x1B[39;00m\x1B[38;5;124m"\x1B[39m\x1B[38;5;241m.\x1B[39m\n' +
+      '\x1B[1;32m    328\x1B[0m         \x1B[38;5;28mformat\x1B[39m(target_id, \x1B[38;5;124m"\x1B[39m\x1B[38;5;124m.\x1B[39m\x1B[38;5;124m"\x1B[39m, name), value)\n' +
+      '\x1B[1;32m    329\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[1;32m    330\x1B[0m     \x1B[38;5;28;01mraise\x1B[39;00m Py4JError(\n' +
+      '\x1B[1;32m    331\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAn error occurred while calling \x1B[39m\x1B[38;5;132;01m{0}\x1B[39;00m\x1B[38;5;132;01m{1}\x1B[39;00m\x1B[38;5;132;01m{2}\x1B[39;00m\x1B[38;5;124m. Trace:\x1B[39m\x1B[38;5;130;01m\\n\x1B[39;00m\x1B[38;5;132;01m{3}\x1B[39;00m\x1B[38;5;130;01m\\n\x1B[39;00m\x1B[38;5;124m"\x1B[39m\x1B[38;5;241m.\x1B[39m\n' +
+      '\x1B[1;32m    332\x1B[0m         \x1B[38;5;28mformat\x1B[39m(target_id, \x1B[38;5;124m"\x1B[39m\x1B[38;5;124m.\x1B[39m\x1B[38;5;124m"\x1B[39m, name, value))\n',
+    '\x1B[0;31mPy4JJavaError\x1B[0m: An error occurred while calling o69.save.\n' +
+      ": org.apache.spark.SparkException: Job aborted due to stage failure: Task 10 in stage 0.0 failed 4 times, most recent failure: Lost task 10.3 in stage 0.0 (TID 18) (172.18.0.10 executor 1): java.sql.BatchUpdateException: String or binary data would be truncated in table 'CreditStagingDB.dbo.CustomerProductAccount', column 'Email'. Truncated value: 'hoangjohn@example.ne'.\n" +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeBatch(SQLServerPreparedStatement.java:2273)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:753)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)\n' +
+      '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)\n' +
+      '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)\n' +
+      '\tat org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)\n' +
+      '\tat org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)\n' +
+      '\tat org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)\n' +
+      '\tat org.apache.spark.scheduler.Task.run(Task.scala:141)\n' +
+      '\tat org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)\n' +
+      '\tat org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)\n' +
+      '\tat org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)\n' +
+      '\tat org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)\n' +
+      '\tat org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)\n' +
+      '\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n' +
+      '\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n' +
+      '\tat java.base/java.lang.Thread.run(Thread.java:840)\n' +
+      '\n' +
+      'Driver stacktrace:\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)\n' +
+      '\tat scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)\n' +
+      '\tat scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)\n' +
+      '\tat scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)\n' +
+      '\tat scala.Option.foreach(Option.scala:407)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)\n' +
+      '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)\n' +
+      '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)\n' +
+      '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)\n' +
+      '\tat org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)\n' +
+      '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)\n' +
+      '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)\n' +
+      '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)\n' +
+      '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2458)\n' +
+      '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$1(RDD.scala:1039)\n' +
+      '\tat org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)\n' +
+      '\tat org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)\n' +
+      '\tat org.apache.spark.rdd.RDD.withScope(RDD.scala:410)\n' +
+      '\tat org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:1037)\n' +
+      '\tat org.apache.spark.sql.Dataset.$anonfun$foreachPartition$1(Dataset.scala:3516)\n' +
+      '\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n' +
+      '\tat org.apache.spark.sql.Dataset.$anonfun$withNewRDDExecutionId$1(Dataset.scala:4311)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)\n' +
+      '\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)\n' +
+      '\tat org.apache.spark.sql.Dataset.withNewRDDExecutionId(Dataset.scala:4309)\n' +
+      '\tat org.apache.spark.sql.Dataset.foreachPartition(Dataset.scala:3516)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.saveTable(JdbcUtils.scala:903)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:70)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)\n' +
+      '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n' +
+      '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n' +
+      '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)\n' +
+      '\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)\n' +
+      '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n' +
+      '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n' +
+      '\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n' +
+      '\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n' +
+      '\tat py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\n' +
+      '\tat py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\n' +
+      '\tat py4j.Gateway.invoke(Gateway.java:282)\n' +
+      '\tat py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\n' +
+      '\tat py4j.commands.CallCommand.execute(CallCommand.java:79)\n' +
+      '\tat py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)\n' +
+      '\tat py4j.ClientServerConnection.run(ClientServerConnection.java:106)\n' +
+      '\tat java.base/java.lang.Thread.run(Thread.java:840)\n' +
+      "Caused by: java.sql.BatchUpdateException: String or binary data would be truncated in table 'CreditStagingDB.dbo.CustomerProductAccount', column 'Email'. Truncated value: 'hoangjohn@example.ne'.\n" +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeBatch(SQLServerPreparedStatement.java:2273)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:753)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)\n' +
+      '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)\n' +
+      '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)\n' +
+      '\tat org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)\n' +
+      '\tat org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)\n' +
+      '\tat org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)\n' +
+      '\tat org.apache.spark.scheduler.Task.run(Task.scala:141)\n' +
+      '\tat org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)\n' +
+      '\tat org.apache.spark.util.Spark'... 486 more characters
+  ]
+}
+05:54:54.691 [info] Disposing request as the cell (3) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.696 [info] Disposing request as the cell (7) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.698 [info] Disposing request as the cell (8) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.698 [info] Disposing request as the cell (8) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.711 [info] Disposing request as the cell (9) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.711 [info] Disposing request as the cell (9) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.711 [info] Disposing request as the cell (9) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.711 [info] Disposing request as the cell (9) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.711 [info] Disposing request as the cell (9) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.711 [info] Disposing request as the cell (9) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.711 [info] Disposing request as the cell (9) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.711 [info] Disposing request as the cell (9) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.711 [info] Disposing request as the cell (9) was deleted /container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb
+05:54:54.791 [info] Dispose Kernel '/container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb' associated with '/container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb'
+05:55:00.898 [info] Starting Kernel (Python Path: /usr/local/bin/python, Unknown, 3.11.9) for '/container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb' (disableUI=true)
+05:55:01.803 [warn] Failed to get activated env vars for /usr/local/bin/python in 883ms
+05:55:01.832 [info] Process Execution: /usr/local/bin/python -m pip list
+05:55:03.347 [warn] Failed to get activated env vars for /usr/local/bin/python in 2350ms
+05:55:03.373 [info] Process Execution: /usr/local/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+05:55:03.398 [info] Process Execution: /usr/local/bin/python -m ipykernel_launcher --f=/~/.local/share/jupyter/runtime/kernel-v30f5e5863c05665d6827e6e2eb046d5fb8361f4de.json
+    > cwd: //container/pyspark_workspace/source_code/sample_code
+05:55:08.892 [info] Kernel successfully started
+05:55:15.066 [warn] Cell completed with errors iu [Error]: name 'DummyDataGenerator' is not defined
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'NameError',
+  evalue: "name 'DummyDataGenerator' is not defined",
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mNameError\x1B[0m                                 Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[1], line 25\x1B[0m\n' +
+      '\x1B[1;32m     13\x1B[0m     df \x1B[38;5;241m=\x1B[39m spark\x1B[38;5;241m.\x1B[39mcreateDataFrame([Row(\x1B[38;5;241m*\x1B[39m\x1B[38;5;241m*\x1B[39mi) \x1B[38;5;28;01mfor\x1B[39;00m i \x1B[38;5;129;01min\x1B[39;00m data])\n' +
+      '\x1B[1;32m     14\x1B[0m     df\x1B[38;5;241m.\x1B[39mwrite \\\n' +
+      '\x1B[1;32m     15\x1B[0m         \x1B[38;5;241m.\x1B[39mformat(\x1B[38;5;124m"\x1B[39m\x1B[38;5;124mjdbc\x1B[39m\x1B[38;5;124m"\x1B[39m) \\\n' +
+      '\x1B[1;32m     16\x1B[0m         \x1B[38;5;241m.\x1B[39moption(\x1B[38;5;124m"\x1B[39m\x1B[38;5;124murl\x1B[39m\x1B[38;5;124m"\x1B[39m, jdbc_url) \\\n' +
+      '\x1B[0;32m   (...)\x1B[0m\n' +
+      '\x1B[1;32m     22\x1B[0m         \x1B[38;5;241m.\x1B[39mmode(\x1B[38;5;124m"\x1B[39m\x1B[38;5;124mappend\x1B[39m\x1B[38;5;124m"\x1B[39m) \\\n' +
+      '\x1B[1;32m     23\x1B[0m         \x1B[38;5;241m.\x1B[39msave()\n' +
+      '\x1B[0;32m---> 25\x1B[0m generator \x1B[38;5;241m=\x1B[39m \x1B[43mDummyDataGenerator\x1B[49m()\n' +
+      '\x1B[1;32m     27\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m _ \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mrange\x1B[39m(\x1B[38;5;241m1\x1B[39m):\n' +
+      '\x1B[1;32m     28\x1B[0m     customer_product_account_data, account_transaction_history_data \x1B[38;5;241m=\x1B[39m generator\x1B[38;5;241m.\x1B[39mgenerate_data(\x1B[38;5;241m20\x1B[39m)\n',
+    "\x1B[0;31mNameError\x1B[0m: name 'DummyDataGenerator' is not defined"
+  ]
+}
+05:56:59.780 [warn] Cell completed with errors iu [Error]: An error occurred while calling o96.save.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 48) (172.18.0.10 executor 1): com.microsoft.sqlserver.jdbc.SQLServerException: Conversion failed when converting date and/or time from character string.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:270)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1735)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatementBatch(SQLServerPreparedStatement.java:3025)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtBatchExecCmd.doExecute(SQLServerPreparedStatement.java:2873)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7745)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4391)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:276)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeBatch(SQLServerPreparedStatement.java:2264)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:753)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)
+	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+	at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2458)
+	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$1(RDD.scala:1039)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:410)
+	at org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:1037)
+	at org.apache.spark.sql.Dataset.$anonfun$foreachPartition$1(Dataset.scala:3516)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.sql.Dataset.$anonfun$withNewRDDExecutionId$1(Dataset.scala:4311)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.Dataset.withNewRDDExecutionId(Dataset.scala:4309)
+	at org.apache.spark.sql.Dataset.foreachPartition(Dataset.scala:3516)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.saveTable(JdbcUtils.scala:903)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:70)
+	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)
+	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Conversion failed when converting date and/or time from character string.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:270)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1735)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatementBatch(SQLServerPreparedStatement.java:3025)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtBatchExecCmd.doExecute(SQLServerPreparedStatement.java:2873)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7745)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4391)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:276)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeBatch(SQLServerPreparedStatement.java:2264)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:753)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)
+	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+	at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	... 1 more
+
+    at n.execute (/~/.vscode-server/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64/dist/extension.node.js:297:4958) {
+  ename: 'Py4JJavaError',
+  evalue: 'An error occurred while calling o96.save.\n' +
+    ': org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 48) (172.18.0.10 executor 1): com.microsoft.sqlserver.jdbc.SQLServerException: Conversion failed when converting date and/or time from character string.\n' +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:270)\n' +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1735)\n' +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatementBatch(SQLServerPreparedStatement.java:3025)\n' +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtBatchExecCmd.doExecute(SQLServerPreparedStatement.java:2873)\n' +
+    '\tat com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7745)\n' +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4391)\n' +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:276)\n' +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)\n' +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeBatch(SQLServerPreparedStatement.java:2264)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:753)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)\n' +
+    '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)\n' +
+    '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)\n' +
+    '\tat org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)\n' +
+    '\tat org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)\n' +
+    '\tat org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)\n' +
+    '\tat org.apache.spark.scheduler.Task.run(Task.scala:141)\n' +
+    '\tat org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)\n' +
+    '\tat org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)\n' +
+    '\tat org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)\n' +
+    '\tat org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)\n' +
+    '\tat org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)\n' +
+    '\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n' +
+    '\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n' +
+    '\tat java.base/java.lang.Thread.run(Thread.java:840)\n' +
+    '\n' +
+    'Driver stacktrace:\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)\n' +
+    '\tat scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)\n' +
+    '\tat scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)\n' +
+    '\tat scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)\n' +
+    '\tat scala.Option.foreach(Option.scala:407)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)\n' +
+    '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)\n' +
+    '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)\n' +
+    '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)\n' +
+    '\tat org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)\n' +
+    '\tat org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)\n' +
+    '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)\n' +
+    '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)\n' +
+    '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)\n' +
+    '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2458)\n' +
+    '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$1(RDD.scala:1039)\n' +
+    '\tat org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)\n' +
+    '\tat org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)\n' +
+    '\tat org.apache.spark.rdd.RDD.withScope(RDD.scala:410)\n' +
+    '\tat org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:1037)\n' +
+    '\tat org.apache.spark.sql.Dataset.$anonfun$foreachPartition$1(Dataset.scala:3516)\n' +
+    '\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n' +
+    '\tat org.apache.spark.sql.Dataset.$anonfun$withNewRDDExecutionId$1(Dataset.scala:4311)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)\n' +
+    '\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)\n' +
+    '\tat org.apache.spark.sql.Dataset.withNewRDDExecutionId(Dataset.scala:4309)\n' +
+    '\tat org.apache.spark.sql.Dataset.foreachPartition(Dataset.scala:3516)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.saveTable(JdbcUtils.scala:903)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:70)\n' +
+    '\tat org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)\n' +
+    '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n' +
+    '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n' +
+    '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)\n' +
+    '\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n' +
+    '\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+    '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+    '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)\n' +
+    '\tat org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)\n' +
+    '\tat org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)\n' +
+    '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n' +
+    '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n' +
+    '\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n' +
+    '\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n' +
+    '\tat py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\n' +
+    '\tat py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\n' +
+    '\tat py4j.Gateway.invoke(Gateway.java:282)\n' +
+    '\tat py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\n' +
+    '\tat py4j.commands.CallCommand.execute(CallCommand.java:79)\n' +
+    '\tat py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)\n' +
+    '\tat py4j.ClientServerConnection.run(ClientServerConnection.java:106)\n' +
+    '\tat java.base/java.lang.Thread.run(Thread.java:840)\n' +
+    'Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Conversion failed when converting date and/or time from character string.\n' +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:270)\n' +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1735)\n' +
+    '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatementBatch(SQLServerPrepa'... 1982 more characters,
+  traceback: [
+    '\x1B[0;31m---------------------------------------------------------------------------\x1B[0m',
+    '\x1B[0;31mPy4JJavaError\x1B[0m                             Traceback (most recent call last)',
+    'Cell \x1B[0;32mIn[11], line 32\x1B[0m\n' +
+      "\x1B[1;32m     30\x1B[0m     insert_data(\x1B[38;5;124m'\x1B[39m\x1B[38;5;124mCustomerProductAccount\x1B[39m\x1B[38;5;124m'\x1B[39m, customer_product_account_data)\n" +
+      '\x1B[1;32m     31\x1B[0m     \x1B[38;5;66;03m# Generate and insert data for AccountTransactionHistory table\x1B[39;00m\n' +
+      "\x1B[0;32m---> 32\x1B[0m     \x1B[43minsert_data\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[38;5;124;43mAccountTransactionHistory\x1B[39;49m\x1B[38;5;124;43m'\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43maccount_transaction_history_data\x1B[49m\x1B[43m)\x1B[49m\n" +
+      '\x1B[1;32m     33\x1B[0m     \x1B[38;5;66;03m# time.sleep(5)  # Sleep for 5 seconds\x1B[39;00m\n' +
+      '\x1B[1;32m     34\x1B[0m \n' +
+      '\x1B[1;32m     35\x1B[0m \x1B[38;5;66;03m# Stop the Spark session\x1B[39;00m\n' +
+      '\x1B[1;32m     36\x1B[0m \x1B[38;5;66;03m# spark.stop()\x1B[39;00m\n',
+    'Cell \x1B[0;32mIn[11], line 23\x1B[0m, in \x1B[0;36minsert_data\x1B[0;34m(table_name, data)\x1B[0m\n' +
+      '\x1B[1;32m     12\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21minsert_data\x1B[39m(table_name, data):\n' +
+      '\x1B[1;32m     13\x1B[0m     df \x1B[38;5;241m=\x1B[39m spark\x1B[38;5;241m.\x1B[39mcreateDataFrame([Row(\x1B[38;5;241m*\x1B[39m\x1B[38;5;241m*\x1B[39mi) \x1B[38;5;28;01mfor\x1B[39;00m i \x1B[38;5;129;01min\x1B[39;00m data])\n' +
+      '\x1B[1;32m     14\x1B[0m     \x1B[43mdf\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mwrite\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     15\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mformat\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mjdbc\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     16\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43murl\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mjdbc_url\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     17\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mdbtable\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mtable_name\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     18\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43muser\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43musername\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     19\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mpassword\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[43mpassword\x1B[49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     20\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mencrypt\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43;01mTrue\x1B[39;49;00m\x1B[43m)\x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     21\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43moption\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mtrustServerCertificate\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43;01mTrue\x1B[39;49;00m\x1B[43m)\x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[1;32m     22\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mmode\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[38;5;124;43mappend\x1B[39;49m\x1B[38;5;124;43m"\x1B[39;49m\x1B[43m)\x1B[49m\x1B[43m \x1B[49m\x1B[43m\\\x1B[49m\n' +
+      '\x1B[0;32m---> 23\x1B[0m \x1B[43m        \x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msave\x1B[49m\x1B[43m(\x1B[49m\x1B[43m)\x1B[49m\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/sql/readwriter.py:1461\x1B[0m, in \x1B[0;36mDataFrameWriter.save\x1B[0;34m(self, path, format, mode, partitionBy, **options)\x1B[0m\n' +
+      '\x1B[1;32m   1459\x1B[0m     \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mformat(\x1B[38;5;28mformat\x1B[39m)\n' +
+      '\x1B[1;32m   1460\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m path \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[0;32m-> 1461\x1B[0m     \x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43m_jwrite\x1B[49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43msave\x1B[49m\x1B[43m(\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1462\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[1;32m   1463\x1B[0m     \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39m_jwrite\x1B[38;5;241m.\x1B[39msave(path)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/py4j/java_gateway.py:1322\x1B[0m, in \x1B[0;36mJavaMember.__call__\x1B[0;34m(self, *args)\x1B[0m\n' +
+      '\x1B[1;32m   1316\x1B[0m command \x1B[38;5;241m=\x1B[39m proto\x1B[38;5;241m.\x1B[39mCALL_COMMAND_NAME \x1B[38;5;241m+\x1B[39m\\\n' +
+      '\x1B[1;32m   1317\x1B[0m     \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mcommand_header \x1B[38;5;241m+\x1B[39m\\\n' +
+      '\x1B[1;32m   1318\x1B[0m     args_command \x1B[38;5;241m+\x1B[39m\\\n' +
+      '\x1B[1;32m   1319\x1B[0m     proto\x1B[38;5;241m.\x1B[39mEND_COMMAND_PART\n' +
+      '\x1B[1;32m   1321\x1B[0m answer \x1B[38;5;241m=\x1B[39m \x1B[38;5;28mself\x1B[39m\x1B[38;5;241m.\x1B[39mgateway_client\x1B[38;5;241m.\x1B[39msend_command(command)\n' +
+      '\x1B[0;32m-> 1322\x1B[0m return_value \x1B[38;5;241m=\x1B[39m \x1B[43mget_return_value\x1B[49m\x1B[43m(\x1B[49m\n' +
+      '\x1B[1;32m   1323\x1B[0m \x1B[43m    \x1B[49m\x1B[43manswer\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mgateway_client\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mtarget_id\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;28;43mself\x1B[39;49m\x1B[38;5;241;43m.\x1B[39;49m\x1B[43mname\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m   1325\x1B[0m \x1B[38;5;28;01mfor\x1B[39;00m temp_arg \x1B[38;5;129;01min\x1B[39;00m temp_args:\n' +
+      '\x1B[1;32m   1326\x1B[0m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;28mhasattr\x1B[39m(temp_arg, \x1B[38;5;124m"\x1B[39m\x1B[38;5;124m_detach\x1B[39m\x1B[38;5;124m"\x1B[39m):\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/pyspark/errors/exceptions/captured.py:179\x1B[0m, in \x1B[0;36mcapture_sql_exception.<locals>.deco\x1B[0;34m(*a, **kw)\x1B[0m\n' +
+      '\x1B[1;32m    177\x1B[0m \x1B[38;5;28;01mdef\x1B[39;00m \x1B[38;5;21mdeco\x1B[39m(\x1B[38;5;241m*\x1B[39ma: Any, \x1B[38;5;241m*\x1B[39m\x1B[38;5;241m*\x1B[39mkw: Any) \x1B[38;5;241m-\x1B[39m\x1B[38;5;241m>\x1B[39m Any:\n' +
+      '\x1B[1;32m    178\x1B[0m     \x1B[38;5;28;01mtry\x1B[39;00m:\n' +
+      '\x1B[0;32m--> 179\x1B[0m         \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[43mf\x1B[49m\x1B[43m(\x1B[49m\x1B[38;5;241;43m*\x1B[39;49m\x1B[43ma\x1B[49m\x1B[43m,\x1B[49m\x1B[43m \x1B[49m\x1B[38;5;241;43m*\x1B[39;49m\x1B[38;5;241;43m*\x1B[39;49m\x1B[43mkw\x1B[49m\x1B[43m)\x1B[49m\n' +
+      '\x1B[1;32m    180\x1B[0m     \x1B[38;5;28;01mexcept\x1B[39;00m Py4JJavaError \x1B[38;5;28;01mas\x1B[39;00m e:\n' +
+      '\x1B[1;32m    181\x1B[0m         converted \x1B[38;5;241m=\x1B[39m convert_exception(e\x1B[38;5;241m.\x1B[39mjava_exception)\n',
+    'File \x1B[0;32m/usr/local/lib/python3.11/site-packages/py4j/protocol.py:326\x1B[0m, in \x1B[0;36mget_return_value\x1B[0;34m(answer, gateway_client, target_id, name)\x1B[0m\n' +
+      '\x1B[1;32m    324\x1B[0m value \x1B[38;5;241m=\x1B[39m OUTPUT_CONVERTER[\x1B[38;5;28mtype\x1B[39m](answer[\x1B[38;5;241m2\x1B[39m:], gateway_client)\n' +
+      '\x1B[1;32m    325\x1B[0m \x1B[38;5;28;01mif\x1B[39;00m answer[\x1B[38;5;241m1\x1B[39m] \x1B[38;5;241m==\x1B[39m REFERENCE_TYPE:\n' +
+      '\x1B[0;32m--> 326\x1B[0m     \x1B[38;5;28;01mraise\x1B[39;00m Py4JJavaError(\n' +
+      '\x1B[1;32m    327\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAn error occurred while calling \x1B[39m\x1B[38;5;132;01m{0}\x1B[39;00m\x1B[38;5;132;01m{1}\x1B[39;00m\x1B[38;5;132;01m{2}\x1B[39;00m\x1B[38;5;124m.\x1B[39m\x1B[38;5;130;01m\\n\x1B[39;00m\x1B[38;5;124m"\x1B[39m\x1B[38;5;241m.\x1B[39m\n' +
+      '\x1B[1;32m    328\x1B[0m         \x1B[38;5;28mformat\x1B[39m(target_id, \x1B[38;5;124m"\x1B[39m\x1B[38;5;124m.\x1B[39m\x1B[38;5;124m"\x1B[39m, name), value)\n' +
+      '\x1B[1;32m    329\x1B[0m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[1;32m    330\x1B[0m     \x1B[38;5;28;01mraise\x1B[39;00m Py4JError(\n' +
+      '\x1B[1;32m    331\x1B[0m         \x1B[38;5;124m"\x1B[39m\x1B[38;5;124mAn error occurred while calling \x1B[39m\x1B[38;5;132;01m{0}\x1B[39;00m\x1B[38;5;132;01m{1}\x1B[39;00m\x1B[38;5;132;01m{2}\x1B[39;00m\x1B[38;5;124m. Trace:\x1B[39m\x1B[38;5;130;01m\\n\x1B[39;00m\x1B[38;5;132;01m{3}\x1B[39;00m\x1B[38;5;130;01m\\n\x1B[39;00m\x1B[38;5;124m"\x1B[39m\x1B[38;5;241m.\x1B[39m\n' +
+      '\x1B[1;32m    332\x1B[0m         \x1B[38;5;28mformat\x1B[39m(target_id, \x1B[38;5;124m"\x1B[39m\x1B[38;5;124m.\x1B[39m\x1B[38;5;124m"\x1B[39m, name, value))\n',
+    '\x1B[0;31mPy4JJavaError\x1B[0m: An error occurred while calling o96.save.\n' +
+      ': org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 48) (172.18.0.10 executor 1): com.microsoft.sqlserver.jdbc.SQLServerException: Conversion failed when converting date and/or time from character string.\n' +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:270)\n' +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1735)\n' +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatementBatch(SQLServerPreparedStatement.java:3025)\n' +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtBatchExecCmd.doExecute(SQLServerPreparedStatement.java:2873)\n' +
+      '\tat com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7745)\n' +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4391)\n' +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:276)\n' +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)\n' +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeBatch(SQLServerPreparedStatement.java:2264)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:753)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)\n' +
+      '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)\n' +
+      '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)\n' +
+      '\tat org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)\n' +
+      '\tat org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)\n' +
+      '\tat org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)\n' +
+      '\tat org.apache.spark.scheduler.Task.run(Task.scala:141)\n' +
+      '\tat org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)\n' +
+      '\tat org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)\n' +
+      '\tat org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)\n' +
+      '\tat org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)\n' +
+      '\tat org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)\n' +
+      '\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n' +
+      '\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n' +
+      '\tat java.base/java.lang.Thread.run(Thread.java:840)\n' +
+      '\n' +
+      'Driver stacktrace:\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)\n' +
+      '\tat scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)\n' +
+      '\tat scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)\n' +
+      '\tat scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)\n' +
+      '\tat scala.Option.foreach(Option.scala:407)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)\n' +
+      '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)\n' +
+      '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)\n' +
+      '\tat org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)\n' +
+      '\tat org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)\n' +
+      '\tat org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)\n' +
+      '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)\n' +
+      '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)\n' +
+      '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)\n' +
+      '\tat org.apache.spark.SparkContext.runJob(SparkContext.scala:2458)\n' +
+      '\tat org.apache.spark.rdd.RDD.$anonfun$foreachPartition$1(RDD.scala:1039)\n' +
+      '\tat org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)\n' +
+      '\tat org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)\n' +
+      '\tat org.apache.spark.rdd.RDD.withScope(RDD.scala:410)\n' +
+      '\tat org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:1037)\n' +
+      '\tat org.apache.spark.sql.Dataset.$anonfun$foreachPartition$1(Dataset.scala:3516)\n' +
+      '\tat scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)\n' +
+      '\tat org.apache.spark.sql.Dataset.$anonfun$withNewRDDExecutionId$1(Dataset.scala:4311)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)\n' +
+      '\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)\n' +
+      '\tat org.apache.spark.sql.Dataset.withNewRDDExecutionId(Dataset.scala:4309)\n' +
+      '\tat org.apache.spark.sql.Dataset.foreachPartition(Dataset.scala:3516)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.saveTable(JdbcUtils.scala:903)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:70)\n' +
+      '\tat org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)\n' +
+      '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)\n' +
+      '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)\n' +
+      '\tat org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)\n' +
+      '\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)\n' +
+      '\tat org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+      '\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)\n' +
+      '\tat org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)\n' +
+      '\tat org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)\n' +
+      '\tat org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)\n' +
+      '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n' +
+      '\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n' +
+      '\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n' +
+      '\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n' +
+      '\tat py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\n' +
+      '\tat py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\n' +
+      '\tat py4j.Gateway.invoke(Gateway.java:282)\n' +
+      '\tat py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\n' +
+      '\tat py4j.commands.CallCommand.execute(CallCommand.java:79)\n' +
+      '\tat py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)\n' +
+      '\tat py4j.ClientServerConnection.run(ClientServerConnection.java:106)\n' +
+      '\tat java.base/java.lang.Thread.run(Thread.java:840)\n' +
+      'Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Conversion failed when converting date and/or time from character string.\n' +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:270)\n' +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1735)\n' +
+      '\tat com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedSta'... 2008 more characters
+  ]
+}

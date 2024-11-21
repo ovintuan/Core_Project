@@ -1,2 +1,0 @@
-fetchSettingsForUri: file://attached-container%2B7b22636f6e7461696e65724e616d65223a222f707974686f6e5f656e7669726f6e6d656e74222c2273657474696e6773223a7b22636f6e74657874223a226465736b746f702d6c696e7578227d7d/container/pyspark_workspace/source_code/sample_code/Test_Project_1.ipynb TypeError [ERR_INVALID_FILE_URL_HOST]: File URL host must be "localhost" or empty on linux
-[Error - 10:46:38 PM] Stopping server timed out

@@ -1,0 +1,98 @@
+2024-11-21 05:21:41.630 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-11-21 05:21:41.631 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-11-21 05:21:41.631 [info] Experiment 'pythonTestAdapter' is active
+2024-11-21 05:21:41.631 [warning] Dir "/container/pyspark_workspace/.pixi/envs" is not watchable (directory does not exist)
+2024-11-21 05:21:41.632 [info] > pyenv which python
+2024-11-21 05:21:41.632 [info] cwd: .
+2024-11-21 05:21:42.527 [info] > conda info --json
+2024-11-21 05:21:44.440 [info] > D:\Program Files\Python\python.exe -c "import sys;print(sys.executable)"
+2024-11-21 05:21:44.546 [error] Error: Command failed: D:\Program Files\Python\python.exe -c "import sys;print(sys.executable)"
+/bin/sh: 1: D:Program: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:531:35)
+    at maybeClose (node:internal/child_process:1105:16)
+    at Socket.<anonymous> (node:internal/child_process:457:11)
+    at Socket.emit (node:events:519:28)
+    at Pipe.<anonymous> (node:net:339:12) {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: 'D:\\Program Files\\Python\\python.exe -c "import sys;print(sys.executable)"'
+}
+2024-11-21 05:22:06.253 [info] Starting Pylance language server.
+2024-11-21 05:25:36.801 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:25:37.896 [info] Starting Environment refresh
+2024-11-21 05:25:37.905 [info] Searching for interpreters in posix paths locator
+2024-11-21 05:25:37.917 [info] Searching for pyenv environments
+2024-11-21 05:25:37.928 [info] Searching for conda environments
+2024-11-21 05:25:37.931 [info] Searching for global virtual environments
+2024-11-21 05:25:37.932 [info] Searching for custom virtual environments
+2024-11-21 05:25:38.016 [info] > hatch env show --json
+2024-11-21 05:25:38.018 [info] cwd: .
+2024-11-21 05:25:38.050 [info] pyenv is not installed
+2024-11-21 05:25:38.053 [info] Finished searching for pyenv environments: 140 milliseconds
+2024-11-21 05:25:38.057 [info] Finished searching for custom virtual envs: 142 milliseconds
+2024-11-21 05:25:38.071 [info] Finished searching for global virtual envs: 159 milliseconds
+2024-11-21 05:25:38.191 [info] Found: /bin/python3 --> /bin/python3.11
+2024-11-21 05:25:38.221 [info] Found: /bin/python3.11 --> /bin/python3.11
+2024-11-21 05:25:38.365 [info] Found: /usr/bin/python3 --> /usr/bin/python3.11
+2024-11-21 05:25:38.377 [info] Found: /usr/bin/python3.11 --> /usr/bin/python3.11
+2024-11-21 05:25:38.619 [info] > "D:\Program Files\Python\python.exe" -I ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+2024-11-21 05:25:39.550 [error] Error: Command failed: "D:\Program Files\Python\python.exe" -I /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+/bin/sh: 1: D:\Program Files\Python\python.exe: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:531:35)
+    at maybeClose (node:internal/child_process:1105:16)
+    at Socket.<anonymous> (node:internal/child_process:457:11)
+    at Socket.emit (node:events:519:28)
+    at Pipe.<anonymous> (node:net:339:12) {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: '"D:\\Program Files\\Python\\python.exe" -I /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py'
+}
+2024-11-21 05:25:39.565 [info] Found: /usr/local/bin/python --> /usr/local/bin/python3.11
+2024-11-21 05:25:39.610 [info] Found: /usr/local/bin/python3 --> /usr/local/bin/python3.11
+2024-11-21 05:25:39.614 [info] Found: /usr/local/bin/python3.11 --> /usr/local/bin/python3.11
+2024-11-21 05:25:39.997 [info] > /bin/python3 -I ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+2024-11-21 05:25:40.158 [info] Finished searching for interpreters in posix paths locator: 2231 milliseconds
+2024-11-21 05:25:40.165 [info] > /usr/bin/python3 -I ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+2024-11-21 05:25:40.299 [info] Environments refresh paths discovered (event): 2413 milliseconds
+2024-11-21 05:25:40.302 [info] Environments refresh paths discovered: 2415 milliseconds
+2024-11-21 05:25:40.715 [info] > /usr/local/bin/python -I ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+2024-11-21 05:25:41.563 [info] > "D:\Program Files\Python\python.exe" -I ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+2024-11-21 05:25:41.584 [error] Error: Command failed: "D:\Program Files\Python\python.exe" -I /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py
+/bin/sh: 1: D:\Program Files\Python\python.exe: not found
+
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at ChildProcess.exithandler (node:child_process:422:12)
+    at ChildProcess.emit (node:events:531:35)
+    at maybeClose (node:internal/child_process:1105:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:305:5) {
+  code: 127,
+  killed: false,
+  signal: null,
+  cmd: '"D:\\Program Files\\Python\\python.exe" -I /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode-server/extensions/ms-python.python-2024.20.0-linux-x64/python_files/interpreterInfo.py'
+}
+2024-11-21 05:25:41.617 [info] Environments refresh finished (event): 3725 milliseconds
+2024-11-21 05:25:41.684 [info] Environment refresh took 3804 milliseconds
+2024-11-21 05:25:44.603 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:25:52.404 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:26:32.643 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:26:43.455 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:30:27.346 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:37:40.430 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:37:50.113 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:38:13.411 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:38:33.253 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:38:34.585 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:39:22.657 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:40:12.430 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
+2024-11-21 05:42:26.209 [info] Discover tests for workspace name: pyspark_workspace - uri: /container/pyspark_workspace/source_code/generate_data/generate_dummy_data.py
