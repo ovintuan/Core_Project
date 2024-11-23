@@ -1696,3 +1696,31 @@ Please take a look at these docs to improve your DAG import time:
 [2024-11-23T14:48:02.445+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:48:02.445+0000] {dag.py:2907} INFO - Sync 1 DAGs
 [2024-11-23T14:48:02.559+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:48:02.559+0000] {dag.py:3677} INFO - Setting next_dagrun for import_dummy_data to None, run_after=None
 [2024-11-23T14:48:02.776+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_dummy_data.py took 0.586 seconds
+[2024-11-23T14:48:33.613+0000] {processor.py:157} INFO - Started process (PID=1031) to work on /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:48:33.617+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_dummy_data.py for tasks to queue
+[2024-11-23T14:48:33.633+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:48:33.633+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:48:33.677+0000] {processor.py:839} INFO - DAG(s) dict_keys(['import_dummy_data']) retrieved from /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:48:33.841+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:48:33.841+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T14:48:33.874+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:48:33.874+0000] {dag.py:3677} INFO - Setting next_dagrun for import_dummy_data to None, run_after=None
+[2024-11-23T14:48:34.087+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_dummy_data.py took 0.481 seconds
+[2024-11-23T14:49:04.439+0000] {processor.py:157} INFO - Started process (PID=1041) to work on /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:49:04.441+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_dummy_data.py for tasks to queue
+[2024-11-23T14:49:04.445+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:49:04.444+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:49:04.482+0000] {processor.py:839} INFO - DAG(s) dict_keys(['import_dummy_data']) retrieved from /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:49:04.586+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:49:04.586+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T14:49:04.618+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:49:04.617+0000] {dag.py:3677} INFO - Setting next_dagrun for import_dummy_data to None, run_after=None
+[2024-11-23T14:49:04.796+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_dummy_data.py took 0.364 seconds
+[2024-11-23T14:49:35.076+0000] {processor.py:157} INFO - Started process (PID=1051) to work on /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:49:35.079+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_dummy_data.py for tasks to queue
+[2024-11-23T14:49:35.084+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:49:35.083+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:49:35.125+0000] {processor.py:839} INFO - DAG(s) dict_keys(['import_dummy_data']) retrieved from /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:49:35.218+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:49:35.217+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T14:49:35.253+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:49:35.252+0000] {dag.py:3677} INFO - Setting next_dagrun for import_dummy_data to None, run_after=None
+[2024-11-23T14:49:35.367+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_dummy_data.py took 0.297 seconds
+[2024-11-23T14:50:05.713+0000] {processor.py:157} INFO - Started process (PID=1061) to work on /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:50:05.714+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_dummy_data.py for tasks to queue
+[2024-11-23T14:50:05.717+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:50:05.717+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:50:05.746+0000] {processor.py:839} INFO - DAG(s) dict_keys(['import_dummy_data']) retrieved from /opt/airflow/dags/step_1_import_dummy_data.py
+[2024-11-23T14:50:05.830+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:50:05.830+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T14:50:05.872+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:50:05.872+0000] {dag.py:3677} INFO - Setting next_dagrun for import_dummy_data to None, run_after=None
+[2024-11-23T14:50:05.956+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_dummy_data.py took 0.247 seconds

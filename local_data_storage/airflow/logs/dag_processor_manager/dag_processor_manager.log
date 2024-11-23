@@ -15399,3 +15399,77 @@ File Path                                            PID    Runtime      # DAGs 
 /opt/airflow/dags/step_1_import_dummy_data.py                                 1           0  0.22s           2024-11-23T14:45:27
 /opt/airflow/dags/step_2_bronzen_layer_data_full.py                           1           0  0.20s           2024-11-23T14:45:26
 ================================================================================
+[2024-11-23T14:46:07.685+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/step_1_import_dummy_data.py                                 1           0  0.22s           2024-11-23T14:45:57
+/opt/airflow/dags/step_2_bronzen_layer_data_full.py                           1           0  0.28s           2024-11-23T14:45:57
+================================================================================
+[2024-11-23T14:46:38.231+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/step_1_import_dummy_data.py                                 1           0  0.28s           2024-11-23T14:46:28
+/opt/airflow/dags/step_2_bronzen_layer_data_full.py                           1           0  0.27s           2024-11-23T14:46:28
+================================================================================
+[2024-11-23T14:47:08.902+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/step_1_import_dummy_data.py                                 1           0  0.42s           2024-11-23T14:46:58
+/opt/airflow/dags/step_2_bronzen_layer_data_full.py                           1           0  0.38s           2024-11-23T14:46:58
+================================================================================
+[2024-11-23T14:47:39.662+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/step_1_import_dummy_data.py                                 1           0  0.48s           2024-11-23T14:47:29
+/opt/airflow/dags/step_2_bronzen_layer_data_full.py                           1           0  0.44s           2024-11-23T14:47:29
+================================================================================
+[2024-11-23T14:48:09.872+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/step_1_import_dummy_data.py                                 1           0  2.83s           2024-11-23T14:48:02
+/opt/airflow/dags/step_2_bronzen_layer_data_full.py                           1           0  2.95s           2024-11-23T14:48:02
+================================================================================
+[2024-11-23T14:48:27.012+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2024-11-23T14:48:27.395+0000] {manager.py:763} INFO - There are 2 files in /opt/airflow/dags
+[2024-11-23T14:48:40.153+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/step_1_import_dummy_data.py                                 1           0  0.53s           2024-11-23T14:48:34
+/opt/airflow/dags/step_2_bronzen_layer_data_full.py                           1           0  0.52s           2024-11-23T14:48:34
+================================================================================
+[2024-11-23T14:49:10.836+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/step_1_import_dummy_data.py                                 1           0  0.39s           2024-11-23T14:49:04
+/opt/airflow/dags/step_2_bronzen_layer_data_full.py                           1           0  0.38s           2024-11-23T14:49:04
+================================================================================
+[2024-11-23T14:49:41.448+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/step_1_import_dummy_data.py                                 1           0  0.33s           2024-11-23T14:49:35
+/opt/airflow/dags/step_2_bronzen_layer_data_full.py                           1           0  0.38s           2024-11-23T14:49:35
+================================================================================
