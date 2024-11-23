@@ -8,6 +8,7 @@ resource "docker_container" "airflow_init_db" {
   user = "50000:0"
   env = [
     "AIRFLOW__CORE__EXECUTOR=LocalExecutor",
+    "_AIRFLOW_DB_MIGRATE=true",
     "AIRFLOW__CORE__LOAD_EXAMPLES=false",
     "AIRFLOW_UID=50000",
     "AIRFLOW_GID=0",

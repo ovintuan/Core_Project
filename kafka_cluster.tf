@@ -111,11 +111,6 @@ resource "docker_container" "kafka_schema_registry" {
     internal = var.kafka_schema_registry_port
     external = var.kafka_schema_registry_port
   }
-  mounts {
-    target = "/bitnami"
-    type   = "bind"
-    source = abspath("./local_data_storage/kafka/schema_registry")
-  }
   depends_on = [docker_container.kafka_1, docker_container.kafka_2, docker_container.kafka_3]
 }
 

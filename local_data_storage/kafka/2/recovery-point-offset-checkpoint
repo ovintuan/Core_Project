@@ -16,11 +16,11 @@ debezium_offset 23 0
 debezium_offset 7 0
 __consumer_offsets 25 0
 __consumer_offsets 35 0
-__consumer_offsets 41 0
-__consumer_offsets 33 0
+__consumer_offsets 41 43
+__consumer_offsets 33 29
 __consumer_offsets 23 0
 __consumer_offsets 49 0
-_schemas 0 0
+_schemas 0 39
 __consumer_offsets 47 0
 __consumer_offsets 16 0
 __consumer_offsets 28 0
@@ -30,7 +30,7 @@ __consumer_offsets 42 0
 __consumer_offsets 3 0
 __consumer_offsets 18 0
 __consumer_offsets 37 0
-sqlserver 0 0
+sqlserver 0 3
 __consumer_offsets 15 0
 __consumer_offsets 24 0
 debezium_status 1 0
@@ -55,7 +55,7 @@ __consumer_offsets 45 0
 __consumer_offsets 1 0
 __consumer_offsets 5 0
 __consumer_offsets 26 0
-__consumer_offsets 29 0
+__consumer_offsets 29 36
 __consumer_offsets 34 0
 __consumer_offsets 10 0
 debezium_offset 3 0
