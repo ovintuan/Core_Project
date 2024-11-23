@@ -173,10 +173,10 @@ resource "docker_container" "postgres_database_1" {
     source = abspath("./source_code/init_script/")
   }
   provisioner "local-exec" {
-    command = <<-EOT
-      docker exec postgres_database_1 sleep 90
-      docker exec postgres_database_1 psql -h localhost -U ${local.postgres_user} -f /source_code/init_script/AirFlow_Metadata/init_DB.sql
-    EOT
+    command = "docker exec postgres_database_1 sleep 90"
+  }
+  provisioner "local-exec" {
+    command = "docker exec postgres_database_1 psql -h localhost -U ${local.postgres_user} -f /source_code/init_script/AirFlow_Metadata/init_DB.sql"
     on_failure = continue
   }
 }
@@ -209,11 +209,13 @@ resource "docker_container" "sqlserver_database_1" {
     source = abspath("./source_code/init_script/")
     }
   provisioner "local-exec" {
-    command = <<-EOT
-      docker exec sqlserver_database_1 sleep 90
-      docker exec sqlserver_database_1 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_1} -i /source_code/init_script/SQL_Server_1/init_DB.sql
-      docker exec sqlserver_database_1 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_1} -i /source_code/init_script/SQL_Server_1/init_DB_CreditStagingDB.sql
-    EOT
+    command = "docker exec sqlserver_database_1 sleep 90"
+  }
+  provisioner "local-exec" {
+    command = "docker exec sqlserver_database_1 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_1} -i /source_code/init_script/SQL_Server_1/init_DB.sql"
+  }
+  provisioner "local-exec" {
+    command = "docker exec sqlserver_database_1 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_1} -i /source_code/init_script/SQL_Server_1/init_DB_CreditStagingDB.sql"
   }
 }
 
@@ -245,11 +247,15 @@ resource "docker_container" "sqlserver_database_2" {
     source = abspath("./source_code/init_script/")
   }
   provisioner "local-exec" {
-    command = <<-EOT
-      docker exec sqlserver_database_2 sleep 90
-      docker exec sqlserver_database_2 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_2} -i /source_code/init_script/SQL_Server_2/init_DB.sql
-      docker exec sqlserver_database_2 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_2} -i /source_code/init_script/SQL_Server_2/init_DB_CreditLakehouseDB.sql
-      docker exec sqlserver_database_2 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_2} -i /source_code/init_script/SQL_Server_2/init_DB_CreditDW.sql
-    EOT
+    command = "docker exec sqlserver_database_2 sleep 90"
+  }
+  provisioner "local-exec" {
+    command = "docker exec sqlserver_database_2 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_2} -i /source_code/init_script/SQL_Server_2/init_DB.sql"
+  }
+  provisioner "local-exec" {
+    command = "docker exec sqlserver_database_2 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_2} -i /source_code/init_script/SQL_Server_2/init_DB_CreditLakehouseDB.sql"
+  }
+  provisioner "local-exec" {
+    command = "docker exec sqlserver_database_2 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_2} -i /source_code/init_script/SQL_Server_2/init_DB_CreditDW.sql"
   }
 }
