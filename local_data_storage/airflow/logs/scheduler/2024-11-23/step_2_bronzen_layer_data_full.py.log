@@ -1085,3 +1085,38 @@ sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate
 [2024-11-23T14:45:26.879+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:45:26.879+0000] {dag.py:2907} INFO - Sync 1 DAGs
 [2024-11-23T14:45:26.898+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:45:26.898+0000] {dag.py:3677} INFO - Setting next_dagrun for transfer_to_bronze_layer_full to None, run_after=None
 [2024-11-23T14:45:26.979+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_2_bronzen_layer_data_full.py took 0.175 seconds
+[2024-11-23T14:45:57.347+0000] {processor.py:157} INFO - Started process (PID=977) to work on /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:45:57.348+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_2_bronzen_layer_data_full.py for tasks to queue
+[2024-11-23T14:45:57.350+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:45:57.349+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:45:57.373+0000] {processor.py:839} INFO - DAG(s) dict_keys(['transfer_to_bronze_layer_full']) retrieved from /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:45:57.430+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:45:57.430+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T14:45:57.456+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:45:57.455+0000] {dag.py:3677} INFO - Setting next_dagrun for transfer_to_bronze_layer_full to None, run_after=None
+[2024-11-23T14:45:57.591+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_2_bronzen_layer_data_full.py took 0.248 seconds
+[2024-11-23T14:46:27.856+0000] {processor.py:157} INFO - Started process (PID=987) to work on /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:46:27.857+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_2_bronzen_layer_data_full.py for tasks to queue
+[2024-11-23T14:46:27.859+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:46:27.859+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:46:27.884+0000] {processor.py:839} INFO - DAG(s) dict_keys(['transfer_to_bronze_layer_full']) retrieved from /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:46:27.944+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:46:27.944+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T14:46:27.967+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:46:27.967+0000] {dag.py:3677} INFO - Setting next_dagrun for transfer_to_bronze_layer_full to None, run_after=None
+[2024-11-23T14:46:28.089+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_2_bronzen_layer_data_full.py took 0.237 seconds
+[2024-11-23T14:46:58.468+0000] {processor.py:157} INFO - Started process (PID=997) to work on /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:46:58.469+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_2_bronzen_layer_data_full.py for tasks to queue
+[2024-11-23T14:46:58.474+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:46:58.473+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:46:58.507+0000] {processor.py:839} INFO - DAG(s) dict_keys(['transfer_to_bronze_layer_full']) retrieved from /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:46:58.619+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:46:58.619+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T14:46:58.675+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:46:58.674+0000] {dag.py:3677} INFO - Setting next_dagrun for transfer_to_bronze_layer_full to None, run_after=None
+[2024-11-23T14:46:58.798+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_2_bronzen_layer_data_full.py took 0.337 seconds
+[2024-11-23T14:47:29.143+0000] {processor.py:157} INFO - Started process (PID=1007) to work on /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:47:29.144+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_2_bronzen_layer_data_full.py for tasks to queue
+[2024-11-23T14:47:29.147+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:47:29.147+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:47:29.168+0000] {processor.py:839} INFO - DAG(s) dict_keys(['transfer_to_bronze_layer_full']) retrieved from /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:47:29.224+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:47:29.224+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T14:47:29.244+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:47:29.243+0000] {dag.py:3677} INFO - Setting next_dagrun for transfer_to_bronze_layer_full to None, run_after=None
+[2024-11-23T14:47:29.554+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_2_bronzen_layer_data_full.py took 0.416 seconds
+[2024-11-23T14:48:02.199+0000] {processor.py:157} INFO - Started process (PID=1018) to work on /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:48:02.201+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_2_bronzen_layer_data_full.py for tasks to queue
+[2024-11-23T14:48:02.207+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:48:02.206+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:48:02.252+0000] {processor.py:839} INFO - DAG(s) dict_keys(['transfer_to_bronze_layer_full']) retrieved from /opt/airflow/dags/step_2_bronzen_layer_data_full.py
+[2024-11-23T14:48:02.470+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:48:02.470+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T14:48:02.716+0000] {logging_mixin.py:151} INFO - [2024-11-23T14:48:02.716+0000] {dag.py:3677} INFO - Setting next_dagrun for transfer_to_bronze_layer_full to None, run_after=None
+[2024-11-23T14:48:02.869+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_2_bronzen_layer_data_full.py took 0.677 seconds
