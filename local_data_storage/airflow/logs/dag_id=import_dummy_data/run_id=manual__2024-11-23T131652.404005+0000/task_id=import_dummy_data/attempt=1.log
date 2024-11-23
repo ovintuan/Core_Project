@@ -1,0 +1,28 @@
+[2024-11-23T13:17:02.001+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_dummy_data.import_dummy_data manual__2024-11-23T13:16:52.404005+00:00 [queued]>
+[2024-11-23T13:17:02.020+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_dummy_data.import_dummy_data manual__2024-11-23T13:16:52.404005+00:00 [queued]>
+[2024-11-23T13:17:02.021+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-11-23T13:17:02.101+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): import_dummy_data> on 2024-11-23 13:16:52.404005+00:00
+[2024-11-23T13:17:02.139+0000] {standard_task_runner.py:57} INFO - Started process 2050 to run task
+[2024-11-23T13:17:02.323+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_dummy_data', 'import_dummy_data', 'manual__2024-11-23T13:16:52.404005+00:00', '--job-id', '314', '--raw', '--subdir', 'DAGS_FOLDER/step_1_import_dummy_data.py', '--cfg-path', '/tmp/tmp3ou5wh4g']
+[2024-11-23T13:17:02.345+0000] {standard_task_runner.py:85} INFO - Job 314: Subtask import_dummy_data
+[2024-11-23T13:17:02.870+0000] {task_command.py:415} INFO - Running <TaskInstance: import_dummy_data.import_dummy_data manual__2024-11-23T13:16:52.404005+00:00 [running]> on host 5143e832e4c7
+[2024-11-23T13:17:03.453+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_dummy_data' AIRFLOW_CTX_TASK_ID='import_dummy_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-23T13:16:52.404005+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-23T13:16:52.404005+00:00'
+[2024-11-23T13:17:03.505+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-11-23T13:17:03.508+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'docker exec python_environment python ./source_code/transfer_data/transfer_data_Dummy_to_CreditStagingDB.py']
+[2024-11-23T13:17:03.532+0000] {subprocess.py:86} INFO - Output:
+[2024-11-23T13:17:07.162+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2024-11-23T13:17:07.163+0000] {subprocess.py:93} INFO -   File "/container/pyspark_workspace/./source_code/transfer_data/transfer_data_Dummy_to_CreditStagingDB.py", line 6, in <module>
+[2024-11-23T13:17:07.164+0000] {subprocess.py:93} INFO -     from utils.spark import SparkUtils
+[2024-11-23T13:17:07.164+0000] {subprocess.py:93} INFO -   File "/container/pyspark_workspace/source_code/utils/spark.py", line 5, in <module>
+[2024-11-23T13:17:07.165+0000] {subprocess.py:93} INFO -     import database as DatabaseUtils
+[2024-11-23T13:17:07.167+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'database'
+[2024-11-23T13:17:08.343+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-11-23T13:17:08.579+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-11-23T13:17:08.591+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=import_dummy_data, task_id=import_dummy_data, execution_date=20241123T131652, start_date=20241123T131702, end_date=20241123T131708
+[2024-11-23T13:17:08.840+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 314 for task import_dummy_data (Bash command failed. The command returned a non-zero exit code 1.; 2050)
+[2024-11-23T13:17:08.861+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-11-23T13:17:08.950+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

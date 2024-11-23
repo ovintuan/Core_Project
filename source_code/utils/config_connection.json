@@ -1,0 +1,23 @@
+{
+  "sql_server_1": {
+    "host_name": "sqlserver_database_1",
+    "type": "sqlserver",
+    "port": 1433,
+    "username": "SA",
+    "password": "SQL_Server_Password_1000"
+  },
+  "sql_server_2": {
+    "host_name": "sqlserver_database_2",
+    "type": "sqlserver",
+    "port": 1433,
+    "username": "SA",
+    "password": "SQL_Server_Password_2000"
+  },
+  "postgres": {
+    "host_name": "postgres_database_1",
+    "type": "postgres",
+    "port": 5432,
+    "username": "Postgres_User",
+    "password": "Postgres_Password_3000"
+  }
+}

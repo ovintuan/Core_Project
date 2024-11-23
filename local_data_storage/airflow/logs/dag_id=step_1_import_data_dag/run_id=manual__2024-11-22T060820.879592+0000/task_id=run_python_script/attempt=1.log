@@ -1,0 +1,125 @@
+[2024-11-22T06:08:33.043+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: step_1_import_data_dag.run_python_script manual__2024-11-22T06:08:20.879592+00:00 [queued]>
+[2024-11-22T06:08:33.062+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: step_1_import_data_dag.run_python_script manual__2024-11-22T06:08:20.879592+00:00 [queued]>
+[2024-11-22T06:08:33.063+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-11-22T06:08:33.136+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): run_python_script> on 2024-11-22 06:08:20.879592+00:00
+[2024-11-22T06:08:33.144+0000] {standard_task_runner.py:57} INFO - Started process 644 to run task
+[2024-11-22T06:08:33.152+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'step_1_import_data_dag', 'run_python_script', 'manual__2024-11-22T06:08:20.879592+00:00', '--job-id', '243', '--raw', '--subdir', 'DAGS_FOLDER/step_1_import_data_dag.py', '--cfg-path', '/tmp/tmpo9qcl0me']
+[2024-11-22T06:08:33.158+0000] {standard_task_runner.py:85} INFO - Job 243: Subtask run_python_script
+[2024-11-22T06:08:33.504+0000] {task_command.py:415} INFO - Running <TaskInstance: step_1_import_data_dag.run_python_script manual__2024-11-22T06:08:20.879592+00:00 [running]> on host 42aaea08c63d
+[2024-11-22T06:08:35.153+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='step_1_import_data_dag' AIRFLOW_CTX_TASK_ID='run_python_script' AIRFLOW_CTX_EXECUTION_DATE='2024-11-22T06:08:20.879592+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-22T06:08:20.879592+00:00'
+[2024-11-22T06:08:35.191+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-11-22T06:08:35.193+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'docker exec python_environment python ./source_code/generate_data/insert_dummy_data_into_CreditStagingDB.py']
+[2024-11-22T06:08:35.274+0000] {subprocess.py:86} INFO - Output:
+[2024-11-22T06:08:53.297+0000] {subprocess.py:93} INFO - 24/11/22 06:08:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-11-22T06:08:53.985+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2024-11-22T06:08:53.987+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2024-11-22T06:27:23.313+0000] {job.py:219} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres_database_1" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 190, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres_database_1" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-11-22T06:46:02.300+0000] {local_task_job_runner.py:205} ERROR - Heartbeat time limit exceeded!
+[2024-11-22T06:46:02.420+0000] {process_utils.py:131} INFO - Sending 15 to group 644. PIDs of all processes in the group: [645, 644]
+[2024-11-22T06:46:02.453+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 644
+[2024-11-22T06:46:02.534+0000] {taskinstance.py:1632} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-11-22T06:46:02.579+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2024-11-22T06:49:18.540+0000] {process_utils.py:149} WARNING - process psutil.Process(pid=644, name='airflow task ru', status='running', started='06:08:32') did not respond to SIGTERM. Trying SIGKILL
+[2024-11-22T06:49:19.194+0000] {process_utils.py:149} WARNING - process psutil.Process(pid=645, name='docker', status='zombie', started='06:08:34') did not respond to SIGTERM. Trying SIGKILL
+[2024-11-22T06:49:19.247+0000] {process_utils.py:86} INFO - Sending the signal 9 to group 644
+[2024-11-22T06:49:19.402+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=644, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='06:08:32') (644) terminated with exit code -9
+[2024-11-22T06:49:19.576+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=645, name='docker', status='terminated', started='06:08:34') (645) terminated with exit code None
+[2024-11-22T06:49:19.591+0000] {standard_task_runner.py:172} ERROR - Job 243 was killed before it finished (likely due to running out of memory)

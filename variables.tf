@@ -179,6 +179,10 @@ variable "kafka_schema_registry_hostname" {
   type    = string
 }
 
+locals {
+  kafka_bootstrap_servers = "kafka-1:${var.kafka_port},kafka-2:${var.kafka_port},kafka-3:${var.kafka_port}"
+}
+
 ##########################################################################################
 ### airflow.tf
 
@@ -253,6 +257,52 @@ locals {
 
 
 ##########################################################################################
+### debezium.tf
+
+variable "debezium_image" {
+  default = "debezium/connect:3.0.0.Final"
+  type    = string
+}
+
+variable "debezium_port_internal" {
+  default = 8083
+  type    = number
+}
+
+variable "debezium_port_external" {
+  default = 9083
+  type    = number
+}
+
+# variable "kafka_bootstrap_servers" {
+#   default = "kafka:9092"
+#   type    = string
+# }
+
+variable "debezium_group_id" {
+  default = "debezium"
+  type    = string
+}
+
+variable "debezium_config_storage_topic" {
+  default = "debezium_config"
+  type    = string
+}
+
+variable "debezium_offset_storage_topic" {
+  default = "debezium_offset"
+  type    = string
+}
+
+variable "debezium_status_storage_topic" {
+  default = "debezium_status"
+  type    = string
+}
+
+variable "volume_debezium" {
+  default = "debezium_history"
+  type    = string
+}
 
 ##########################################################################################
 

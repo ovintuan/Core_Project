@@ -1,0 +1,38 @@
+[2024-11-23T13:33:51.051+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: import_dummy_data.import_dummy_data manual__2024-11-23T13:33:43.802191+00:00 [queued]>
+[2024-11-23T13:33:51.068+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: import_dummy_data.import_dummy_data manual__2024-11-23T13:33:43.802191+00:00 [queued]>
+[2024-11-23T13:33:51.068+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-11-23T13:33:51.124+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): import_dummy_data> on 2024-11-23 13:33:43.802191+00:00
+[2024-11-23T13:33:51.146+0000] {standard_task_runner.py:57} INFO - Started process 2386 to run task
+[2024-11-23T13:33:51.156+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'import_dummy_data', 'import_dummy_data', 'manual__2024-11-23T13:33:43.802191+00:00', '--job-id', '316', '--raw', '--subdir', 'DAGS_FOLDER/step_1_import_dummy_data.py', '--cfg-path', '/tmp/tmpzj7t5j82']
+[2024-11-23T13:33:51.161+0000] {standard_task_runner.py:85} INFO - Job 316: Subtask import_dummy_data
+[2024-11-23T13:33:51.387+0000] {task_command.py:415} INFO - Running <TaskInstance: import_dummy_data.import_dummy_data manual__2024-11-23T13:33:43.802191+00:00 [running]> on host 5143e832e4c7
+[2024-11-23T13:33:51.791+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='import_dummy_data' AIRFLOW_CTX_TASK_ID='import_dummy_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-23T13:33:43.802191+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-23T13:33:43.802191+00:00'
+[2024-11-23T13:33:51.820+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-11-23T13:33:51.822+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'docker exec python_environment python ./source_code/transfer_data/transfer_data_Dummy_to_CreditStagingDB.py']
+[2024-11-23T13:33:51.926+0000] {subprocess.py:86} INFO - Output:
+[2024-11-23T13:34:01.713+0000] {subprocess.py:93} INFO - 24/11/23 13:34:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-11-23T13:34:02.159+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2024-11-23T13:34:02.160+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2024-11-23T13:34:27.449+0000] {subprocess.py:93} INFO - spark_submit_local_jars_str:
+[2024-11-23T13:34:27.450+0000] {subprocess.py:93} INFO - 		 /container/pyspark_workspace/local_data_storage/spark/jars/delta-core_2.12-2.1.0.jar,/container/pyspark_workspace/local_data_storage/spark/jars/mssql-jdbc-12.8.1.jre11.jar,/container/pyspark_workspace/local_data_storage/spark/jars/spark-avro_2.12-3.4.0.jar,/container/pyspark_workspace/local_data_storage/spark/jars/spark-sql-kafka-0-10_2.12-3.4.0.jar
+[2024-11-23T13:34:27.451+0000] {subprocess.py:93} INFO - spark_submit_jdbc_driver_str:
+[2024-11-23T13:34:27.452+0000] {subprocess.py:93} INFO - 		 /container/pyspark_workspace/local_data_storage/spark/jars/mssql-jdbc-12.8.1.jre11.jar
+[2024-11-23T13:34:27.453+0000] {subprocess.py:93} INFO - spark_submit_extensions_str:
+[2024-11-23T13:34:27.454+0000] {subprocess.py:93} INFO - 		 io.delta.sql.DeltaSparkSessionExtension
+[2024-11-23T13:34:27.474+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2024-11-23T13:34:27.475+0000] {subprocess.py:93} INFO -   File "/container/pyspark_workspace/./source_code/transfer_data/transfer_data_Dummy_to_CreditStagingDB.py", line 21, in <module>
+[2024-11-23T13:34:27.483+0000] {subprocess.py:93} INFO -     spark_utils.write_df_database('sql_server_1', 'CreditStagingDB', customer_product_account_df, 'dbo.CustomerProductAccount')
+[2024-11-23T13:34:27.486+0000] {subprocess.py:93} INFO -   File "/container/pyspark_workspace/source_code/utils/spark.py", line 70, in write_df_database
+[2024-11-23T13:34:27.495+0000] {subprocess.py:93} INFO -     db_host_name = db_connection['host_name']
+[2024-11-23T13:34:27.498+0000] {subprocess.py:93} INFO -                    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+[2024-11-23T13:34:27.501+0000] {subprocess.py:93} INFO - KeyError: 'host_name'
+[2024-11-23T13:34:28.810+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-11-23T13:34:28.906+0000] {taskinstance.py:1943} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-11-23T13:34:28.913+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=import_dummy_data, task_id=import_dummy_data, execution_date=20241123T133343, start_date=20241123T133351, end_date=20241123T133428
+[2024-11-23T13:34:28.980+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 316 for task import_dummy_data (Bash command failed. The command returned a non-zero exit code 1.; 2386)
+[2024-11-23T13:34:28.992+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-11-23T13:34:29.057+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

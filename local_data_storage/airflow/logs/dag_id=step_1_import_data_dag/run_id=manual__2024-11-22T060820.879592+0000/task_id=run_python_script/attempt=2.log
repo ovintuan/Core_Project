@@ -1,0 +1,2 @@
+[2024-11-22T06:49:54.816+0000] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: step_1_import_data_dag.run_python_script manual__2024-11-22T06:08:20.879592+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2024-11-22T06:49:54.949+0000] {local_task_job_runner.py:154} INFO - Task is not able to be run

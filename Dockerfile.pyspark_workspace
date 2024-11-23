@@ -12,8 +12,8 @@ COPY . /container/pyspark_workspace/
 # Example: "spark:1011:rwx;ro_user:1099:r"
 ENV INIT_USER_LIST="spark:1011:rwx;ro_user:1099:r"
 
-RUN /container/pyspark_workspace/config_entrypoint/sudo.sh
-RUN /container/pyspark_workspace/config_entrypoint/init_user.sh
+RUN bash /container/pyspark_workspace/config_entrypoint/sudo.sh
+RUN bash /container/pyspark_workspace/config_entrypoint/init_user.sh
 
 RUN usermod -aG root spark
 RUN chmod -R 755 /container/pyspark_workspace/

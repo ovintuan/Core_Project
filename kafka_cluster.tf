@@ -15,7 +15,7 @@ resource "docker_container" "kafka_1" {
     "KAFKA_CFG_OFFSETS_TOPIC_REPLICATION_FACTOR=3",
     "KAFKA_CFG_TRANSACTION_STATE_LOG_REPLICATION_FACTOR=3",
     "KAFKA_CFG_TRANSACTION_STATE_LOG_MIN_ISR=2",
-    "KAFKA_CFG_LOG_DIRS=/opt/bitnami/kafka/data",
+    # "KAFKA_CFG_LOG_DIRS=/opt/bitnami/kafka/data",
     "ALLOW_PLAINTEXT_LISTENER=yes",
     "KAFKA_KRAFT_CLUSTER_ID=abcdefghijklmnopqrstuv"
   ]
@@ -23,7 +23,7 @@ resource "docker_container" "kafka_1" {
     internal = var.kafka_port
   }
   mounts {
-    target = "/bitnami/kafka"
+    target = "/bitnami/kafka/data"
     type   = "bind"
     source = abspath("./local_data_storage/kafka/1")
   }
@@ -46,7 +46,7 @@ resource "docker_container" "kafka_2" {
     "KAFKA_CFG_OFFSETS_TOPIC_REPLICATION_FACTOR=3",
     "KAFKA_CFG_TRANSACTION_STATE_LOG_REPLICATION_FACTOR=3",
     "KAFKA_CFG_TRANSACTION_STATE_LOG_MIN_ISR=2",
-    "KAFKA_CFG_LOG_DIRS=/opt/bitnami/kafka/data",
+    # "KAFKA_CFG_LOG_DIRS=/opt/bitnami/kafka/data",
     "ALLOW_PLAINTEXT_LISTENER=yes",
     "KAFKA_KRAFT_CLUSTER_ID=abcdefghijklmnopqrstuv"
   ]
@@ -54,7 +54,7 @@ resource "docker_container" "kafka_2" {
     internal = var.kafka_port
   }
   mounts {
-    target = "/bitnami/kafka"
+    target = "/bitnami/kafka/data"
     type   = "bind"
     source = abspath("./local_data_storage/kafka/2")
   }
@@ -77,7 +77,7 @@ resource "docker_container" "kafka_3" {
     "KAFKA_CFG_OFFSETS_TOPIC_REPLICATION_FACTOR=3",
     "KAFKA_CFG_TRANSACTION_STATE_LOG_REPLICATION_FACTOR=3",
     "KAFKA_CFG_TRANSACTION_STATE_LOG_MIN_ISR=2",
-    "KAFKA_CFG_LOG_DIRS=/opt/bitnami/kafka/data",
+    # "KAFKA_CFG_LOG_DIRS=/opt/bitnami/kafka/data",
     "ALLOW_PLAINTEXT_LISTENER=yes",
     "KAFKA_KRAFT_CLUSTER_ID=abcdefghijklmnopqrstuv"
   ]
@@ -85,7 +85,7 @@ resource "docker_container" "kafka_3" {
     internal = var.kafka_port
   }
   mounts {
-    target = "/bitnami/kafka"
+    target = "/bitnami/kafka/data"
     type   = "bind"
     source = abspath("./local_data_storage/kafka/3")
   }
@@ -102,7 +102,7 @@ resource "docker_container" "kafka_schema_registry" {
   }
   env = [
     "SCHEMA_REGISTRY_DEBUG=true",
-    "SCHEMA_REGISTRY_KAFKA_BROKERS=PLAINTEXT://kafka-1:${var.kafka_port},kafka-2:${var.kafka_port},kafka-3:${var.kafka_port}",
+    "SCHEMA_REGISTRY_KAFKA_BROKERS=PLAINTEXT://${local.kafka_bootstrap_servers}",
     "ALLOW_PLAINTEXT_LISTENER=yes",
     "SCHEMA_REGISTRY_HOST_NAME=${var.kafka_schema_registry_hostname}",
     "SCHEMA_REGISTRY_LISTENERS=http://${var.kafka_schema_registry_hostname}:${var.kafka_schema_registry_port}"
@@ -128,8 +128,8 @@ resource "docker_container" "kafka_ui" {
   env = [
     "KAFKA_CLUSTERS_0_NAME=Kafka Cluster Sample",
     "DYNAMIC_CONFIG_ENABLED=true",
-    "KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka-1:${var.kafka_port},kafka-2:${var.kafka_port},kafka-3:${var.kafka_port}",
-    "KAFKA_CLUSTERS_0_SCHEMAREGISTRY=http://{${var.kafka_schema_registry_hostname}}:${var.kafka_schema_registry_port}"
+    "KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=${local.kafka_bootstrap_servers}",
+    "KAFKA_CLUSTERS_0_SCHEMAREGISTRY=http://${var.kafka_schema_registry_hostname}:${var.kafka_schema_registry_port}"
   ]
   ports {
     internal = var.kafka_ui_port_internal

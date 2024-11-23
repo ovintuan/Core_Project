@@ -1,0 +1,522 @@
+[2024-11-23T12:02:30.432+0000] {processor.py:157} INFO - Started process (PID=963) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:02:30.633+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:02:30.639+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:02:30.638+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:02:31.304+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:02:43.017+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:02:43.017+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:02:43.094+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:02:43.093+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:02:43.607+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 13.186 seconds
+[2024-11-23T12:03:14.011+0000] {processor.py:157} INFO - Started process (PID=973) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:03:14.013+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:03:14.016+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:03:14.015+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:03:14.075+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:03:14.206+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:03:14.206+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:03:14.246+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:03:14.246+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:03:14.343+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.341 seconds
+[2024-11-23T12:03:44.765+0000] {processor.py:157} INFO - Started process (PID=983) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:03:44.768+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:03:44.770+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:03:44.769+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:03:44.819+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:03:44.971+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:03:44.970+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:03:45.033+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:03:45.033+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:03:45.157+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.400 seconds
+[2024-11-23T12:04:15.751+0000] {processor.py:157} INFO - Started process (PID=993) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:04:15.754+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:04:15.758+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:04:15.757+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:04:15.830+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:04:15.991+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:04:15.990+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:04:16.045+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:04:16.045+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:04:16.169+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.429 seconds
+[2024-11-23T12:04:46.542+0000] {processor.py:157} INFO - Started process (PID=1003) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:04:46.544+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:04:46.546+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:04:46.546+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:04:46.586+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:04:46.679+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:04:46.679+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:04:46.714+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:04:46.714+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:04:46.827+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.291 seconds
+[2024-11-23T12:05:17.163+0000] {processor.py:157} INFO - Started process (PID=1013) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:05:17.165+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:05:17.168+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:05:17.167+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:05:17.224+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:05:17.361+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:05:17.361+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:05:17.402+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:05:17.402+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:05:18.615+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 1.461 seconds
+[2024-11-23T12:05:49.111+0000] {processor.py:157} INFO - Started process (PID=1023) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:05:49.113+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:05:49.114+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:05:49.114+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:05:49.148+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:05:49.279+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:05:49.279+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:05:49.317+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:05:49.317+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:05:49.404+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.300 seconds
+[2024-11-23T12:06:20.284+0000] {processor.py:157} INFO - Started process (PID=1033) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:06:20.485+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:06:20.572+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:06:20.571+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:06:20.785+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:06:21.146+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:06:21.145+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:06:21.266+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:06:21.266+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:06:21.752+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 1.487 seconds
+[2024-11-23T12:06:52.190+0000] {processor.py:157} INFO - Started process (PID=1043) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:06:52.192+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:06:52.194+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:06:52.193+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:06:52.229+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:06:52.319+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:06:52.319+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:06:52.347+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:06:52.346+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:06:52.449+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.268 seconds
+[2024-11-23T12:07:22.928+0000] {processor.py:157} INFO - Started process (PID=1053) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:07:22.930+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:07:22.933+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:07:22.932+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:07:22.978+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:07:23.097+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:07:23.096+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:07:23.139+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:07:23.138+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:07:23.253+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.336 seconds
+[2024-11-23T12:07:53.747+0000] {processor.py:157} INFO - Started process (PID=1063) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:07:53.749+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:07:53.751+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:07:53.750+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:07:53.790+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:07:53.909+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:07:53.909+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:07:53.952+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:07:53.952+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:07:54.109+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.367 seconds
+[2024-11-23T12:08:24.434+0000] {processor.py:157} INFO - Started process (PID=1073) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:08:24.436+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:08:24.438+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:08:24.437+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:08:24.471+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:08:24.550+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:08:24.550+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:08:24.577+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:08:24.577+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:08:24.651+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.224 seconds
+[2024-11-23T12:08:55.066+0000] {processor.py:157} INFO - Started process (PID=1083) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:08:55.068+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:08:55.069+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:08:55.069+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:08:55.102+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:08:55.192+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:08:55.192+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:08:55.226+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:08:55.226+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:08:55.335+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.274 seconds
+[2024-11-23T12:09:25.672+0000] {processor.py:157} INFO - Started process (PID=1093) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:09:25.675+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:09:25.677+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:09:25.676+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:09:25.738+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:09:25.940+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:09:25.940+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:09:26.045+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:09:26.045+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:09:26.186+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.524 seconds
+[2024-11-23T12:09:56.635+0000] {processor.py:157} INFO - Started process (PID=1103) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:09:56.644+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:09:56.647+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:09:56.646+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:09:56.721+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:09:56.903+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:09:56.903+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:09:56.975+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:09:56.974+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:09:57.182+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.564 seconds
+[2024-11-23T12:10:27.571+0000] {processor.py:157} INFO - Started process (PID=1113) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:10:27.572+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:10:27.573+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:10:27.573+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:10:27.604+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:10:27.679+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:10:27.679+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:10:27.705+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:10:27.705+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:10:27.819+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.252 seconds
+[2024-11-23T12:10:58.136+0000] {processor.py:157} INFO - Started process (PID=1123) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:10:58.137+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:10:58.139+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:10:58.138+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:10:58.169+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:10:58.243+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:10:58.243+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:10:58.267+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:10:58.267+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:10:58.335+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.205 seconds
+[2024-11-23T12:11:28.640+0000] {processor.py:157} INFO - Started process (PID=1133) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:11:28.641+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:11:28.643+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:11:28.642+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:11:28.663+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:11:28.721+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:11:28.721+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:11:28.740+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:11:28.740+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:11:28.829+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.193 seconds
+[2024-11-23T12:11:59.135+0000] {processor.py:157} INFO - Started process (PID=1143) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:11:59.136+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:11:59.137+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:11:59.137+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:11:59.157+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:11:59.207+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:11:59.207+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:11:59.227+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:11:59.226+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:11:59.294+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.162 seconds
+[2024-11-23T12:12:29.759+0000] {processor.py:157} INFO - Started process (PID=1153) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:12:29.767+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:12:29.771+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:12:29.770+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:12:29.816+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:12:29.948+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:12:29.947+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:12:29.987+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:12:29.986+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:12:30.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.349 seconds
+[2024-11-23T12:13:00.475+0000] {processor.py:157} INFO - Started process (PID=1163) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:13:00.477+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:13:00.480+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:13:00.479+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:13:00.540+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:13:00.661+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:13:00.660+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:13:00.700+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:13:00.699+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:13:00.781+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.311 seconds
+[2024-11-23T12:13:31.114+0000] {processor.py:157} INFO - Started process (PID=1173) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:13:31.116+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:13:31.117+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:13:31.116+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:13:31.148+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:13:31.211+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:13:31.210+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:13:31.233+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:13:31.232+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:13:31.322+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.212 seconds
+[2024-11-23T12:14:01.611+0000] {processor.py:157} INFO - Started process (PID=1183) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:14:01.612+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:14:01.614+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:14:01.613+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:14:01.635+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:14:01.691+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:14:01.691+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:14:01.711+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:14:01.711+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:14:01.813+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.207 seconds
+[2024-11-23T12:14:31.917+0000] {processor.py:157} INFO - Started process (PID=1193) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:14:31.918+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:14:31.920+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:14:31.919+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:14:31.946+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:14:32.021+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:14:32.021+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:14:32.049+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:14:32.049+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:14:32.124+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.212 seconds
+[2024-11-23T12:15:02.515+0000] {processor.py:157} INFO - Started process (PID=1203) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:15:02.517+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:15:02.519+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:15:02.519+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:15:02.565+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:15:02.670+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:15:02.670+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:15:02.703+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:15:02.702+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:15:02.849+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.341 seconds
+[2024-11-23T12:15:33.205+0000] {processor.py:157} INFO - Started process (PID=1213) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:15:33.206+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:15:33.207+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:15:33.206+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:15:33.228+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:15:33.291+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:15:33.291+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:15:33.314+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:15:33.314+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:15:33.405+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.204 seconds
+[2024-11-23T12:16:03.686+0000] {processor.py:157} INFO - Started process (PID=1223) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:16:03.687+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:16:03.689+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:16:03.689+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:16:03.716+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:16:03.771+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:16:03.771+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:16:03.791+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:16:03.791+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:16:03.877+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.195 seconds
+[2024-11-23T12:16:34.559+0000] {processor.py:157} INFO - Started process (PID=1233) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:16:34.560+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:16:34.562+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:16:34.561+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:16:34.588+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:16:34.653+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:16:34.652+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:16:34.677+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:16:34.677+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:16:34.803+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.248 seconds
+[2024-11-23T12:17:05.119+0000] {processor.py:157} INFO - Started process (PID=1243) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:17:05.120+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:17:05.121+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:17:05.121+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:17:05.146+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:17:05.193+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:17:05.193+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:17:05.215+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:17:05.215+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:17:05.438+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.323 seconds
+[2024-11-23T12:17:35.771+0000] {processor.py:157} INFO - Started process (PID=1253) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:17:35.772+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:17:35.773+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:17:35.773+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:17:35.796+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:17:35.858+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:17:35.858+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:17:35.880+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:17:35.880+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:17:35.939+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.173 seconds
+[2024-11-23T12:18:06.308+0000] {processor.py:157} INFO - Started process (PID=1263) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:18:06.310+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:18:06.311+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:18:06.311+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:18:06.340+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:18:06.413+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:18:06.413+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:18:06.438+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:18:06.437+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:18:06.552+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.251 seconds
+[2024-11-23T12:18:36.914+0000] {processor.py:157} INFO - Started process (PID=1273) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:18:36.915+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:18:36.916+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:18:36.916+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:18:36.946+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:18:37.005+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:18:37.005+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:18:37.029+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:18:37.029+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:18:37.092+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.182 seconds
+[2024-11-23T12:19:07.486+0000] {processor.py:157} INFO - Started process (PID=1283) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:19:07.487+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:19:07.488+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:19:07.488+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:19:07.514+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:19:07.587+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:19:07.587+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:19:07.614+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:19:07.614+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:19:07.691+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.208 seconds
+[2024-11-23T12:19:37.994+0000] {processor.py:157} INFO - Started process (PID=1293) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:19:37.995+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:19:37.997+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:19:37.997+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:19:38.032+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:19:38.119+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:19:38.118+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:19:38.146+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:19:38.146+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:19:38.217+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.229 seconds
+[2024-11-23T12:20:08.531+0000] {processor.py:157} INFO - Started process (PID=1303) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:20:08.535+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:20:08.537+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:20:08.536+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:20:08.585+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:20:08.682+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:20:08.681+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:20:08.722+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:20:08.721+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:20:08.838+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.316 seconds
+[2024-11-23T12:20:39.150+0000] {processor.py:157} INFO - Started process (PID=1313) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:20:39.152+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:20:39.153+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:20:39.153+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:20:39.182+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:20:39.257+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:20:39.256+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:20:39.283+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:20:39.283+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:20:39.413+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.267 seconds
+[2024-11-23T12:21:09.762+0000] {processor.py:157} INFO - Started process (PID=1323) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:21:09.763+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:21:09.766+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:21:09.765+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:21:09.815+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:21:10.277+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:21:10.276+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:21:10.537+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:21:10.537+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:21:10.969+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 1.214 seconds
+[2024-11-23T12:21:41.361+0000] {processor.py:157} INFO - Started process (PID=1333) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:21:41.362+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:21:41.364+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:21:41.363+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:21:41.393+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:21:41.466+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:21:41.465+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:21:41.493+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:21:41.492+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:21:41.609+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.253 seconds
+[2024-11-23T12:22:11.922+0000] {processor.py:157} INFO - Started process (PID=1343) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:22:11.923+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:22:11.925+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:22:11.925+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:22:11.951+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:22:12.020+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:22:12.020+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:22:12.042+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:22:12.042+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:22:12.110+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.193 seconds
+[2024-11-23T12:22:42.578+0000] {processor.py:157} INFO - Started process (PID=1353) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:22:42.585+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:22:42.588+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:22:42.587+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:22:42.677+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:22:42.860+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:22:42.860+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:22:42.920+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:22:42.919+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:22:43.114+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.548 seconds
+[2024-11-23T12:23:13.528+0000] {processor.py:157} INFO - Started process (PID=1363) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:23:13.530+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:23:13.531+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:23:13.531+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:23:13.557+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:23:13.627+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:23:13.627+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:23:13.655+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:23:13.655+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:23:13.738+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.215 seconds
+[2024-11-23T12:23:44.143+0000] {processor.py:157} INFO - Started process (PID=1373) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:23:44.146+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:23:44.159+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:23:44.149+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:23:44.241+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:23:44.512+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:23:44.511+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:23:44.695+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:23:44.694+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:23:45.036+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.906 seconds
+[2024-11-23T12:24:15.544+0000] {processor.py:157} INFO - Started process (PID=1383) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:24:15.546+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:24:15.547+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:24:15.546+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:24:15.575+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:24:15.645+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:24:15.645+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:24:15.670+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:24:15.669+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:24:15.748+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.208 seconds
+[2024-11-23T12:24:46.111+0000] {processor.py:157} INFO - Started process (PID=1393) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:24:46.116+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:24:46.121+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:24:46.119+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:24:46.164+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:24:47.063+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:24:47.059+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:24:47.170+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:24:47.169+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:24:47.344+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 1.243 seconds
+[2024-11-23T12:25:18.356+0000] {processor.py:157} INFO - Started process (PID=1403) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:25:18.358+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:25:18.360+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:25:18.360+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:25:18.401+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:25:18.619+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:25:18.619+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:25:18.681+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:25:18.681+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:25:18.832+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.485 seconds
+[2024-11-23T12:25:49.238+0000] {processor.py:157} INFO - Started process (PID=1413) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:25:49.240+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:25:49.242+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:25:49.241+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:25:49.306+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:25:49.518+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:25:49.518+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:25:49.625+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:25:49.624+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:25:49.806+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.580 seconds
+[2024-11-23T12:26:20.221+0000] {processor.py:157} INFO - Started process (PID=1423) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:26:20.223+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:26:20.226+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:26:20.225+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:26:20.281+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:26:20.468+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:26:20.467+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:26:20.551+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:26:20.550+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:26:20.690+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.478 seconds
+[2024-11-23T12:26:51.171+0000] {processor.py:157} INFO - Started process (PID=1433) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:26:51.173+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:26:51.175+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:26:51.174+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:26:51.231+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:26:51.786+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:26:51.785+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:26:51.858+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:26:51.857+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:26:51.958+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.794 seconds
+[2024-11-23T12:27:22.304+0000] {processor.py:157} INFO - Started process (PID=1443) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:27:22.307+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:27:22.309+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:27:22.309+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:27:22.356+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:27:22.462+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:27:22.462+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:27:22.507+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:27:22.507+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:27:22.615+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.322 seconds
+[2024-11-23T12:27:53.063+0000] {processor.py:157} INFO - Started process (PID=1453) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:27:53.068+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:27:53.072+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:27:53.071+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:27:53.126+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:27:53.239+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:27:53.238+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:27:53.299+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:27:53.298+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:27:53.412+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.357 seconds
+[2024-11-23T12:28:23.917+0000] {processor.py:157} INFO - Started process (PID=1463) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:28:23.920+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:28:23.922+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:28:23.921+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:28:23.982+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:28:24.128+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:28:24.127+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:28:24.164+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:28:24.164+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:28:24.266+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.357 seconds
+[2024-11-23T12:28:54.639+0000] {processor.py:157} INFO - Started process (PID=1473) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:28:54.641+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:28:54.643+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:28:54.643+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:28:54.721+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:28:54.905+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:28:54.905+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:28:54.990+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:28:54.990+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:28:55.164+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.534 seconds
+[2024-11-23T12:29:25.589+0000] {processor.py:157} INFO - Started process (PID=1483) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:29:25.593+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:29:25.597+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:29:25.596+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:29:25.851+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:29:26.511+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:29:26.510+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:29:26.611+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:29:26.610+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:29:26.796+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 1.228 seconds
+[2024-11-23T12:29:57.273+0000] {processor.py:157} INFO - Started process (PID=1493) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:29:57.276+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:29:57.279+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:29:57.278+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:29:57.366+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:29:57.505+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:29:57.504+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:29:57.540+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:29:57.540+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:29:57.871+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.612 seconds
+[2024-11-23T12:30:28.263+0000] {processor.py:157} INFO - Started process (PID=1503) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:30:28.265+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:30:28.267+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:30:28.266+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:30:28.308+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:30:28.420+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:30:28.420+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:30:28.628+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:30:28.627+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:30:28.991+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.740 seconds
+[2024-11-23T12:30:59.393+0000] {processor.py:157} INFO - Started process (PID=1513) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:30:59.396+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:30:59.398+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:30:59.397+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:30:59.443+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:30:59.618+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:30:59.618+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:30:59.680+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:30:59.679+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:30:59.815+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.432 seconds
+[2024-11-23T12:31:30.195+0000] {processor.py:157} INFO - Started process (PID=1523) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:31:30.196+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:31:30.198+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:31:30.197+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:31:30.234+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:31:30.340+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:31:30.339+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:31:30.387+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:31:30.387+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:31:30.488+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.302 seconds
+[2024-11-23T12:32:01.029+0000] {processor.py:157} INFO - Started process (PID=1533) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:32:01.032+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:32:01.035+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:32:01.034+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:32:01.080+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:32:01.226+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:32:01.226+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:32:01.269+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:32:01.268+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:32:01.416+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.398 seconds
+[2024-11-23T12:32:31.980+0000] {processor.py:157} INFO - Started process (PID=1543) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:32:31.982+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:32:31.983+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:32:31.983+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:32:32.030+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:32:32.188+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:32:32.187+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:32:32.287+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:32:32.287+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:32:32.378+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.405 seconds
+[2024-11-23T12:33:02.868+0000] {processor.py:157} INFO - Started process (PID=1553) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:33:02.871+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:33:02.873+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:33:02.872+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:33:02.936+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:33:03.100+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:33:03.099+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:33:03.149+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:33:03.148+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:33:03.278+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.425 seconds
+[2024-11-23T12:33:33.645+0000] {processor.py:157} INFO - Started process (PID=1563) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:33:33.648+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:33:33.652+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:33:33.650+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:33:33.756+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:33:33.907+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:33:33.906+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:33:33.956+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:33:33.955+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:33:34.068+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.437 seconds
+[2024-11-23T12:34:04.418+0000] {processor.py:157} INFO - Started process (PID=1573) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:34:04.420+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:34:04.422+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:34:04.422+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:34:04.467+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:34:04.581+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:34:04.581+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:34:04.630+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:34:04.630+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:34:04.758+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.346 seconds
+[2024-11-23T12:34:35.081+0000] {processor.py:157} INFO - Started process (PID=1583) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:34:35.084+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:34:35.087+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:34:35.086+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:34:35.133+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:34:35.219+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:34:35.219+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:34:35.250+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:34:35.250+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:34:35.373+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.299 seconds
+[2024-11-23T12:35:05.804+0000] {processor.py:157} INFO - Started process (PID=1593) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:35:05.807+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:35:05.809+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:35:05.809+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:35:05.859+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:35:05.995+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:35:05.995+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:35:06.084+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:35:06.083+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:35:06.319+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.528 seconds
+[2024-11-23T12:35:36.774+0000] {processor.py:157} INFO - Started process (PID=1603) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:35:36.777+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:35:36.780+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:35:36.779+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:35:36.842+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:35:37.112+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:35:37.112+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:35:37.187+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:35:37.186+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:35:37.343+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.578 seconds
+[2024-11-23T12:36:07.840+0000] {processor.py:157} INFO - Started process (PID=1613) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:36:07.842+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:36:07.844+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:36:07.844+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:36:07.884+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:36:08.008+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:36:08.007+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:36:08.062+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:36:08.062+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:36:08.142+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.311 seconds
+[2024-11-23T12:36:38.579+0000] {processor.py:157} INFO - Started process (PID=1623) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:36:38.581+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:36:38.583+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:36:38.582+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:36:38.623+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:36:38.718+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:36:38.717+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:36:38.748+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:36:38.748+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:36:38.841+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.273 seconds
+[2024-11-23T12:37:09.249+0000] {processor.py:157} INFO - Started process (PID=1633) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:09.251+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:37:09.254+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:09.253+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:09.293+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:09.421+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:09.421+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:37:09.454+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:09.453+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:37:09.584+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.343 seconds
+[2024-11-23T12:37:40.093+0000] {processor.py:157} INFO - Started process (PID=1643) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:40.096+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:37:40.098+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:40.097+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:40.145+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:40.601+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:40.600+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:37:40.668+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:40.668+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:37:40.847+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.766 seconds
+[2024-11-23T12:37:43.001+0000] {processor.py:157} INFO - Started process (PID=1653) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:43.003+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:37:43.006+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:43.005+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:43.077+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:44.133+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:44.133+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:37:44.177+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:44.177+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:37:44.270+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 1.276 seconds
+[2024-11-23T12:37:55.181+0000] {processor.py:157} INFO - Started process (PID=1658) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:55.184+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:37:55.187+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:55.186+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:55.248+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:37:55.305+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:55.304+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:37:55.340+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:37:55.340+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:37:55.507+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.335 seconds
+[2024-11-23T12:38:12.701+0000] {processor.py:157} INFO - Started process (PID=1668) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:38:12.703+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:38:12.705+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:38:12.704+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:38:12.757+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:38:12.819+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:38:12.819+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:38:12.854+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:38:12.854+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:38:12.970+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.273 seconds
+[2024-11-23T12:38:43.298+0000] {processor.py:157} INFO - Started process (PID=1678) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:38:43.301+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:38:43.303+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:38:43.302+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:38:43.345+0000] {processor.py:839} INFO - DAG(s) dict_keys(['step_1_import_data_dag']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:38:43.688+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:38:43.688+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:38:43.723+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:38:43.722+0000] {dag.py:3677} INFO - Setting next_dagrun for step_1_import_data_dag to None, run_after=None
+[2024-11-23T12:38:43.839+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 0.547 seconds
+[2024-11-23T12:38:59.903+0000] {processor.py:157} INFO - Started process (PID=1683) to work on /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:38:59.905+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/step_1_import_data_dag.py for tasks to queue
+[2024-11-23T12:38:59.907+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:38:59.906+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:38:59.998+0000] {processor.py:839} INFO - DAG(s) dict_keys(['import_dummy_data']) retrieved from /opt/airflow/dags/step_1_import_data_dag.py
+[2024-11-23T12:39:00.695+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:39:00.694+0000] {manager.py:501} INFO - Created Permission View: can delete on DAG:import_dummy_data
+[2024-11-23T12:39:00.761+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:39:00.761+0000] {manager.py:501} INFO - Created Permission View: can edit on DAG:import_dummy_data
+[2024-11-23T12:39:00.806+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:39:00.805+0000] {manager.py:501} INFO - Created Permission View: can read on DAG:import_dummy_data
+[2024-11-23T12:39:00.852+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:39:00.852+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2024-11-23T12:39:00.894+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:39:00.893+0000] {dag.py:2929} INFO - Creating ORM DAG for import_dummy_data
+[2024-11-23T12:39:00.896+0000] {logging_mixin.py:151} INFO - [2024-11-23T12:39:00.895+0000] {dag.py:3677} INFO - Setting next_dagrun for import_dummy_data to None, run_after=None
+[2024-11-23T12:39:01.075+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/step_1_import_data_dag.py took 1.180 seconds

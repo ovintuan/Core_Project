@@ -13,7 +13,7 @@ def load_ids_and_product_info(file_path):
         reader = csv.DictReader(file)
         return list(reader)
 
-customer_product_account_ids = load_ids_and_product_info('../../local_data_storage/master_data/CustomerProductAccountIDs.csv')
+customer_product_account_ids = load_ids_and_product_info('/container/pyspark_workspace/local_data_storage/master_data/CustomerProductAccountIDs.csv')
 
 # Load Product information from CSV file
 def load_product_info(file_path):
@@ -21,7 +21,7 @@ def load_product_info(file_path):
         reader = csv.DictReader(file)
         return {row['ProductID']: row for row in reader}
 
-product_info = load_product_info('../../local_data_storage/master_data/ProductMasterData.csv')
+product_info = load_product_info('/container/pyspark_workspace/local_data_storage/master_data/ProductMasterData.csv')
 
 class DummyDataGenerator:
     def __init__(self):

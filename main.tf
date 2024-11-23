@@ -8,7 +8,6 @@ terraform {
 }
 
 provider "docker" {
-  host = var.docker_host
 }
 
 resource "docker_image" "pyspark_workspace" {
@@ -178,7 +177,7 @@ resource "docker_container" "postgres_database_1" {
     interpreter = ["PowerShell", "-Command"]
   }
   provisioner "local-exec" {
-    command    = "docker exec ${docker_container.postgres_database_1.name} psql -h localhost -U ${local.postgres_user} -f /source_code/init_script/AirFlow_Metadata/init_DB.sql"
+    command    = "docker exec postgres_database_1 psql -h localhost -U ${local.postgres_user} -f /source_code/init_script/AirFlow_Metadata/init_DB.sql"
     on_failure = continue
   }
 }
@@ -197,7 +196,8 @@ resource "docker_container" "sqlserver_database_1" {
   }
   env = [
     "ACCEPT_EULA=Y",
-    "SA_PASSWORD=${local.sqlserver_sa_password_1}"
+    "SA_PASSWORD=${local.sqlserver_sa_password_1}",
+    "MSSQL_AGENT_ENABLED=true"
   ]
   mounts {
     target = "/var/opt/mssql/data"
@@ -235,7 +235,8 @@ resource "docker_container" "sqlserver_database_2" {
   }
   env = [
     "ACCEPT_EULA=Y",
-    "SA_PASSWORD=${local.sqlserver_sa_password_2}"
+    "SA_PASSWORD=${local.sqlserver_sa_password_2}",
+    "MSSQL_AGENT_ENABLED=true"
   ]
   mounts {
     target = "/var/opt/mssql/data"
@@ -260,8 +261,4 @@ resource "docker_container" "sqlserver_database_2" {
   provisioner "local-exec" {
     command = "docker exec sqlserver_database_2 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_2} -i /source_code/init_script/SQL_Server_2/init_DB_CreditDW.sql"
   }
-
-
 }
-
-
