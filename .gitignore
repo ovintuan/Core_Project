@@ -1,8 +1,7 @@
-
 terraform.tfstate 
 terraform.tfstate.backup 
 .terraform.lock.hcl
 .terraform
 .DS_Store
 local_data_storage/airflow/logs/scheduler/latest
-local_data_storage/.vscode-server/bin/
+local_data_storage/.vscode-server/
