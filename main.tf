@@ -141,10 +141,10 @@ resource "docker_container" "python_environment" {
     type   = "bind"
     source = abspath(".")
   }
-  depends_on = [docker_container.spark_master, docker_image.pyspark_workspace]
   provisioner "local-exec" {
     command = "docker exec python_environment pip install -r source_code/requirements.txt"
   }
+  depends_on = [docker_container.spark_master, docker_image.pyspark_workspace]
 }
 
 resource "docker_container" "postgres_database_1" {
