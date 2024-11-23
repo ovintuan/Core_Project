@@ -22,11 +22,6 @@ resource "docker_container" "airflow_init_db" {
     source = abspath("./local_data_storage/airflow/dags")
   }
   mounts {
-    target = "/opt/airflow/plugins"
-    type   = "bind"
-    source = abspath("./local_data_storage/airflow/plugins")
-  }
-  mounts {
     target = "/opt/airflow/logs"
     type   = "bind"
     source = abspath("./local_data_storage/airflow/logs")
