@@ -5,3 +5,4 @@ terraform.tfstate.backup
 .DS_Store
 local_data_storage/airflow/logs/scheduler/latest
 local_data_storage/.vscode-server/
+local_data_storage/postgres/
