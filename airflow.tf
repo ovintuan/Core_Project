@@ -27,6 +27,7 @@ resource "docker_container" "airflow_init_db" {
     source = abspath("./local_data_storage/airflow/logs")
   }
   depends_on = [docker_container.postgres_database_1]
+  restart = "on-failure"
 }
 
 resource "docker_container" "airflow_webserver" {
@@ -69,6 +70,7 @@ resource "docker_container" "airflow_webserver" {
     container_path = "/var/run/docker.sock"
   }
   depends_on = [docker_container.postgres_database_1, docker_container.airflow_init_db]
+  restart = "on-failure"
 }
 
 # resource "docker_container" "airflow_scheduler" {

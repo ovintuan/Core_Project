@@ -23,6 +23,7 @@ resource "docker_container" "debezium" {
     container_path = "/mnt/debezium-history"
     volume_name    = docker_volume.debezium.name
   }
+  restart = "on-failure"
   depends_on = [docker_container.kafka_ui, docker_container.sqlserver_database_1]
 }
 

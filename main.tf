@@ -84,6 +84,7 @@ resource "docker_container" "spark_master" {
     command = "docker exec --user root spark-master chmod -R 775 /container/pyspark_workspace/local_data_storage/deltalake /container/pyspark_workspace/local_data_storage/spark /container/pyspark_workspace/local_data_storage/master_data"
   }
   depends_on = [docker_image.pyspark_workspace]
+  restart = "on-failure"
 }
 
 resource "docker_container" "spark_worker_1" {
@@ -116,6 +117,7 @@ resource "docker_container" "spark_worker_1" {
     command = "docker exec --user root spark-worker-1 chmod -R 775 /container/pyspark_workspace/local_data_storage/deltalake /container/pyspark_workspace/local_data_storage/spark /container/pyspark_workspace/local_data_storage/master_data"
   }
   depends_on = [docker_container.spark_master, docker_image.pyspark_workspace]
+  restart = "on-failure"
 }
 
 resource "docker_container" "spark_worker_2" {
@@ -148,6 +150,7 @@ resource "docker_container" "spark_worker_2" {
     command = "docker exec --user root spark-worker-2 chmod -R 775 /container/pyspark_workspace/local_data_storage/deltalake /container/pyspark_workspace/local_data_storage/spark /container/pyspark_workspace/local_data_storage/master_data"
   }
   depends_on = [docker_container.spark_master, docker_image.pyspark_workspace]
+  restart = "on-failure"
 }
 
 resource "docker_container" "python_environment" {
@@ -188,6 +191,7 @@ resource "docker_container" "python_environment" {
     command = "docker exec python_environment pip install -r source_code/requirements.txt"
   }
   depends_on = [docker_container.spark_master, docker_image.pyspark_workspace]
+  restart = "on-failure"
 }
 
 resource "docker_container" "postgres_database_1" {
@@ -221,6 +225,7 @@ resource "docker_container" "postgres_database_1" {
     command = "docker exec postgres_database_1 psql -h localhost -U ${local.postgres_user} -f /source_code/init_script/AirFlow_Metadata/init_DB.sql"
     on_failure = continue
   }
+  restart = "on-failure"
 }
 
 resource "docker_container" "sqlserver_database_1" {
@@ -259,6 +264,7 @@ resource "docker_container" "sqlserver_database_1" {
   provisioner "local-exec" {
     command = "docker exec sqlserver_database_1 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_1} -i /source_code/init_script/SQL_Server_1/init_DB_CreditStagingDB.sql"
   }
+  restart = "on-failure"
 }
 
 resource "docker_container" "sqlserver_database_2" {
@@ -300,4 +306,5 @@ resource "docker_container" "sqlserver_database_2" {
   provisioner "local-exec" {
     command = "docker exec sqlserver_database_2 /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ${local.sqlserver_sa_password_2} -i /source_code/init_script/SQL_Server_2/init_DB_CreditDW.sql"
   }
+  restart = "on-failure"
 }

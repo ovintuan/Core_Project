@@ -27,6 +27,7 @@ resource "docker_container" "kafka_1" {
     type   = "bind"
     source = abspath("./local_data_storage/kafka/1")
   }
+  restart = "on-failure"
 }
 
 resource "docker_container" "kafka_2" {
@@ -58,6 +59,7 @@ resource "docker_container" "kafka_2" {
     type   = "bind"
     source = abspath("./local_data_storage/kafka/2")
   }
+  restart = "on-failure"
 }
 
 resource "docker_container" "kafka_3" {
@@ -89,6 +91,7 @@ resource "docker_container" "kafka_3" {
     type   = "bind"
     source = abspath("./local_data_storage/kafka/3")
   }
+  restart = "on-failure"
 }
 
 resource "docker_container" "kafka_schema_registry" {
@@ -131,6 +134,7 @@ resource "docker_container" "kafka_ui" {
     external = var.kafka_ui_port_external
   }
   depends_on = [docker_container.kafka_1, docker_container.kafka_2, docker_container.kafka_3, docker_container.kafka_schema_registry]
+  restart = "on-failure"
 }
 
 
