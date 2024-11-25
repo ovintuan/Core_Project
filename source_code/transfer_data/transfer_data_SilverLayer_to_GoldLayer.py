@@ -18,32 +18,6 @@ gold_account_path = '/container/pyspark_workspace/local_data_storage/deltalake/g
 gold_transaction_path = '/container/pyspark_workspace/local_data_storage/deltalake/gold/FactTransactionPayment'
 gold_date_path = '/container/pyspark_workspace/local_data_storage/deltalake/gold/DimDate'
 
-# Initialize dimension tables if they do not exist
-try:
-    spark.read.format('delta').load(gold_customer_path)
-except AnalysisException:
-    dw.init_scd_table(spark.sql("SELECT * FROM delta.`/container/pyspark_workspace/local_data_storage/deltalake/silver/Customer`"), gold_customer_path)
-
-try:
-    spark.read.format('delta').load(gold_product_path)
-except AnalysisException:
-    dw.init_scd_table(spark.sql("SELECT * FROM delta.`/container/pyspark_workspace/local_data_storage/deltalake/silver/Product`"), gold_product_path)
-
-try:
-    spark.read.format('delta').load(gold_account_path)
-except AnalysisException:
-    dw.init_scd_table(spark.sql("SELECT * FROM delta.`/container/pyspark_workspace/local_data_storage/deltalake/silver/CreditAccount`"), gold_account_path)
-
-try:
-    spark.read.format('delta').load(gold_transaction_path)
-except AnalysisException:
-    dw.init_scd_table(spark.sql("SELECT * FROM delta.`/container/pyspark_workspace/local_data_storage/deltalake/silver/TransactionPayment`"), gold_transaction_path)
-
-try:
-    spark.read.format('delta').load(gold_date_path)
-except AnalysisException:
-    dw.init_scd_table(spark.sql("SELECT * FROM delta.`/container/pyspark_workspace/local_data_storage/deltalake/silver/Date`"), gold_date_path)
-
 # Mapping Customer Data to DimCustomer
 dim_customer_df = spark.sql("""
     SELECT 
@@ -113,12 +87,34 @@ dim_date_df = spark.sql("""
     FROM delta.`/container/pyspark_workspace/local_data_storage/deltalake/silver/Date` d
 """)
 
+
+# Initialize dimension tables if they do not exist
+try:
+    spark.read.format('delta').load(gold_customer_path)
+except AnalysisException:
+    dw.init_scd_table(dim_customer_df, gold_customer_path)
+
+try:
+    spark.read.format('delta').load(gold_product_path)
+except AnalysisException:
+    dw.init_scd_table(dim_product_df, gold_product_path)
+
+try:
+    spark.read.format('delta').load(gold_account_path)
+except AnalysisException:
+    dw.init_scd_table(dim_account_df, gold_account_path)
+
+try:
+    spark.read.format('delta').load(gold_date_path)
+except AnalysisException:
+    dw.init_scd_table(spark.sql(dim_date_df), gold_date_path)
+
 # Save the transformed data to the Gold layer using DataWarehouse class
 dw.write_scd_type(gold_customer_path, dim_customer_df, ['CustomerID'])
 dw.write_scd_type(gold_product_path, dim_product_df, ['ProductID'])
 dw.write_scd_type(gold_account_path, dim_account_df, ['AccountID'])
-fact_transaction_payment_df.write.format('delta').mode('overwrite').save(gold_transaction_path)
 dw.write_scd_type(gold_date_path, dim_date_df, ['DateKey'])
+fact_transaction_payment_df.write.format('delta').mode('overwrite').save(gold_transaction_path)
 
 # Stop the Spark session
 spark_utils.stop_spark_session()
