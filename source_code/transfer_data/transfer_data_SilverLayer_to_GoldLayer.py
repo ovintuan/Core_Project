@@ -76,8 +76,8 @@ dim_account_df = spark.sql("""
         ca.AccountID, 
         ca.CustomerID, 
         ca.ProductID, 
-        CONVERT(INT, FORMAT(ca.OpenDate, 'yyyyMMdd')) AS OpenDateKey, 
-        CONVERT(INT, FORMAT(ca.CloseDate, 'yyyyMMdd')) AS CloseDateKey, 
+        CAST(DATE_FORMAT(ca.OpenDate, 'yyyyMMdd') AS INT) AS OpenDateKey, 
+        CAST(DATE_FORMAT(ca.CloseDate, 'yyyyMMdd') AS INT) AS CloseDateKey, 
         osm.OptionSetValue AS Status
     FROM delta.`/container/pyspark_workspace/local_data_storage/deltalake/silver/CreditAccount` ca
     JOIN delta.`/container/pyspark_workspace/local_data_storage/deltalake/silver/OptionSetMaster` osm ON ca.StatusID = osm.OptionSetID
@@ -88,7 +88,7 @@ fact_transaction_payment_df = spark.sql("""
     SELECT 
         t.TransactionPaymentID, 
         da.AccountKey, 
-        CONVERT(INT, FORMAT(t.PaymentDate, 'yyyyMMdd')) AS DateKey, 
+        CAST(DATE_FORMAT(t.PaymentDate, 'yyyyMMdd') AS INT) AS DateKey, 
         t.Amount, 
         osm.OptionSetValue AS TransactionType, 
         dp.ProductKey
