@@ -26,3 +26,6 @@ for _ in range(1):
 
     # time.sleep(5)  # Sleep for 5 seconds
     print('Data inserted successfully')
+
+# Stop the Spark session
+spark_utils.stop_spark_session()

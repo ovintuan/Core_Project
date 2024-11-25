@@ -5,17 +5,13 @@ FROM bitnami/spark:3.5.2
 COPY --from=python /usr/local/ /opt/bitnami/python
 USER root
 
-
-COPY . /container/pyspark_workspace/
+COPY ./config_entrypoint /container/pyspark_workspace/config_entrypoint
 
 # Ensure the script has execute permissions
 # Example: "spark:1011:rwx;ro_user:1099:r"
-ENV INIT_USER_LIST="spark:1011:rwx;ro_user:1099:r"
+ENV INIT_USER_LIST="spark:1001:rwx;ro_user:1099:r"
 
 RUN mkdir -p /root/.vscode-server
 RUN bash /container/pyspark_workspace/config_entrypoint/sudo.sh
 RUN bash /container/pyspark_workspace/config_entrypoint/init_user.sh
-
 RUN usermod -aG root spark
-RUN chmod -R 755 /container/pyspark_workspace/
-

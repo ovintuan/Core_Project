@@ -22,7 +22,7 @@ CREATE TABLE dbo.CustomerProductAccount (
     Balance DECIMAL(18,2),
     OpenDate DATE,
     CloseDate DATE,
-    StatusID UNIQUEIDENTIFIER,
+    Status NVARCHAR(100),
     CreatedDate DATE DEFAULT GETDATE(),
     UpdateDate DATE DEFAULT GETDATE(),
     CONSTRAINT PK_CustomerProductAccount PRIMARY KEY (CustomerID, ProductID, AccountID)
@@ -38,8 +38,8 @@ CREATE TABLE dbo.AccountTransactionHistory (
     Balance DECIMAL(18,2),
     TransactionID UNIQUEIDENTIFIER,
     Amount DECIMAL(18,2),
-    PaymentmethodID UNIQUEIDENTIFIER,
-    TransactionTypeID UNIQUEIDENTIFIER,
+    Paymentmethod NVARCHAR(100),
+    TransactionType NVARCHAR(100),
     PaymentDate DATETIME2(7),
     HistoryID UNIQUEIDENTIFIER,
     CreditScore INT,
@@ -57,5 +57,7 @@ CREATE TABLE dbo.Product (
     Description NVARCHAR(500),
     InterestRate DECIMAL(10,2),
     ProductType VARCHAR(50),
-    CONSTRAINT PK_Product PRIMARY KEY (ProductID)
+    CONSTRAINT PK_Product PRIMARY KEY (ProductID),
+    CreatedDate DATE DEFAULT GETDATE(),
+    UpdateDate DATE DEFAULT GETDATE()
 );

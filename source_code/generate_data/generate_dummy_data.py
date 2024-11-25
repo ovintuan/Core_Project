@@ -23,14 +23,31 @@ def load_product_info(file_path):
 
 product_info = load_product_info('/container/pyspark_workspace/local_data_storage/master_data/ProductMasterData.csv')
 
+def load_option_set(file_path):
+    with open(file_path, mode='r') as file:
+        reader = csv.DictReader(file)
+        option_set = {}
+        for row in reader:
+            if row['OptionSetName'] not in option_set:
+                option_set[row['OptionSetName']] = []
+            option_set[row['OptionSetName']].append(row)
+        return option_set
+
+option_set_data = load_option_set('/container/pyspark_workspace/local_data_storage/master_data/OptionSetMasterData.csv')
+
 class DummyDataGenerator:
     def __init__(self):
         self.fake = Faker('vi_VN')
         self.customer_product_account_ids = customer_product_account_ids
         self.product_info = product_info
+        self.option_set_data = option_set_data
+
+    def get_random_option_set_value(self, option_set_name):
+        return choice(self.option_set_data[option_set_name])
 
     def generate_customer_product_account_data(self, record_id):
         product = self.product_info[record_id['ProductID']]
+        status = self.get_random_option_set_value('Status')
         record = {
             "CustomerID": record_id['CustomerID'],
             "FirstName": self.fake.first_name(),
@@ -50,7 +67,7 @@ class DummyDataGenerator:
             "Balance": round(uniform(0.0, 50000.0), 2),
             "OpenDate": self.fake.date_between(start_date='-5y', end_date='today').isoformat(),
             "CloseDate": self.fake.date_between(start_date='today', end_date='+5y').isoformat(),
-            "StatusID": str(uuid.uuid4()),
+            "Status": status['OptionSetValue'],
             "CreatedDate": datetime.now().isoformat(),
             "UpdateDate": datetime.now().isoformat()
         }
@@ -58,6 +75,8 @@ class DummyDataGenerator:
 
     def generate_account_transaction_history_data(self, record_id):
         product = self.product_info[record_id['ProductID']]
+        payment_method = self.get_random_option_set_value('PaymentMethod')
+        transaction_type = self.get_random_option_set_value('TransactionType')
         record = {
             "AccountID": record_id['AccountID'],
             "CustomerID": record_id['CustomerID'],
@@ -66,8 +85,8 @@ class DummyDataGenerator:
             "Balance": round(uniform(0.0, 50000.0), 2),
             "TransactionID": str(uuid.uuid4()),
             "Amount": round(uniform(10.0, 1000.0), 2),
-            "PaymentmethodID": str(uuid.uuid4()),
-            "TransactionTypeID": str(uuid.uuid4()),
+            "PaymentMethod": payment_method['OptionSetValue'],
+            "TransactionType": transaction_type['OptionSetValue'],
             "PaymentDate": self.fake.date_time_between(start_date='-5y', end_date='now').isoformat(),
             "HistoryID": str(uuid.uuid4()),
             "CreditScore": randint(300, 850),

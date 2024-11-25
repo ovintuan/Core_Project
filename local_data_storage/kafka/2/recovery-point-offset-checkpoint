@@ -16,11 +16,11 @@ debezium_offset 23 0
 debezium_offset 7 0
 __consumer_offsets 25 0
 __consumer_offsets 35 0
-__consumer_offsets 41 53
-__consumer_offsets 33 40
+__consumer_offsets 41 114
+__consumer_offsets 33 51
 __consumer_offsets 23 0
 __consumer_offsets 49 0
-_schemas 0 49
+_schemas 0 127
 __consumer_offsets 47 0
 __consumer_offsets 16 0
 __consumer_offsets 28 0
@@ -55,7 +55,7 @@ __consumer_offsets 45 0
 __consumer_offsets 1 0
 __consumer_offsets 5 0
 __consumer_offsets 26 0
-__consumer_offsets 29 42
+__consumer_offsets 29 85
 __consumer_offsets 34 0
 __consumer_offsets 10 0
 debezium_offset 3 0

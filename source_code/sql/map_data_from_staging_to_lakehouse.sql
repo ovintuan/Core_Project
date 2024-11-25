@@ -27,7 +27,7 @@ SELECT DISTINCT
     cpa.Balance, 
     cpa.OpenDate, 
     cpa.CloseDate, 
-    cpa.StatusID, 
+    (SELECT OptionSetID FROM CreditLakehouseDB.dbo.OptionSet WHERE OptionSetName = 'Status' AND OptionSetValue = cpa.StatusID) AS StatusID, 
     cpa.CreatedDate, 
     cpa.UpdateDate
 FROM CreditStagingDB.dbo.CustomerProductAccount cpa
@@ -39,8 +39,8 @@ SELECT DISTINCT
     ath.TransactionID, 
     ath.AccountID, 
     ath.Amount, 
-    ath.PaymentmethodID, 
-    ath.TransactionTypeID, 
+    (SELECT OptionSetID FROM CreditLakehouseDB.dbo.OptionSet WHERE OptionSetName = 'PaymentMethod' AND OptionSetValue = ath.PaymentmethodID) AS PaymentmethodID, 
+    (SELECT OptionSetID FROM CreditLakehouseDB.dbo.OptionSet WHERE OptionSetName = 'TransactionType' AND OptionSetValue = ath.TransactionTypeID) AS TransactionTypeID, 
     ath.PaymentDate, 
     ath.CreatedDate, 
     ath.UpdateDate
@@ -63,8 +63,19 @@ SELECT DISTINCT
     p.ProductName, 
     p.Description, 
     p.InterestRate, 
-    p.ProductType, 
+    (SELECT OptionSetID FROM CreditLakehouseDB.dbo.OptionSet WHERE OptionSetName = 'ProductType' AND OptionSetValue = p.ProductType) AS ProductTypeID, 
     GETDATE() AS CreatedDate, 
     GETDATE() AS UpdateDate
 FROM CreditStagingDB.dbo.Product p
 WHERE NOT EXISTS (SELECT 1 FROM CreditLakehouseDB.dbo.Product pr WHERE pr.ProductID = p.ProductID);
+
+-- Mapping OptionSet Data to OptionSet
+INSERT INTO CreditLakehouseDB.dbo.OptionSet (OptionSetID, OptionSetName, OptionSetValue, CreatedDate, UpdateDate)
+SELECT DISTINCT 
+    os.OptionSetID, 
+    os.OptionSetName, 
+    os.OptionSetValue, 
+    GETDATE() AS CreatedDate, 
+    GETDATE() AS UpdateDate
+FROM CreditStagingDB.dbo.OptionSet os
+WHERE NOT EXISTS (SELECT 1 FROM CreditLakehouseDB.dbo.OptionSet o WHERE o.OptionSetID = os.OptionSetID);

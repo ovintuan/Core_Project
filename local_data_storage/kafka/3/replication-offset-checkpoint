@@ -5,14 +5,14 @@ __consumer_offsets 30 0
 __consumer_offsets 32 0
 sqlserver.CreditStagingDB.dbo.CustomerProductAccount 0 120
 __consumer_offsets 25 0
-__consumer_offsets 41 53
+__consumer_offsets 41 114
 schema-changes.SQL_Server_1 0 3
 __consumer_offsets 49 0
-debezium_config 0 38
+debezium_config 0 51
 __consumer_offsets 40 0
 __consumer_offsets 27 0
 debezium_offset 10 0
-debezium_status 2 34
+debezium_status 2 57
 __consumer_offsets 12 0
 __consumer_offsets 36 0
 __consumer_offsets 45 0
@@ -33,7 +33,7 @@ __consumer_offsets 1 0
 __consumer_offsets 38 0
 sqlserver.CDC_SQL_Server_1 0 0
 __consumer_offsets 14 0
-__consumer_offsets 29 41
+__consumer_offsets 29 85
 __consumer_offsets 0 0
 __consumer_offsets 6 0
 __consumer_offsets 35 0
@@ -41,8 +41,8 @@ __consumer_offsets 13 0
 __consumer_offsets 26 0
 __consumer_offsets 21 0
 __consumer_offsets 19 0
-debezium_status 3 55
-__consumer_offsets 33 40
+debezium_status 3 91
+__consumer_offsets 33 51
 __consumer_offsets 37 0
 __consumer_offsets 8 0
 __consumer_offsets 24 0
@@ -54,7 +54,7 @@ __consumer_offsets 39 0
 __consumer_offsets 2 0
 __consumer_offsets 44 0
 __consumer_offsets 16 0
-_schemas 0 49
+_schemas 0 127
 __consumer_offsets 47 0
 debezium_offset 4 0
 __consumer_offsets 7 0

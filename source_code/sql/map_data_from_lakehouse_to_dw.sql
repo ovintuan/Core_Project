@@ -94,16 +94,16 @@ WHEN NOT MATCHED BY TARGET THEN
     INSERT (AccountID, CustomerID, ProductID, OpenDateKey, CloseDateKey, Status, StartDate, EndDate, IsCurrent)
     VALUES (source.AccountID, source.CustomerID, source.ProductID, source.OpenDateKey, source.CloseDateKey, source.Status, source.StartDate, source.EndDate, source.IsCurrent);
 
--- Mapping Transaction Data to FactTransaction
-INSERT INTO CreditDW.dbo.FactTransaction (TransactionID, AccountKey, DateKey, Amount, TransactionType, ProductKey)
+-- Mapping Transaction Data to FactTransactionPayment
+INSERT INTO CreditDW.dbo.FactTransactionPayment (TransactionPaymentID, AccountKey, DateKey, Amount, TransactionType, ProductKey)
 SELECT 
-    t.TransactionID, 
+    t.TransactionPaymentID, 
     da.AccountKey, 
     CONVERT(INT, FORMAT(t.PaymentDate, 'yyyyMMdd')) AS DateKey, 
     t.Amount, 
     osm.OptionSetValue AS TransactionType, 
     dp.ProductKey
-FROM CreditLakehouseDB.dbo.Transaction t
+FROM CreditLakehouseDB.dbo.TransactionPayment t
 JOIN CreditDW.dbo.DimAccount da ON t.AccountID = da.AccountID
 JOIN CreditLakehouseDB.dbo.OptionSetMaster osm ON t.TransactionTypeID = osm.OptionSetID
 JOIN CreditDW.dbo.DimProduct dp ON dp.ProductID = (SELECT ca.ProductID FROM CreditLakehouseDB.dbo.CreditAccount ca WHERE ca.AccountID = t.AccountID)

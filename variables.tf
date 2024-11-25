@@ -9,7 +9,7 @@ variable "docker_host" {
 variable "pyspark_image_name" {
   default = "pyspark_workspace"
   type    = string
-}
+  }
 
 variable "pyspark_dockerfile" {
   default = "Dockerfile.pyspark_workspace"
@@ -113,6 +113,11 @@ variable "spark_worker_webui_port_2" {
 
 variable "postgres_hostname" {
   default = "postgres_database_1"
+  type    = string
+}
+
+variable "volume_postgres_data" {
+  default = "postgres_data"
   type    = string
 }
 

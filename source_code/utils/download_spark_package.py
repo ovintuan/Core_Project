@@ -36,10 +36,11 @@ def download_jar(artifact, destination_folder):
 def main():
     # Danh sách các package cần tải
     spark_packages = [
-        "io.delta:delta-core_2.12:2.1.0",
+        "io.delta:delta-storage:3.2.0",
+        "io.delta:delta-spark_2.12:3.2.0",
         "org.apache.spark:spark-avro_2.12:3.4.0",
         "org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0",
-        "com.microsoft.sqlserver:mssql-jdbc:12.8.1.jre11"
+        "com.microsoft.sqlserver:mssql-jdbc:12.8.1.jre11",
     ]
     
     # Thư mục đích để lưu JAR

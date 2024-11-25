@@ -12,12 +12,12 @@ __consumer_offsets 9 0
 __consumer_offsets 46 0
 __consumer_offsets 25 0
 __consumer_offsets 35 0
-__consumer_offsets 41 53
-__consumer_offsets 33 40
+__consumer_offsets 41 114
+__consumer_offsets 33 51
 __consumer_offsets 23 0
 __consumer_offsets 49 0
 debezium_offset 2 0
-_schemas 0 49
+_schemas 0 127
 debezium_offset 22 0
 __consumer_offsets 47 0
 __consumer_offsets 16 0
@@ -54,7 +54,7 @@ __consumer_offsets 1 0
 __consumer_offsets 5 0
 __consumer_offsets 26 0
 sqlserver.CreditStagingDB.dbo.AccountTransactionHistory 0 80
-__consumer_offsets 29 41
+__consumer_offsets 29 85
 __consumer_offsets 34 0
 __consumer_offsets 10 0
 debezium_offset 19 0

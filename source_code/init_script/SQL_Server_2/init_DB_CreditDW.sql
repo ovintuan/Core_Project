@@ -6,7 +6,7 @@ IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'DimCu
 CREATE TABLE dbo.DimCustomer (
     CustomerKey INT PRIMARY KEY IDENTITY(1,1), -- Surrogate Key
     CustomerID UNIQUEIDENTIFIER NOT NULL, -- Natural Key from Source System
-    FullName NVARCHAR(100) DEFAULT CONCAT_WS(' ', LastName, FirstName),
+    FullName AS CONCAT_WS(' ', LastName, FirstName),
     FirstName NVARCHAR(100) NOT NULL,
     LastName NVARCHAR(100) NOT NULL,
     DateOfBirth DATE,
@@ -37,8 +37,8 @@ IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'DimAc
 CREATE TABLE dbo.DimAccount (
     AccountKey INT PRIMARY KEY IDENTITY(1,1), -- Surrogate Key
     AccountID UNIQUEIDENTIFIER NOT NULL UNIQUE, -- Natural Key from Source System
-    CustomerID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES DimCustomer(CustomerKey),
-    ProductID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES DimProduct(ProductKey),
+    CustomerID UNIQUEIDENTIFIER,
+    ProductID UNIQUEIDENTIFIER,
     OpenDateKey INT,
     CloseDateKey INT,
     Status VARCHAR(50),
@@ -59,13 +59,13 @@ CREATE TABLE dbo.DimDate (
     Weekday VARCHAR(10)
 );
 
--- FactTransaction (Transaction Fact Table)
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'FactTransaction' AND TABLE_SCHEMA = 'dbo')
-CREATE TABLE dbo.FactTransaction (
-    TransactionID UNIQUEIDENTIFIER PRIMARY KEY,
-    AccountKey INT FOREIGN KEY REFERENCES DimAccount(AccountKey),
-    DateKey INT FOREIGN KEY REFERENCES DimDate(DateKey),
+-- FactTransactionPayment (Transaction Payment Fact Table)
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'FactTransactionPayment' AND TABLE_SCHEMA = 'dbo')
+CREATE TABLE dbo.FactTransactionPayment (
+    TransactionPaymentID UNIQUEIDENTIFIER PRIMARY KEY,
+    AccountKey INT,
+    DateKey INT,
     Amount DECIMAL(18,2),
     TransactionType VARCHAR(50),
-    ProductKey INT FOREIGN KEY REFERENCES DimProduct(ProductKey)
+    ProductKey INT
 );

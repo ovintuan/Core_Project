@@ -40,7 +40,7 @@ CREATE TABLE dbo.Product (
     ProductName VARCHAR(100) NOT NULL,
     Description NVARCHAR(500),
     InterestRate DECIMAL(10,2), 
-    ProductTypeID UNIQUEIDENTIFIER REFERENCES OptionSetMaster(OptionSetID), -- e.g., Loan, Credit Card, Line of Credit
+    ProductTypeID UNIQUEIDENTIFIER, -- e.g., Loan, Credit Card, Line of Credit
     CreatedDate DATE DEFAULT GETDATE(),
     UpdateDate DATE DEFAULT GETDATE(),
     CONSTRAINT PK_Product PRIMARY KEY (ProductID)
@@ -50,39 +50,39 @@ CREATE TABLE dbo.Product (
 IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'CreditAccount' AND TABLE_SCHEMA = 'dbo')
 CREATE TABLE dbo.CreditAccount (
     AccountID UNIQUEIDENTIFIER DEFAULT NEWID(),
-    CustomerID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Customer(CustomerID),
-    ProductID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Product(ProductID),
+    CustomerID UNIQUEIDENTIFIER,
+    ProductID UNIQUEIDENTIFIER,
     LimitAmount DECIMAL(18,2),
     Balance DECIMAL(18,2),
     OpenDate DATE,
     CloseDate DATE,
-    StatusID UNIQUEIDENTIFIER REFERENCES OptionSetMaster(OptionSetID), -- e.g., Active, Closed, Delinquent
+    StatusID UNIQUEIDENTIFIER, -- e.g., Active, Closed, Delinquent
     CreatedDate DATE DEFAULT GETDATE(),
     UpdateDate DATE DEFAULT GETDATE(),
     CONSTRAINT PK_CreditAccount PRIMARY KEY (AccountID)
 );
 
--- Transaction Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Transaction' AND TABLE_SCHEMA = 'dbo')
-CREATE TABLE dbo.Transaction (
-    TransactionID UNIQUEIDENTIFIER DEFAULT NEWID(),
-    AccountID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES CreditAccount(AccountID),
+-- TransactionPayment Table
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'TransactionPayment' AND TABLE_SCHEMA = 'dbo')
+CREATE TABLE dbo.TransactionPayment (
+    TransactionPaymentID UNIQUEIDENTIFIER DEFAULT NEWID(),
+    AccountID UNIQUEIDENTIFIER,
     Amount DECIMAL(18,2),
-    PaymentmethodID UNIQUEIDENTIFIER REFERENCES OptionSetMaster(OptionSetID),
-    TransactionTypeID UNIQUEIDENTIFIER REFERENCES OptionSetMaster(OptionSetID),
+    PaymentmethodID UNIQUEIDENTIFIER,
+    TransactionTypeID UNIQUEIDENTIFIER,
     PaymentDate DATETIME2(7),
     CreatedDate DATE DEFAULT GETDATE(),
     UpdateDate DATE DEFAULT GETDATE(),
-    CONSTRAINT PK_Transaction PRIMARY KEY (TransactionID)
+    CONSTRAINT PK_Transaction PRIMARY KEY (TransactionPaymentID)
 );
 
 -- CreditHistory Table
 IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'CreditHistory' AND TABLE_SCHEMA = 'dbo')
 CREATE TABLE dbo.CreditHistory (
     HistoryID UNIQUEIDENTIFIER DEFAULT NEWID(),
-    AccountID UNIQUEIDENTIFIER FOREIGN KEY REFERENCES CreditAccount(AccountID),
+    AccountID UNIQUEIDENTIFIER,
     CreditScore INT,
-    Date DATE,
+    HistoryDate DATE,
     CONSTRAINT PK_CreditHistory PRIMARY KEY (HistoryID)
 );
 

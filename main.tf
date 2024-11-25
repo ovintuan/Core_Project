@@ -34,6 +34,10 @@ resource "docker_volume" "python_site_packages" {
   name = var.volume_python_site_packages
 }
 
+resource "docker_volume" "postgres_data" {
+  name = var.volume_postgres_data
+}
+
 resource "docker_container" "spark_master" {
   name  = "spark-master"
   image = docker_image.pyspark_workspace.image_id
@@ -62,9 +66,22 @@ resource "docker_container" "spark_master" {
     volume_name    = docker_volume.spark_master_spark_command.name
   }
   mounts {
-    target = "/container/pyspark_workspace"
+    target = "/container/pyspark_workspace/local_data_storage/deltalake"
     type   = "bind"
-    source = abspath(".")
+    source = abspath("./local_data_storage/deltalake")
+  }
+  mounts {
+    target = "/container/pyspark_workspace/local_data_storage/spark"
+    type   = "bind"
+    source = abspath("./local_data_storage/spark")
+  }
+  mounts {
+    target = "/container/pyspark_workspace/local_data_storage/master_data"
+    type   = "bind"
+    source = abspath("./local_data_storage/master_data")
+  }
+  provisioner "local-exec" {
+    command = "docker exec --user root spark-master chmod -R 775 /container/pyspark_workspace/local_data_storage/deltalake /container/pyspark_workspace/local_data_storage/spark /container/pyspark_workspace/local_data_storage/master_data"
   }
   depends_on = [docker_image.pyspark_workspace]
 }
@@ -81,9 +98,22 @@ resource "docker_container" "spark_worker_1" {
     "SPARK_WORKER_WEBUI_PORT=${var.spark_worker_webui_port_1}"
   ]
   mounts {
-    target = "/container/pyspark_workspace"
+    target = "/container/pyspark_workspace/local_data_storage/deltalake"
     type   = "bind"
-    source = abspath(".")
+    source = abspath("./local_data_storage/deltalake")
+  }
+  mounts {
+    target = "/container/pyspark_workspace/local_data_storage/spark"
+    type   = "bind"
+    source = abspath("./local_data_storage/spark")
+  }
+  mounts {
+    target = "/container/pyspark_workspace/local_data_storage/master_data"
+    type   = "bind"
+    source = abspath("./local_data_storage/master_data")
+  }
+  provisioner "local-exec" {
+    command = "docker exec --user root spark-worker-1 chmod -R 775 /container/pyspark_workspace/local_data_storage/deltalake /container/pyspark_workspace/local_data_storage/spark /container/pyspark_workspace/local_data_storage/master_data"
   }
   depends_on = [docker_container.spark_master, docker_image.pyspark_workspace]
 }
@@ -100,9 +130,22 @@ resource "docker_container" "spark_worker_2" {
     "SPARK_WORKER_WEBUI_PORT=${var.spark_worker_webui_port_2}"
   ]
   mounts {
-    target = "/container/pyspark_workspace"
+    target = "/container/pyspark_workspace/local_data_storage/deltalake"
     type   = "bind"
-    source = abspath(".")
+    source = abspath("./local_data_storage/deltalake")
+  }
+  mounts {
+    target = "/container/pyspark_workspace/local_data_storage/spark"
+    type   = "bind"
+    source = abspath("./local_data_storage/spark")
+  }
+  mounts {
+    target = "/container/pyspark_workspace/local_data_storage/master_data"
+    type   = "bind"
+    source = abspath("./local_data_storage/master_data")
+  }
+  provisioner "local-exec" {
+    command = "docker exec --user root spark-worker-2 chmod -R 775 /container/pyspark_workspace/local_data_storage/deltalake /container/pyspark_workspace/local_data_storage/spark /container/pyspark_workspace/local_data_storage/master_data"
   }
   depends_on = [docker_container.spark_master, docker_image.pyspark_workspace]
 }
@@ -162,10 +205,9 @@ resource "docker_container" "postgres_database_1" {
     internal = var.postgres_port_internal
     external = var.postgres_port_external
   }
-  mounts {
-    target = "/var/lib/postgresql/data"
-    type   = "bind"
-    source = abspath("./local_data_storage/postgres")
+  volumes {
+    container_path = "/var/lib/postgresql/data"
+    volume_name    = docker_volume.postgres_data.name
   }
   mounts {
     target = "/source_code/init_script/"

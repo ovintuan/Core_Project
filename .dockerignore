@@ -1,0 +1,14 @@
+terraform.tfstate/
+terraform.tfstate.backup/
+.terraform.lock.hcl/
+.terraform/
+.DS_Store/
+local_data_storage/airflow/logs/scheduler/latest/
+local_data_storage/.vscode-server/
+local_data_storage/postgres/
+
+.git/
+local_data_storage/airflow/
+local_data_storage/kafka/
+local_data_storage/sql_server_1/
+local_data_storage/sql_server_2/
