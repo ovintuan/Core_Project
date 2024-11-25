@@ -16,6 +16,7 @@ gold_customer_path = '/container/pyspark_workspace/local_data_storage/deltalake/
 gold_product_path = '/container/pyspark_workspace/local_data_storage/deltalake/gold/DimProduct'
 gold_account_path = '/container/pyspark_workspace/local_data_storage/deltalake/gold/DimAccount'
 gold_transaction_path = '/container/pyspark_workspace/local_data_storage/deltalake/gold/FactTransactionPayment'
+gold_date_path = '/container/pyspark_workspace/local_data_storage/deltalake/gold/DimDate'
 
 # Initialize dimension tables if they do not exist
 try:
@@ -37,6 +38,11 @@ try:
     spark.read.format('delta').load(gold_transaction_path)
 except AnalysisException:
     dw.init_scd_table(spark.sql("SELECT * FROM delta.`/container/pyspark_workspace/local_data_storage/deltalake/silver/TransactionPayment`"), gold_transaction_path)
+
+try:
+    spark.read.format('delta').load(gold_date_path)
+except AnalysisException:
+    dw.init_scd_table(spark.sql("SELECT * FROM delta.`/container/pyspark_workspace/local_data_storage/deltalake/silver/Date`"), gold_date_path)
 
 # Mapping Customer Data to DimCustomer
 dim_customer_df = spark.sql("""
@@ -93,11 +99,26 @@ fact_transaction_payment_df = spark.sql("""
     WHERE NOT EXISTS (SELECT 1 FROM delta.`/container/pyspark_workspace/local_data_storage/deltalake/gold/FactTransactionPayment` ft WHERE ft.TransactionID = t.TransactionID)
 """)
 
+# Mapping Date Data to DimDate
+dim_date_df = spark.sql("""
+    SELECT 
+        d.DateKey, 
+        d.FullDate, 
+        d.Day, 
+        d.Month, 
+        d.Year, 
+        d.Quarter, 
+        d.FiscalYear, 
+        d.WeekOfYear
+    FROM delta.`/container/pyspark_workspace/local_data_storage/deltalake/silver/Date` d
+""")
+
 # Save the transformed data to the Gold layer using DataWarehouse class
 dw.write_scd_type(gold_customer_path, dim_customer_df, ['CustomerID'])
 dw.write_scd_type(gold_product_path, dim_product_df, ['ProductID'])
 dw.write_scd_type(gold_account_path, dim_account_df, ['AccountID'])
 fact_transaction_payment_df.write.format('delta').mode('overwrite').save(gold_transaction_path)
+dw.write_scd_type(gold_date_path, dim_date_df, ['DateKey'])
 
 # Stop the Spark session
 spark_utils.stop_spark_session()
